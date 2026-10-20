@@ -48,6 +48,7 @@ Plan {title, learners:string[], minutes:number, tasks:{id,name,duration,capacity
 ```
 EveryHand/
 ├── src/
+│   ├── Modal.tsx            # shared keyboard/focus-managed dialog
 │   ├── choices.ts          # actual alternatives, source revisions and application
 │   ├── choices.test.ts     # bounds, protected history and stale-apply checks
 │   ├── ChoiceWorkspace.tsx # constraint comparison and named before/after paths

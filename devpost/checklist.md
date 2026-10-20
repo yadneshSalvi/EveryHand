@@ -37,7 +37,7 @@ Build mode: fast — explicit autonomous implementation authorization. Human han
   Learner check: Print/export the repaired plan, use phone width, report unclear or broken behavior.
   Commit: `Finish facilitator exports and studio polish`
 
-- [ ] **4. Compare actual ways to preserve every full turn**
+- [x] **4. Compare actual ways to preserve every full turn**
   Becomes usable: Preview equipment/time alternatives, inspect named before/after paths and apply an actual schedule, including disruption-aware recovery.
   Why now: Closes the facilitator decision after the proven shortage; a teacher may be unable to borrow equipment.
   PRD ref: `prd.md > Ways to Make Room`, `prd.md > Resource Loss and Undo`
@@ -59,7 +59,7 @@ Build mode: fast — explicit autonomous implementation authorization. Human han
 - [ ] Optional edit and transfer reflection addressed — not yet offered
 - [x] `devpost/app-map.html` generated from finished code and source-checked; provided as a reference artifact with a project-grounded practice to reuse. Human walkthrough remains pending.
 Activity and evidence: Implementation and agent mechanical/browser verification complete; the reference map is prepared. Human learning activity and feedback remain pending.
-Route and stops: Reference-only route: `src/App.tsx > addResource / apply` → `src/solver.ts > schedule / capacityProof` → `src/Room.tsx > Room` and `src/export.ts > toCSV`. No human guided stops claimed.
+Route and stops: Reference-only route: `src/ChoiceWorkspace.tsx > ChoiceWorkspace` → `src/choices.ts > generateChoices / applyChoice` and `src/solver.ts > schedule` → `src/Room.tsx > Room` and `src/export.ts > toCSV`. No human guided stops claimed.
 Edit outcome: Not applicable yet.
 Reflection: Not established; no invented response.
 Activity mode: Offline reference map prepared; human activity pending.
@@ -76,3 +76,6 @@ Activity mode: Offline reference map prepared; human activity pending.
 - Final agent browser pass at 390 × 844: document width equals viewport width (390px), readable hero/controls, editor fits and scrolls. Print-mode chronological run sheet visually verified with the export modal open. Human final review remains pending.
 
 - Competitive review selected a constraint-aware choice workspace plus named consequences. Full turn durations remain fixed; accommodations, fairness history and shared resource expansion remain deferred. Planning updated before code under delegated implementation authorization.
+
+- Choice revision verified: 20 committed tests, typecheck and production build. Independent audit passed 606 baseline/loss contexts and 381 full-path candidates, plus four explicit lock checks. Parent IAB verified baseline +10 minutes/+1 place, constraint locks, preview/apply/undo, named before/after paths, loss at minute eight and +6-minute recovery. Actual exported recovery JSON has 28 unique four-minute turns, all eight completed intervals identical, no overlaps or failed-resource use after cutoff.
+- Mid-turn historical regression verified in IAB: lose one of four places at minute five, rewind to minute four; all four historical active turns render, including the interrupted turn. Room and roster explicitly show the before-loss view. Functional small labels and warning/missing/undo/chip text were darkened and enlarged after computed-style contrast review. Human final review remains pending.

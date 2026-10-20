@@ -53,7 +53,9 @@ export default function Room({
   const first = plan.tasks[0];
   const historical =
     !!disruption && disruption.task === first.id && minute < disruption.minute;
-  const visibleCapacity = first.capacity + (historical ? 1 : 0);
+  const visibleCapacity = historical
+    ? (disruption?.capacityBefore ?? first.capacity + 1)
+    : first.capacity;
   const shown = Math.min(visibleCapacity, 6);
   const isMicroscope = /microsc|specimen/i.test(first.name);
   const stations = Array.from({ length: shown }, (_, i) => ({
@@ -78,7 +80,8 @@ export default function Room({
         </div>
         <span className="preview-badge">
           <i />
-          Preview <b>{String(minute).padStart(2, "0")}:00</b>
+          {historical ? "History" : "Preview"}{" "}
+          <b>{String(minute).padStart(2, "0")}:00</b>
         </span>
       </div>
       <div className="mobile-room-hint">

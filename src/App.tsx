@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowDown,
   ArrowDownToLine,
@@ -23,6 +23,14 @@ import {
   Zap,
 } from "lucide-react";
 import Room, { Microscope } from "./Room";
+import Modal from "./Modal";
+import ChoiceWorkspace from "./ChoiceWorkspace";
+import {
+  applyChoice,
+  createChoiceContext,
+  type ChoiceCandidate,
+  type ChoiceLocks,
+} from "./choices";
 import { download, toCSV } from "./export";
 import {
   capacityProof,
@@ -35,7 +43,7 @@ import {
   type Schedule,
   type Disruption,
 } from "./solver";
-type Dialog = "edit" | "import" | "export" | "about" | null;
+type Dialog = "edit" | "import" | "export" | "about" | "choices" | null;
 interface Baseline {
   plan: Plan;
   result: Schedule;
@@ -54,90 +62,6 @@ function loadPlan(): Plan {
   } catch {}
   return clone(samplePlan);
 }
-function Modal({
-  title,
-  subtitle,
-  onClose,
-  children,
-  wide = false,
-}: {
-  title: string;
-  subtitle?: string;
-  onClose: () => void;
-  children: ReactNode;
-  wide?: boolean;
-}) {
-  const ref = useRef<HTMLDivElement>(null);
-  const closeRef = useRef(onClose);
-  closeRef.current = onClose;
-  useEffect(() => {
-    const previous = document.activeElement as HTMLElement;
-    const dialog = ref.current;
-    const first = dialog?.querySelector<HTMLElement>(
-      "button,input,textarea,select",
-    );
-    first?.focus();
-    const key = (e: KeyboardEvent) => {
-      if (e.key === "Escape") closeRef.current();
-      if (e.key === "Tab" && dialog) {
-        const all = Array.from(
-          dialog.querySelectorAll<HTMLElement>(
-            "button:not(:disabled),input:not(:disabled),textarea:not(:disabled),select:not(:disabled),a[href]",
-          ),
-        );
-        const first = all[0],
-          last = all[all.length - 1];
-        if (e.shiftKey && document.activeElement === first) {
-          e.preventDefault();
-          last?.focus();
-        } else if (!e.shiftKey && document.activeElement === last) {
-          e.preventDefault();
-          first?.focus();
-        }
-      }
-    };
-    document.addEventListener("keydown", key);
-    const old = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.removeEventListener("keydown", key);
-      document.body.style.overflow = old;
-      previous?.focus();
-    };
-  }, []);
-  return (
-    <div
-      className="modal-backdrop"
-      onMouseDown={(e) => {
-        if (e.target === e.currentTarget) onClose();
-      }}
-    >
-      <div
-        ref={ref}
-        className={`modal ${wide ? "wide" : ""}`}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="dialog-title"
-      >
-        <div className="modal-header">
-          <div>
-            <span className="eyebrow">EVERY HAND / THE STUDIO</span>
-            <h2 id="dialog-title">{title}</h2>
-            {subtitle && <p>{subtitle}</p>}
-          </div>
-          <button
-            className="icon-button close"
-            onClick={onClose}
-            aria-label="Close dialog"
-          >
-            <X size={20} />
-          </button>
-        </div>
-        {children}
-      </div>
-    </div>
-  );
-}
 export default function App() {
   const [plan, setPlan] = useState<Plan>(loadPlan);
   const [result, setResult] = useState<Schedule>(() => schedule(plan));
@@ -148,6 +72,17 @@ export default function App() {
   const [disruption, setDisruption] = useState<Disruption | null>(null);
   const [undo, setUndo] = useState<Snapshot | null>(null);
   const [lossBaseline, setLossBaseline] = useState<Baseline | null>(null);
+  const choiceContext = useMemo(
+    () => createChoiceContext(plan, result, disruption),
+    [plan, result, disruption],
+  );
+  const viewingHistory = !!(
+    disruption &&
+    lossBaseline &&
+    minute < disruption.minute
+  );
+  const displayResult = viewingHistory ? lossBaseline!.result : result;
+  const rosterMissing = plan.learners.length - displayResult.served;
   const [toast, setToast] = useState("");
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
@@ -263,13 +198,19 @@ export default function App() {
     setAssumptions([]);
     setDialog("edit");
   }
-  function addResource() {
-    apply({
-      ...plan,
-      tasks: plan.tasks.map((t) =>
-        t.id === diagnosticTask.id ? { ...t, capacity: t.capacity + 1 } : t,
-      ),
-    });
+  function applyAlternative(candidate: ChoiceCandidate, locks: ChoiceLocks) {
+    const next = applyChoice(choiceContext, candidate, locks);
+    snapshot();
+    setPlan(next.plan);
+    setResult(next.result);
+    setMinute((m) => Math.min(m, next.plan.minutes));
+    setPlaying(false);
+    setDialog(null);
+    setSelected(null);
+    setFilter("all");
+    setToast(
+      `${next.delta.gained.length} more learners have full paths. Every full turn is kept.`,
+    );
   }
   function simulate() {
     snapshot();
@@ -299,6 +240,7 @@ export default function App() {
     snapshot();
     setPlan(lossBaseline.plan);
     setResult(lossBaseline.result);
+    setMinute((m) => Math.min(m, lossBaseline.plan.minutes));
     setDisruption(null);
     setLossBaseline(null);
     setPlaying(false);
@@ -357,17 +299,17 @@ export default function App() {
         .map((name, i) => ({
           name,
           i,
-          state: learnerState(i, plan, result, minute),
+          state: learnerState(i, plan, displayResult, minute),
         }))
         .filter(
           (l) =>
             (filter === "all" ||
               (filter === "unserved"
-                ? result.unserved.some((s) => s.learner === l.i)
+                ? displayResult.unserved.some((s) => s.learner === l.i)
                 : l.state === filter)) &&
             `${l.name} ${l.i + 1}`.toLowerCase().includes(search.toLowerCase()),
         ),
-    [plan, result, minute, filter, search],
+    [plan, displayResult, minute, filter, search],
   );
   return (
     <>
@@ -419,6 +361,8 @@ export default function App() {
           </div>
           <div className="intro-note">
             <p>
+              For teachers and workshop leaders.
+              <br />
               Being in the group is one thing.
               <br />
               Getting a real turn is another.
@@ -486,7 +430,7 @@ export default function App() {
         <div className="studio-grid" id="studio">
           <Room
             plan={plan}
-            result={result}
+            result={displayResult}
             minute={minute}
             setMinute={setMinute}
             playing={playing}
@@ -591,27 +535,16 @@ export default function App() {
                 </div>
               </div>
             )}
-            {missing > 0 &&
-            !disruption &&
-            finiteFix &&
-            provenShortfall &&
-            diagnosticTask.capacity < 16 ? (
+            {missing > 0 ? (
               <button
                 className="button dark full fix-button"
-                onClick={addResource}
+                onClick={() => {
+                  setPlaying(false);
+                  setDialog("choices");
+                }}
               >
-                <Plus size={17} />
-                Add one more place{" "}
-                <span>
-                  {diagnosticTask.capacity} → {diagnosticTask.capacity + 1}
-                </span>
-              </button>
-            ) : missing > 0 && !disruption ? (
-              <button className="button dark full fix-button" onClick={edit}>
-                <Settings2 size={17} />
-                {finiteFix
-                  ? "Review activity timing"
-                  : "Adjust time to fit a full turn"}
+                <Sparkles size={17} />
+                Compare ways to make room
                 <ArrowRight size={16} />
               </button>
             ) : (
@@ -620,7 +553,8 @@ export default function App() {
                 onClick={() => setDialog("export")}
               >
                 <ArrowDownToLine size={17} />
-                Take your plan into the room <ArrowRight size={16} />
+                Take your plan into the room
+                <ArrowRight size={16} />
               </button>
             )}
             {undo && (
@@ -691,6 +625,13 @@ export default function App() {
               See the run sheet <ArrowRight size={15} />
             </button>
           </div>
+          {viewingHistory && (
+            <p className="history-view-label">
+              <ShieldCheck size={14} />
+              Before the loss: the original plan at {minute}:00. The comparison
+              and exports use the current recovery plan.
+            </p>
+          )}
           <div className="roster-toolbar">
             <div
               className="filter-tabs"
@@ -707,7 +648,7 @@ export default function App() {
                 className={filter === "unserved" ? "active" : ""}
                 onClick={() => setFilter("unserved")}
               >
-                Needs a turn <span>{missing}</span>
+                Needs a turn <span>{rosterMissing}</span>
               </button>
               <button
                 className={filter === "complete" ? "active" : ""}
@@ -758,7 +699,7 @@ export default function App() {
                     <td>
                       <div className="slot-list">
                         {plan.tasks.map((t) => {
-                          const s = result.slots.find(
+                          const s = displayResult.slots.find(
                             (s) => s.learner === i && s.task === t.id,
                           );
                           return (
@@ -883,6 +824,14 @@ export default function App() {
             <X size={14} />
           </button>
         </div>
+      )}
+      {dialog === "choices" && (
+        <ChoiceWorkspace
+          context={choiceContext}
+          onClose={closeDialog}
+          onApply={applyAlternative}
+          onEdit={edit}
+        />
       )}
       {dialog === "edit" && (
         <Modal
@@ -1277,7 +1226,7 @@ export default function App() {
         >
           <div className="learner-detail">
             {plan.tasks.map((t, i) => {
-              const s = result.slots.find(
+              const s = displayResult.slots.find(
                 (s) => s.learner === selected && s.task === t.id,
               );
               return (
@@ -1309,12 +1258,16 @@ export default function App() {
             <button
               className="button dark full"
               onClick={() => {
-                const s = result.slots.find((s) => s.learner === selected);
+                const s = displayResult.slots.find(
+                  (s) => s.learner === selected,
+                );
                 if (s) setMinute(s.start);
                 setSelected(null);
                 setPlaying(false);
               }}
-              disabled={!result.slots.some((s) => s.learner === selected)}
+              disabled={
+                !displayResult.slots.some((s) => s.learner === selected)
+              }
             >
               Find this moment in the room <ArrowRight size={16} />
             </button>
