@@ -37,6 +37,16 @@ Build mode: fast — explicit autonomous implementation authorization. Human han
   Learner check: Print/export the repaired plan, use phone width, report unclear or broken behavior.
   Commit: `Finish facilitator exports and studio polish`
 
+- [ ] **4. Compare actual ways to preserve every full turn**
+  Becomes usable: Preview equipment/time alternatives, inspect named before/after paths and apply an actual schedule, including disruption-aware recovery.
+  Why now: Closes the facilitator decision after the proven shortage; a teacher may be unable to borrow equipment.
+  PRD ref: `prd.md > Ways to Make Room`, `prd.md > Resource Loss and Undo`
+  Spec ref: `spec.md > Choice Comparison`, `spec.md > Scenario Repair`
+  Build: Add pure candidate generation and source revision checks; preserve full durations and protected history; build constraint locks, preview/application/undo and learner consequences.
+  Verify (mechanical): Baseline +10 minutes/+1 place; loss at minute 8 +6 minutes with eight completed retained; mid-turn history, no-finite-option bounds, stale rejection, preview immutability, exact deltas, multi-task label honesty, tests/typecheck/build and parent browser/export verification.
+  Learner check: Compare keeping equipment versus keeping the finish time; inspect a named learner, apply, simulate a loss and recover without changing completed turns.
+  Commit: `Add verified ways to make room and learner consequences`
+
 ## Hands-on Checkpoints
 - [ ] Early usable behavior explored — human feedback after slice 1; agent browser evidence recorded separately.
 - [ ] Final kick-the-tires exploration and feedback completed
@@ -64,3 +74,5 @@ Activity mode: Offline reference map prepared; human activity pending.
 - Imported-draft cancellation prevents stale responses reopening a closed editor. A separate pre-loss snapshot keeps scenario restoration usable after edit/undo. Interrupted work is described as needing a full restart, with actual fitting restart counts.
 
 - Final agent browser pass at 390 × 844: document width equals viewport width (390px), readable hero/controls, editor fits and scrolls. Print-mode chronological run sheet visually verified with the export modal open. Human final review remains pending.
+
+- Competitive review selected a constraint-aware choice workspace plus named consequences. Full turn durations remain fixed; accommodations, fairness history and shared resource expansion remain deferred. Planning updated before code under delegated implementation authorization.

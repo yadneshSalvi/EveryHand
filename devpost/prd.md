@@ -9,9 +9,9 @@ An individual opportunity planner for teachers and facilitators. Source: `scope.
 ## The Core Journey
 1. Arrive at a working, explicitly fictional microscope example with a visible 21/28 result.
 2. Inspect 28 learners, a 30-minute session, four-minute turns including reset, and three microscopes.
-3. Add the recommended fourth microscope or edit the plan. Replan and see 28 complete opportunities.
+3. Compare actual schedules: keep three microscopes and extend to 40 minutes, or keep 30 minutes and add a fourth. Inspect named learner paths before and after; preview does not change the plan. Apply one choice atomically and see 28 complete opportunities.
 4. Scrub or play the timeline; select a learner to inspect their exact turn.
-5. Simulate a microscope loss at the selected minute; preserve completed turns, keep unaffected active turns, and rebuild the remainder. Undo is available.
+5. Simulate a microscope loss at the selected minute; preserve completed turns, keep unaffected active turns, and compare recovery alternatives. With four-to-three places lost at minute eight, 36 total minutes restores all 28 with eight completed turns retained. Undo is available.
 6. Export printable individual turn cards and a facilitator run sheet, or download schedule data.
 
 ## Screens and Layout
@@ -29,8 +29,12 @@ A learner counts as fully served only when every required task has a complete va
 For the example, display 112 required microscope-minutes versus 90 available and the stronger whole-turn bound 3 × floor(30/4) = 21. Never display fractional learners. Capacity proofs are identified as such; multi-task heuristic shortfalls do not claim global impossibility. Resource and duration edits recalculate the schedule.
 ### Timeline and Room
 Play/pause, restart and a labeled range scrubber drive the same slot state used by the roster. Selected learners are highlighted. Simulation is clearly distinct from actual attendance. Every visible station represents actual resource capacity, with a compact aggregate view if capacity is large.
+### Ways to Make Room
+A comparison workspace shows actual generated full-coverage options, preserving full activity durations, learners and prerequisite order. One option keeps equipment and adds time; another keeps finish time and adds places. Finish-time and equipment locks filter permitted changes; when both are locked and the plan has a shortage, explain why a limit must change. Each option shows its actual result, changed assumption, exact-vs-verified evidence and named learners gaining a full path. Select a learner to inspect actual before/after activity times and places. Selection is a preview; Apply commits the selected schedule atomically, with undo. Closing preserves the current plan. Stale comparisons cannot be applied.
+Single identical-activity options use exact bounds, including remaining capacity after a loss. Multi-activity options are verified heuristic schedules and cannot claim a global minimum. The bounded search checks time through 120 minutes or capacity through 16 places for a single changed activity; an unsuccessful search is not a global impossibility proof. No option quietly shortens a full turn.
+
 ### Resource Loss and Undo
-Remove one first-task resource at current preview time. Completed turns stay complete. In-progress turns on surviving resources finish. A turn interrupted on the removed resource restarts at full duration. Future slots are recomputed; show before/after counts and the exact cutoff. One loss per scenario, undo restores prior schedule.
+Remove one first-task resource at current preview time. Completed turns stay complete. Choice comparisons preserve the exact completed and unaffected active intervals when rebuilding future turns. In-progress turns on surviving resources finish. A turn interrupted on the removed resource restarts at full duration. Future slots are recomputed; show before/after counts and the exact cutoff. One loss per scenario, undo restores prior schedule.
 ### Importing Lesson Text
 Paste bounded plain text. Explicit import action discloses transmission to OpenAI and encourages anonymous labels. Loading, timeout and service-unavailable states retain text. Structured draft displays assumptions for human correction before applying. Core manual/example flow requires no key.
 ### Exporting a Run Sheet
@@ -39,6 +43,7 @@ Print real cards and chronological facilitator sheet derived from current slots;
 ## States and Boundaries
 - First use: fictional microscope example, with seed label and assumptions.
 - Invalid input: prevent apply and name the invalid field.
+- Comparison: loading, valid options, locked constraints, no option within supported bounds, and stale-context rejection are explicit. Preview never mutates the plan.
 - Unserved: show missing learners/tasks and a concrete capacity explanation where provable.
 - Saved locally: browser plan persists; incompatible/corrupt state falls back safely to sample.
 - Cloud unavailable: actionable error and manual editing remain usable.
