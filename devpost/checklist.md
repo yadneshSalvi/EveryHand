@@ -17,7 +17,7 @@ Build mode: fast — explicit autonomous implementation authorization. Human han
   Learner check: Open5174, inspect shortage and add the fourth microscope; confirm individual slots.
   Commit: `Build individual-turn scheduling studio`
 
-- [ ] **2. Edit, import and recover a workshop plan**
+- [x] **2. Edit, import and recover a workshop plan**
   Becomes usable: Manual editor, reviewable optional importer, synchronized playback, loss scenario and undo.
   Why now: Exercises the same kernel with changed assumptions and partial history.
   PRD ref: `prd.md > Confirming a Plan`, `prd.md > Resource Loss and Undo`, `prd.md > Importing Lesson Text`
@@ -57,3 +57,5 @@ Activity mode: Reference route will be prepared; human activity pending.
 ## Revisions
 - Kernel checks passed; parent IAB verified21→28 after adding the fourth place, then loss at minute8→23 with8 completed turns preserved. This is agent verification, not learner review.
 - Capacity diagnosis now targets the constrained activity; turns longer than the session have no finite equipment fix. Historical room playback shows original resource capacity before the loss cutoff.
+
+- Actual optional API calls verified one-action microscope extraction (one4-minute task, capacity3) and a two-action slide-preparation lesson. Strict schema plus independent validation; repeated AI actions are rejected. Import assumptions remain reviewable.

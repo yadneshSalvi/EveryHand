@@ -1,4 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap");
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/dm-sans-400.ttf) format("truetype");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/dm-sans-500.ttf) format("truetype");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/dm-sans-600.ttf) format("truetype");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/dm-sans-700.ttf) format("truetype");
+}
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/dm-serif-italic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/dm-serif-regular.ttf) format("truetype");
+}
 :root {
   font-family: "DM Sans", sans-serif;
   color: #293e32;
@@ -2907,5 +2948,432 @@ footer .text-button {
   }
   .diagnosis .math-note .math-task-name {
     font-size: 10px;
+  }
+}
+/* Mobile is a usable workshop, with readable controls rather than a shrunken desktop. */
+@media (max-width: 540px) {
+  .site-header .button {
+    font-size: 12px;
+    min-height: 42px;
+    padding: 10px 12px;
+  }
+  .intro .eyebrow {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+  .intro-note p {
+    font-size: 15px;
+  }
+  .intro-note > span {
+    font-size: 13px;
+    max-width: none;
+  }
+  .lesson-kicker {
+    font-size: 9px;
+    letter-spacing: 0.6px;
+  }
+  .lesson-kicker span {
+    font-size: 9px;
+  }
+  .lesson-name h2 {
+    font-size: 15px;
+  }
+  .lesson-facts span {
+    font-size: 11px;
+  }
+  .lesson-bar > .button {
+    font-size: 11px;
+    min-height: 37px;
+    padding: 8px 10px;
+  }
+  .lesson-facts {
+    gap: 8px;
+  }
+  .panel-top .eyebrow {
+    font-size: 9px;
+  }
+  .view-label {
+    font-size: 12px;
+  }
+  .preview-badge {
+    font-size: 10px;
+  }
+  .preview-badge b {
+    font-size: 11px;
+  }
+  .mobile-room-hint {
+    font-size: 10px;
+    padding: 9px 14px 3px;
+    gap: 14px;
+  }
+  .mobile-room-hint > span {
+    max-width: 125px;
+    text-align: right;
+  }
+  .room-legend {
+    flex-wrap: wrap;
+    gap: 9px 17px;
+    padding: 8px 16px 0;
+  }
+  .room-legend > span {
+    font-size: 11px;
+  }
+  .legend-dot {
+    width: 7px;
+    height: 7px;
+  }
+  .play-button {
+    width: 40px;
+    height: 40px;
+  }
+  .play-button svg {
+    width: 16px;
+  }
+  .restart {
+    width: 32px;
+    height: 40px;
+  }
+  .restart svg {
+    width: 15px;
+  }
+  .scrub-labels {
+    font-size: 12px;
+  }
+  .scrub-labels small {
+    font-size: 10px;
+  }
+  .timeline-ticks {
+    font-size: 10px;
+  }
+  .scrub-area input {
+    margin: 14px 0;
+  }
+  .scrub-area input::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+  }
+  .room-foot {
+    font-size: 9px;
+    line-height: 1.6;
+  }
+  .room-foot > span:last-child {
+    display: none;
+  }
+  .room-foot svg {
+    width: 12px;
+  }
+  .diagnosis-heading .eyebrow {
+    font-size: 10px;
+  }
+  .status-chip {
+    font-size: 10px;
+  }
+  .diagnosis .diagnosis-copy {
+    font-size: 13px;
+  }
+  .meter-caption {
+    font-size: 11px;
+    gap: 12px;
+    line-height: 1.6;
+  }
+  .diagnosis .math-note b {
+    font-size: 13px;
+  }
+  .diagnosis .math-note span:not(.math-icon) {
+    font-size: 13px;
+  }
+  .diagnosis .math-note small {
+    font-size: 12px;
+  }
+  .diagnosis .math-note .math-task-name {
+    font-size: 11px;
+  }
+  .fix-button {
+    font-size: 12px !important;
+    min-height: 47px;
+  }
+  .fix-button > span {
+    font-size: 11px;
+  }
+  .assumptions summary {
+    font-size: 12px;
+    min-height: 36px;
+  }
+  .assumptions p {
+    font-size: 12px;
+  }
+  .undo-button {
+    font-size: 12px;
+    min-height: 40px;
+  }
+  .reality-strip {
+    padding: 19px 15px;
+  }
+  .reality-strip h3 {
+    font-size: 14px;
+  }
+  .reality-strip p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .reality-strip .button {
+    font-size: 12px;
+    min-height: 44px;
+    margin-left: 42px;
+    padding: 10px 13px;
+  }
+  .roster-header {
+    display: block;
+  }
+  .roster-header .eyebrow {
+    font-size: 9px;
+  }
+  .roster-header h2 {
+    font-size: 30px;
+    max-width: none;
+  }
+  .roster-header .text-button {
+    font-size: 12px;
+    margin-top: 13px;
+  }
+  .filter-tabs {
+    gap: 12px;
+    justify-content: space-between;
+  }
+  .filter-tabs button {
+    font-size: 11px;
+    padding: 15px 0;
+  }
+  .filter-tabs button span {
+    font-size: 9px;
+  }
+  .search-box {
+    padding: 6px 0;
+  }
+  .search-box svg {
+    width: 16px;
+  }
+  .search-box input {
+    font-size: 14px;
+    min-height: 42px;
+  }
+  .roster-table {
+    min-width: 600px;
+  }
+  .roster-table th {
+    font-size: 11px;
+    padding: 14px 10px;
+  }
+  .roster-table td {
+    padding: 14px 10px;
+  }
+  .roster-table th:first-child {
+    width: 27%;
+  }
+  .roster-table th:nth-child(2) {
+    width: 45%;
+  }
+  .learner-name {
+    gap: 11px;
+    min-width: 125px;
+  }
+  .learner-name b {
+    font-size: 14px;
+  }
+  .avatar {
+    width: 31px;
+    height: 31px;
+    font-size: 10px;
+  }
+  .slot-pill {
+    font-size: 13px;
+    max-width: none;
+  }
+  .slot-pill small {
+    font-size: 11px;
+    margin-left: 9px;
+    width: 100%;
+  }
+  .state-label {
+    font-size: 11px;
+    gap: 5px;
+  }
+  .state-label i {
+    width: 5px;
+    height: 5px;
+  }
+  .slot-dot {
+    width: 5px;
+    height: 5px;
+  }
+  .roster-table td > .icon-button {
+    width: 34px;
+    height: 37px;
+  }
+  .roster-table td > .icon-button svg {
+    width: 17px;
+  }
+  .bottom-note {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+  .bottom-note .text-button {
+    font-size: 12px;
+    padding: 9px 0;
+  }
+  .bottom-note > svg {
+    width: 15px;
+  }
+  footer p {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+  footer .text-button {
+    font-size: 11px;
+  }
+  .footer-brand {
+    font-size: 18px;
+  }
+  .modal-header .eyebrow {
+    font-size: 9px;
+  }
+  .modal-header p {
+    font-size: 13px;
+  }
+  .field {
+    font-size: 12px;
+    gap: 8px;
+  }
+  .field > span {
+    font-size: 10px;
+    position: static;
+    order: 3;
+    margin-top: -3px;
+  }
+  .field input,
+  .field textarea {
+    font-size: 16px;
+    min-height: 45px;
+  }
+  .name-details summary {
+    font-size: 12px;
+  }
+  .activity-header h3 {
+    font-size: 15px;
+  }
+  .activity-header p {
+    font-size: 12px;
+  }
+  .activity-header > span {
+    font-size: 12px;
+  }
+  .task-fields .field {
+    font-size: 11px;
+  }
+  .task-fields .field > span {
+    font-size: 9px;
+  }
+  .task-fields .field input {
+    font-size: 15px;
+  }
+  .task-number {
+    width: 24px;
+    height: 27px;
+    font-size: 10px;
+  }
+  .task-editor {
+    gap: 9px;
+    padding: 14px 10px;
+  }
+  .task-fields .two-fields {
+    grid-template-columns: 1fr;
+  }
+  .task-actions .icon-button {
+    width: 27px;
+    height: 40px;
+  }
+  .button.dashed {
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .modal-actions .text-button {
+    font-size: 12px;
+    min-height: 40px;
+  }
+  .modal-actions .button {
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .modal-actions {
+    gap: 12px;
+    justify-content: flex-start;
+  }
+  .privacy-note {
+    font-size: 12px;
+  }
+  .import-review {
+    font-size: 12px;
+  }
+  .error-message {
+    font-size: 13px;
+  }
+  .about-step h3 {
+    font-size: 14px;
+  }
+  .about-step p {
+    font-size: 13px;
+  }
+  .about-honesty p {
+    font-size: 12px;
+  }
+  .about-body > .button {
+    font-size: 13px;
+  }
+  .export-preview .eyebrow {
+    font-size: 9px;
+  }
+  .export-preview p {
+    font-size: 11px;
+  }
+  .export-placeholder {
+    font-size: 13px;
+  }
+  .export-body > .button {
+    font-size: 12px;
+  }
+  .export-downloads {
+    grid-template-columns: 1fr;
+  }
+  .export-downloads .button {
+    font-size: 13px;
+    min-height: 44px;
+  }
+  .export-note {
+    font-size: 12px;
+  }
+  .detail-turn h3 {
+    font-size: 15px;
+  }
+  .detail-turn p {
+    font-size: 12px;
+  }
+  .detail-turn strong small {
+    font-size: 12px;
+  }
+  .learner-detail > .button {
+    font-size: 12px;
+  }
+  .toast {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
+
+@media print {
+  #root > .modal-backdrop {
+    display: block !important;
+  }
+  .modal-backdrop {
+    backdrop-filter: none !important;
   }
 }

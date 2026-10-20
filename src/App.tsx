@@ -2,18 +2,15 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import {
   ArrowDown,
   ArrowDownToLine,
-  ArrowLeft,
   ArrowRight,
   ArrowUp,
   Check,
   ChevronDown,
   Clock3,
-  Copy,
   FileText,
   Hand,
   Info,
   Leaf,
-  ListFilter,
   Minus,
   Plus,
   RotateCcw,
@@ -26,6 +23,7 @@ import {
   Zap,
 } from "lucide-react";
 import Room, { Microscope } from "./Room";
+import { download, toCSV } from "./export";
 import {
   capacityProof,
   learnerState,
@@ -162,12 +160,22 @@ export default function App() {
     (result.served / plan.learners.length) * 100,
   );
   const [draft, setDraft] = useState(clone(plan));
+  const [learnerCount, setLearnerCount] = useState(
+    String(plan.learners.length),
+  );
+  const [isImportedDraft, setIsImportedDraft] = useState(false);
+  const importRequest = useRef<AbortController | null>(null);
   const [errors, setErrors] = useState<string[]>([]);
   const [importText, setImportText] = useState("");
   const [importBusy, setImportBusy] = useState(false);
   const [importError, setImportError] = useState("");
   const [assumptions, setAssumptions] = useState<string[]>([]);
-  const closeDialog = useRef(() => setDialog(null)).current;
+  const closeDialog = useRef(() => {
+    importRequest.current?.abort();
+    importRequest.current = null;
+    setImportBusy(false);
+    setDialog(null);
+  }).current;
   useEffect(() => {
     if (!disruption)
       try {
@@ -219,6 +227,11 @@ export default function App() {
     setToast("Plan updated. Every individual turn has been recalculated.");
   }
   function edit() {
+    importRequest.current?.abort();
+    importRequest.current = null;
+    setImportBusy(false);
+    setLearnerCount(String(plan.learners.length));
+    setIsImportedDraft(false);
     setDraft(
       clone({
         ...plan,
@@ -266,6 +279,7 @@ export default function App() {
     setImportBusy(true);
     setImportError("");
     const controller = new AbortController();
+    importRequest.current = controller;
     const timeout = setTimeout(() => controller.abort(), 30000);
     try {
       const response = await fetch("/api/import", {
@@ -275,6 +289,7 @@ export default function App() {
         signal: controller.signal,
       });
       const data = await response.json();
+      if (importRequest.current !== controller) return;
       if (!response.ok)
         throw new Error(
           data.error || "The importer is unavailable. Try the manual editor.",
@@ -284,10 +299,13 @@ export default function App() {
           "The draft needs another try. You can also enter it manually.",
         );
       setDraft({ ...data.plan, origin: "custom" });
+      setLearnerCount(String(data.plan.learners.length));
+      setIsImportedDraft(true);
       setAssumptions(data.assumptions || []);
       setErrors([]);
       setDialog("edit");
     } catch (e) {
+      if (importRequest.current !== controller) return;
       setImportError(
         e instanceof Error && e.name === "AbortError"
           ? "The request timed out. Your text is still here; try again or edit manually."
@@ -297,7 +315,10 @@ export default function App() {
       );
     } finally {
       clearTimeout(timeout);
-      setImportBusy(false);
+      if (importRequest.current === controller) {
+        importRequest.current = null;
+        setImportBusy(false);
+      }
     }
   }
   const visible = useMemo(
@@ -826,7 +847,7 @@ export default function App() {
       {dialog === "edit" && (
         <Modal
           title={
-            assumptions.length
+            isImportedDraft
               ? "Make the draft yours."
               : "A little planning. More possibility."
           }
@@ -837,15 +858,29 @@ export default function App() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
+              if (
+                !Number.isInteger(+learnerCount) ||
+                +learnerCount < 1 ||
+                +learnerCount > 60
+              ) {
+                setErrors(["Use a whole number of 1–60 learners."]);
+                return;
+              }
               apply({ ...draft, origin: "custom" });
             }}
             className="editor-form"
           >
-            {assumptions.length > 0 && (
+            {isImportedDraft && (
               <div className="import-review">
                 <Sparkles size={18} />
                 <div>
-                  <b>AI draft · review every assumption</b>
+                  <b>AI draft · review every field</b>
+                  {!assumptions.length && (
+                    <p>
+                      These fields came from your notes. Confirm the timing,
+                      order and places before applying.
+                    </p>
+                  )}
                   {assumptions.map((a, i) => (
                     <p key={i}>{a}</p>
                   ))}
@@ -886,8 +921,9 @@ export default function App() {
                   min="1"
                   max="60"
                   step="1"
-                  value={draft.learners.length}
+                  value={learnerCount}
                   onChange={(e) => {
+                    setLearnerCount(e.target.value);
                     const count = +e.target.value;
                     if (Number.isInteger(count) && count >= 1 && count <= 60)
                       setDraft({
@@ -914,9 +950,11 @@ export default function App() {
                 <textarea
                   rows={5}
                   value={draft.learners.join("\n")}
-                  onChange={(e) =>
-                    setDraft({ ...draft, learners: e.target.value.split("\n") })
-                  }
+                  onChange={(e) => {
+                    const learners = e.target.value.split("\n");
+                    setDraft({ ...draft, learners });
+                    setLearnerCount(String(learners.length));
+                  }}
                 />
               </label>
             </details>
@@ -1358,39 +1396,6 @@ function ExportModal({
       <PrintKit plan={plan} result={result} disruption={disruption} />
     </Modal>
   );
-}
-function download(text: string, name: string, type: string) {
-  const url = URL.createObjectURL(new Blob([text], { type }));
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = name;
-  a.click();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-}
-export function toCSV(plan: Plan, result: Schedule) {
-  const field = (v: unknown) => {
-    let s = String(v ?? "");
-    if (/^[=+@\-\t\r]/.test(s)) s = `'${s}`;
-    return `"${s.replaceAll('"', '""')}"`;
-  };
-  return [
-    ["Learner", "Activity", "Place", "Start minute", "End minute", "Status"],
-    ...plan.learners.flatMap((name, i) =>
-      plan.tasks.map((t) => {
-        const s = result.slots.find((s) => s.learner === i && s.task === t.id);
-        return [
-          name,
-          t.name,
-          s ? s.resource + 1 : "",
-          s?.start ?? "",
-          s?.end ?? "",
-          s ? "Scheduled" : "No full turn",
-        ];
-      }),
-    ),
-  ]
-    .map((row) => row.map(field).join(","))
-    .join("\r\n");
 }
 function PrintKit({
   plan,
