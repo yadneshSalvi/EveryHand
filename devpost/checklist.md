@@ -7,7 +7,7 @@ implementation_authorization: delegated by user before build; human document rev
 Build mode: fast — explicit autonomous implementation authorization. Human hands-on review remains pending.
 
 ## Slices
-- [ ] **1. Inspect and repair a real individual-turn schedule**
+- [x] **1. Inspect and repair a real individual-turn schedule**
   Becomes usable: A running microscope studio shows21/28 and fourth-resource repair28/28, with individually inspectable slots.
   Why now: Proves the unique kernel before peripheral features.
   PRD ref: `prd.md > Individual Opportunities`, `prd.md > Explaining the Shortfall`
@@ -55,3 +55,5 @@ Reflection: Not established; no invented response.
 Activity mode: Reference route will be prepared; human activity pending.
 
 ## Revisions
+- Kernel checks passed; parent IAB verified21→28 after adding the fourth place, then loss at minute8→23 with8 completed turns preserved. This is agent verification, not learner review.
+- Capacity diagnosis now targets the constrained activity; turns longer than the session have no finite equipment fix. Historical room playback shows original resource capacity before the loss cutoff.
