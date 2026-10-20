@@ -34,6 +34,7 @@ export interface Disruption {
   completed: Slot[];
   interrupted: Slot[];
   before: number;
+  capacityBefore: number;
 }
 export const sampleNames = [
   "Aarav",
@@ -263,6 +264,7 @@ export function repair(
       completed,
       interrupted,
       before: original.served,
+      capacityBefore: task.capacity,
     },
   };
 }
