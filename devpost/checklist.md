@@ -8,13 +8,13 @@ Build mode: fast — explicit autonomous implementation authorization. Human han
 
 ## Slices
 - [x] **1. Inspect and repair a real individual-turn schedule**
-  Becomes usable: A running microscope studio shows21/28 and fourth-resource repair28/28, with individually inspectable slots.
+  Becomes usable: A running microscope studio shows 21/28 and fourth-resource repair 28/28, with individually inspectable slots.
   Why now: Proves the unique kernel before peripheral features.
   PRD ref: `prd.md > Individual Opportunities`, `prd.md > Explaining the Shortfall`
   Spec ref: `spec.md > Plan Validation and Scheduler`, `spec.md > Workshop Studio`
   Build: Scaffold inside first slice; implement/test solver, room, capacity diagnosis and roster.
   Verify (mechanical): Kernel fixtures, invariant tests, typecheck and production build; local browser smoke.
-  Learner check: Open5174, inspect shortage and add the fourth microscope; confirm individual slots.
+  Learner check: Open localhost:5174, inspect the shortage, compare choices and apply the fourth microscope; confirm individual slots.
   Commit: `Build individual-turn scheduling studio`
 
 - [x] **2. Edit, import and recover a workshop plan**
@@ -65,10 +65,10 @@ Reflection: Not established; no invented response.
 Activity mode: Offline reference map prepared; human activity pending.
 
 ## Revisions
-- Kernel checks passed; parent IAB verified21→28 after adding the fourth place, then loss at minute8→23 with8 completed turns preserved. This is agent verification, not learner review.
+- Kernel checks passed; parent IAB verified 21→28 after adding the fourth place, then loss at minute 8→23 with 8 completed turns preserved. This is agent verification, not learner review.
 - Capacity diagnosis now targets the constrained activity; turns longer than the session have no finite equipment fix. Historical room playback shows original resource capacity before the loss cutoff.
 
-- Actual optional API calls verified one-action microscope extraction (one4-minute task, capacity3) and a two-action slide-preparation lesson. Strict schema plus independent validation; repeated AI actions are rejected. Import assumptions remain reviewable.
+- Actual optional API calls verified one-action microscope extraction (one 4-minute task, capacity 3) and a two-action slide-preparation lesson. Strict schema plus independent validation; repeated AI actions are rejected. Import assumptions remain reviewable.
 
 - Independent audit passed 8,400 scheduling invariant cases, 37 mocked API/schema/privacy checks, and 300 export cases comprising 19,230 parsed CSV rows. Agent tests are distinct from pending human final review.
 - Imported-draft cancellation prevents stale responses reopening a closed editor. A separate pre-loss snapshot keeps scenario restoration usable after edit/undo. Interrupted work is described as needing a full restart, with actual fitting restart counts.

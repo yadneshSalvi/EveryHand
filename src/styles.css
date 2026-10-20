@@ -4612,3 +4612,106 @@ footer .text-button {
   background: #eeeede;
   border-color: #c5ceba;
 }
+/* Shared secondary-ink tokens: small, meaningful text never relies on pale sage. */
+:root {
+  --text-secondary: #526044;
+  --text-warm: #795735;
+}
+.eyebrow,
+.intro .eyebrow,
+.roster-header .eyebrow,
+.panel-top .eyebrow,
+.diagnosis-heading .eyebrow,
+.modal-header .eyebrow,
+.consequence-heading .eyebrow,
+.choice-workspace .modal-header .eyebrow,
+.export-preview .eyebrow {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.lesson-kicker,
+.lesson-kicker span {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.meter-caption,
+.state-label,
+.state-label.waiting,
+.state-label.complete,
+.all-set .meter-caption > span:last-child {
+  color: var(--text-secondary);
+}
+.meter-caption > span:last-child,
+.state-label.unserved,
+.state-label.active,
+.slot-pill.no-slot,
+.missing-symbol,
+.status-chip.warning,
+.text-button:hover {
+  color: var(--text-warm);
+}
+.text-button.undo-button,
+.mobile-room-hint,
+.mobile-room-hint span,
+.gained-learners button > span {
+  color: var(--text-secondary);
+}
+.path-step,
+.turn-path .path-step,
+.option-top,
+.option-top > span,
+.constraint-locks small,
+.choice-question p,
+.consequence-heading .eyebrow,
+.change-account,
+.choice-evidence,
+.choice-evidence p,
+.choice-loading,
+.choice-loading p,
+.history-lock span,
+.proof-person label,
+.path-label small,
+.turn-path small,
+.turn-path b,
+.choice-actions > div > span,
+.option-result > span,
+.option-result > small,
+.preview-only {
+  color: var(--text-secondary);
+}
+.turn-path .missing-turn b,
+.turn-path .missing-turn small,
+.path-gap,
+.turn-path .missing-turn strong {
+  color: var(--text-warm);
+}
+.token-number,
+.token-number.small {
+  font-size: 14px;
+}
+.svg-eyebrow,
+.station-label,
+.room-caption,
+.room-note {
+  font-size: 14px;
+}
+@media (max-width: 540px) {
+  .room-svg .token-number,
+  .room-svg .token-number.small,
+  .room-svg .svg-eyebrow,
+  .room-svg .station-label,
+  .room-svg .room-caption,
+  .room-svg .room-note {
+    font-size: 16px;
+  }
+}
+.path-label > span,
+.status-chip {
+  color: var(--text-secondary);
+}
+.status-chip.warning {
+  color: var(--text-warm);
+}
+.intro-note > span {
+  color: var(--text-secondary);
+}

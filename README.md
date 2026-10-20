@@ -2,7 +2,11 @@
 
 **Make room for every learner's hands-on turn.**
 
-Every Hand is a workshop planning studio for teachers and facilitators. It schedules complete **individual** opportunities, reveals equipment and time shortfalls, and rebuilds the remaining plan after a simulated resource loss.
+Every Hand is a workshop planning studio for teachers and facilitators. It schedules complete **individual** opportunities, then compares actual ways to make room: keep the equipment and add time, or keep the finish time and add places. Full turn lengths stay fixed, named learner paths show the consequence, and recovery preserves work already done.
+
+![Every Hand workshop studio showing the fictional 28-learner example and 21 complete individual turns.](docs/screenshots/studio.webp)
+
+![The actual comparison workspace shows ten extra minutes or one extra place while preserving full four-minute turns.](docs/screenshots/choice-comparison.webp)
 
 The fictional microscope example makes the difference visible:
 
@@ -10,6 +14,7 @@ The fictional microscope example makes the difference visible:
 | --- | ---: | ---: |
 | 28 learners · 30 minutes · 4 minutes each · 3 microscopes | 21 | 7 |
 | The same lesson with a fourth microscope | 28 | 0 |
+| The same three microscopes, with 40 minutes instead of 30 | 28 | 0 |
 
 Three microscopes provide 90 microscope-minutes against 112 needed. The stronger whole-turn limit is `3 × floor(30 / 4) = 21`. Four microscopes fit seven waves and finish all 28 turns at minute 28.
 
@@ -35,11 +40,12 @@ The local API listens on `127.0.0.1:3002`; Vite proxies `/api` to it. The defaul
 ## Walk through the proof
 
 1. Start with the labeled fictional example. Inspect **21 / 28** and the seven learners needing a turn.
-2. Choose **Add one more place**. The schedule becomes **28 / 28**.
-3. Play or scrub the room. Select a learner to inspect their exact time and place.
-4. At minute 8, choose **Lose a place**. The four-place example becomes **23 / 28**; eight completed turns stay preserved. Undo restores the prior plan.
-5. Open **Facilitator kit**. Print the chronological run sheet and individual cards, or download the actual JSON/CSV schedule.
-6. Edit or paste a different lesson. Up to four activities run in the specified prerequisite order; each learner needs a complete turn in each activity.
+2. Choose **Compare ways to make room**. Preview **10 extra minutes** with the same equipment, or **one extra place** with the same finish time. Both preserve the full four-minute turn. Lock time or equipment to reflect a real constraint.
+3. Inspect a named learner’s actual before/after path, then apply the equipment option. The schedule becomes **28 / 28**. Preview alone leaves the plan unchanged.
+4. Play or scrub the room. Select a learner to inspect their exact time and place.
+5. At minute 8, choose **Lose a place**. The four-place example becomes **23 / 28**; eight completed turns stay preserved. Compare recovery: **six extra minutes** restores all 28 with the same three remaining places. Apply the actual 36-minute recovery plan or use undo.
+6. Open **Facilitator kit**. Print the chronological run sheet and individual cards, or download the actual JSON/CSV schedule.
+7. Edit or paste a different lesson. Up to four activities run in the specified prerequisite order; each learner needs a complete turn in each activity.
 
 ## How scheduling works
 
@@ -49,6 +55,14 @@ The single-activity whole-turn bound is exact. A per-activity capacity shortfall
 
 At simulated resource loss, slots completed by the cutoff remain immutable. Active turns on surviving places finish. An interrupted turn on the lost place restarts at its full duration if time remains. Future turns are rebuilt from the remaining capacity. Rewinding the preview before the cutoff shows the historical resource count.
 
+## Choosing a workable change
+
+The comparison engine generates complete schedules, not estimated scores. Baseline single-activity options use exact whole-turn bounds. After a resource loss, the bound includes completed turns and each surviving place’s next-free time. This is why the original shortfall needs ten extra minutes, while the minute-eight recovery needs only six.
+
+Multi-activity options are labeled **verified**, with no global-minimum claim. The search checks later integer horizons through 120 minutes and increases to one activity at a time through 16 places. No result within this bounded search does not prove that combined changes or another ordering cannot work.
+
+Every candidate retains the original learners, activity order and full durations. Applying rechecks the source revision, lock settings, actual schedule and protected history; a stale preview cannot overwrite a changed plan. Time/equipment deltas, gained learner names and moved future turns are computed from actual before/after slots. Exports read the applied schedule.
+
 ## Verification
 
 ```sh
@@ -57,12 +71,14 @@ npm run check
 npm run build
 ```
 
-The tests cover the canonical 21/28 and 28/28 fixtures, 100 deterministic randomized plans, independent overlap/dependency invariants, disruption boundaries and mid-turn restart, invalid inputs, import HTTP boundaries, CSV data parity and spreadsheet formula escaping. See [the verification record](devpost/verification.md) for browser and live API evidence.
+The 20 tests cover the canonical 21/28 and 28/28 fixtures, +10-minute/+1-place alternatives and +6-minute recovery, locks, immutable preview and stale/tampered application rejection, 100 deterministic randomized plans, independent overlap/dependency invariants, disruption boundaries and mid-turn restart, invalid inputs, import HTTP boundaries, CSV data parity and spreadsheet formula escaping. See [the verification record](devpost/verification.md) for browser and live API evidence.
 
 ## Project map
 
 | File | Responsibility |
 | --- | --- |
+| `src/choices.ts` | Actual alternatives, exact/verified evidence, protected history and stale-apply checks |
+| `src/ChoiceWorkspace.tsx` | Constraint locks and named learner before/after preview |
 | `src/solver.ts` | Plan validation, deterministic scheduling, capacity proofs and disruption repair |
 | `src/solver.test.ts` | Scheduling fixtures and independent invariants |
 | `src/App.tsx` | Editing, timeline state, import review, learner detail and printable kit |

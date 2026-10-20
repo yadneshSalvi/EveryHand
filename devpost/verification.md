@@ -4,7 +4,7 @@ This records agent-run evidence. It does not claim a classroom pilot, human lear
 
 ## Automated checks
 
-`npm test`, `npm run check` and `npm run build` pass on Node 22.22.3. The test command runs 12 tests, including 100 deterministic randomized valid plans checked by an independent invariant function. Fixtures enforce 28 learners × 4 minutes with 3 microscopes in 30 minutes → 21 complete turns; with 4 → 28 and final finish 28.
+`npm test`, `npm run check` and `npm run build` pass on Node 22.22.3. The test command now runs 20 tests, including 100 deterministic randomized valid plans checked by an independent invariant function. Fixtures enforce 28 learners × 4 minutes with 3 microscopes in 30 minutes → 21 complete turns; with 4 → 28 and final finish 28.
 
 The invariants check complete durations, session bounds, valid learner/resource IDs, no duplicate learner/task pairs, no learner/resource overlap, previous-activity completion and result-count parity. Repair is checked at 0, 4, 5, 12, 28 and 30 minutes, including restarting interrupted work at full duration and retaining every completed/unaffected active slot. A final-resource-loss fixture keeps historical work and schedules no new turns at zero capacity. A duration longer than the session returns no finite resource fix.
 
@@ -37,3 +37,13 @@ A separate audit agent ran `./node_modules/.bin/tsx /tmp/everyhand-api-audit.mts
 Review the product and planning drafts; try a real classroom timing assumption; complete the brief app-map/code learning activity if desired; record a human-narrated public demo under 3 minutes; write and submit the final Devpost entry. No deployment is included in this local build.
 
 Two additional source findings were repaired: interrupted-turn text distinguishes a required full restart from actual restarted slots, and a separate pre-loss baseline keeps “Restore previous plan” usable even after editing and undoing into a disrupted snapshot.
+
+## Choice-workspace revision
+
+The public plan was updated before implementation. The new pure comparison tests cover the exact +10-minute/+1-place baseline alternatives, +6-minute loss recovery, cutoff-inside-turn history, zero remaining resources, a turn longer than the session, bounded no-option results, named gains, immutable preview, current constraint locks and stale/tampered candidate rejection.
+
+An additional independent audit ran `./node_modules/.bin/tsx /tmp/everyhand-choices-audit.ts`: 606 baseline/loss contexts and 381 actual full-path candidates passed slot duration, unique-pair, overlap, dependency, horizon, protected-history, stale/tamper and exact preceding-bound checks.
+
+The orchestration agent's in-app browser verified both baseline choices, both locks disabling Apply, named learner gains, equipment-option application, undo restoring 21/28, loss at minute eight producing 23/28, and the +6-minute recovery preview restoring 28 with eight completed turns preserved. Mobile comparison layout passed. Functional status/metadata contrast and type size were strengthened following computed-style browser review.
+
+The actual JSON exported after applying the 36-minute recovery was independently inspected: 28 unique four-minute turns, all eight completed intervals unchanged, no learner/resource overlap and no use of the failed place after minute eight. A separate mid-turn browser check lost one of four places at minute five and rewound to minute four: all four original active turns, including the interrupted turn, appeared with explicit historical labels. Preview uses the original pre-loss schedule; choices and exports retain the actual current recovery schedule. The independent audit also passed four current-lock application checks.

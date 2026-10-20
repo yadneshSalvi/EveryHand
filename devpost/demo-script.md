@@ -6,14 +6,14 @@ Target length: **2 minutes 45 seconds**, leaving a small margin below three minu
 
 | Time | Screen action | Evidence to make visible |
 | --- | --- | --- |
-| 0:00–0:20 | Open the local studio and reset the example. Show the lesson settings beside the room. | Explicitly fictional example: 28 learners, 30 minutes, four-minute turns including reset, three microscopes. |
-| 0:20–0:40 | Focus on the capacity explanation, then choose **Needs a turn** in the roster. | 112 microscope-minutes needed versus 90 available. The whole-turn bound is `3 × floor(30 / 4) = 21`; seven learners lack a complete turn. |
-| 0:40–1:00 | Choose **Add one more place** and return the roster to **Everyone**. | The actual result changes from 21/28 to 28/28. Four places fit seven waves and finish by minute 28. |
-| 1:00–1:20 | Select the final learner, inspect their slot, then scrub or briefly play the timeline. | The final learner has an individual 24:00–28:00 turn. The room and roster reflect the same scheduled slots. |
-| 1:20–1:45 | Set the preview to minute 8 and choose **Lose a place**. Briefly rewind before the cutoff, then restore the previous plan. | The repaired example serves 23/28 and preserves eight completed turns. Historical playback still shows four places before the loss. Restoration returns to 28/28. |
-| 1:45–2:05 | Optionally paste the anonymous two-activity notes below, choose **Create a draft**, and inspect the editable fields. Cancel the draft afterward. | Cloud-transmission disclosure precedes the explicit action. AI extracts an editable draft; the deterministic scheduler owns the turn arithmetic. Show activity order, duration and places. |
-| 2:05–2:30 | Open **Facilitator kit** for the restored four-place example. Show the chronological print view and individual cards, or download JSON/CSV. | Real scheduled times and places, plus clearly marked gaps when a plan has them. This is usable output derived from the current schedule. |
-| 2:30–2:45 | Show the public planning documents and the existing test command/results. | Plan-first artifacts, tested scheduling invariants and the stated boundary: planned opportunities are not observed participation or predicted learning. |
+| 0:00–0:20 | Show the fictional workshop: 28 learners, three microscopes, 30 minutes. Keep the full four-minute turn visible. | Only 21 learners have complete individual turns; seven still need a path. |
+| 0:20–0:40 | Choose **Compare ways to make room**. | Actual options: keep three places and add 10 minutes, or keep 30 minutes and add one place. Full turn lengths stay fixed. |
+| 0:40–1:05 | Lock equipment, inspect the time option and a named learner’s before/after path. Unlock equipment and preview the other option. | The constraints change what can be chosen. A missing turn becomes a real scheduled time and place; preview leaves the workshop unchanged. |
+| 1:05–1:25 | Apply the extra-place option. Briefly inspect the room/roster. | The actual plan becomes 28/28 with four places. Zara’s final turn fits at 24:00–28:00. |
+| 1:25–1:55 | At minute eight, lose one place. Open comparison again and inspect the time option. | The recovery starts at 23/28, keeps eight completed turns, and needs only six extra minutes. It uses the actual remaining state rather than starting over. |
+| 1:55–2:15 | Apply the 36-minute recovery. Inspect a newly recovered learner and a preserved completed turn. | All 28 have complete paths; earlier work keeps the same learner, time and place. No turn was shortened. |
+| 2:15–2:35 | Show the actual updated run sheet/cards or download schedule data. | The printable/exported schedule matches the applied choice. |
+| 2:35–2:45 | Briefly show public planning/test evidence and the stated boundary. | Single-activity minima are exact; multi-activity options are verified heuristic plans. Planned opportunities are not observed participation or predicted learning. |
 
 ## Optional import notes
 
@@ -21,7 +21,7 @@ Use anonymous, fictional input:
 
 > 12 learners have 24 minutes. Each learner observes a stone with a loupe for 3 minutes at one of 2 places, then sketches the finding for 2 minutes at one of 4 separate sketching places. All durations include reset.
 
-This two-activity example was verified end to end. API responses can still vary and require review. If the service is unavailable during recording, omit this optional segment and show the manual editor; do not imply a successful import occurred.
+Optional supporting footage only; omit it from the main choice/recovery sequence to keep the recording focused. This two-activity example was verified end to end. API responses can still vary and require review. If the service is unavailable during recording, omit this optional segment and show the manual editor; do not imply a successful import occurred.
 
 ## Before recording
 
