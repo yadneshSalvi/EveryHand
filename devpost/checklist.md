@@ -27,7 +27,7 @@ Build mode: fast — explicit autonomous implementation authorization. Human han
   Learner check: Edit duration, add/reorder task, scrub time, simulate loss and undo; inspect retained turns.
   Commit: `Add editable plans and disruption recovery`
 
-- [ ] **3. Export a usable facilitator kit and finish polish**
+- [x] **3. Export a usable facilitator kit and finish polish**
   Becomes usable: Print real cards/run sheet, download data, responsive accessible flow and documentation.
   Why now: Turns the inspected schedule into something a facilitator can use.
   PRD ref: `prd.md > Exporting a Run Sheet`, `prd.md > Look and Feel`
@@ -38,7 +38,7 @@ Build mode: fast — explicit autonomous implementation authorization. Human han
   Commit: `Finish facilitator exports and studio polish`
 
 ## Hands-on Checkpoints
-- [ ] Early usable behavior explored — human feedback after slice1; agent browser evidence recorded separately.
+- [ ] Early usable behavior explored — human feedback after slice 1; agent browser evidence recorded separately.
 - [ ] Final kick-the-tires exploration and feedback completed
 
 ## Final Review
@@ -47,15 +47,20 @@ Build mode: fast — explicit autonomous implementation authorization. Human han
 ## Code Tour and App Map
 - [ ] Learning activity complete — human review pending
 - [ ] Optional edit and transfer reflection addressed — not yet offered
-- [ ] `devpost/app-map.html` generated from finished code, checked, and shown, including a project-grounded practice to reuse
-Activity and evidence: Pending implementation; agent verification does not imply learner practice.
-Route and stops: Will point to actual post-build symbols.
+- [x] `devpost/app-map.html` generated from finished code and source-checked; provided as a reference artifact with a project-grounded practice to reuse. Human walkthrough remains pending.
+Activity and evidence: Implementation and agent mechanical/browser verification complete; the reference map is prepared. Human learning activity and feedback remain pending.
+Route and stops: Reference-only route: `src/App.tsx > addResource / apply` → `src/solver.ts > schedule / capacityProof` → `src/Room.tsx > Room` and `src/export.ts > toCSV`. No human guided stops claimed.
 Edit outcome: Not applicable yet.
 Reflection: Not established; no invented response.
-Activity mode: Reference route will be prepared; human activity pending.
+Activity mode: Offline reference map prepared; human activity pending.
 
 ## Revisions
 - Kernel checks passed; parent IAB verified21→28 after adding the fourth place, then loss at minute8→23 with8 completed turns preserved. This is agent verification, not learner review.
 - Capacity diagnosis now targets the constrained activity; turns longer than the session have no finite equipment fix. Historical room playback shows original resource capacity before the loss cutoff.
 
 - Actual optional API calls verified one-action microscope extraction (one4-minute task, capacity3) and a two-action slide-preparation lesson. Strict schema plus independent validation; repeated AI actions are rejected. Import assumptions remain reviewable.
+
+- Independent audit passed 8,400 scheduling invariant cases, 37 mocked API/schema/privacy checks, and 300 export cases comprising 19,230 parsed CSV rows. Agent tests are distinct from pending human final review.
+- Imported-draft cancellation prevents stale responses reopening a closed editor. A separate pre-loss snapshot keeps scenario restoration usable after edit/undo. Interrupted work is described as needing a full restart, with actual fitting restart counts.
+
+- Final agent browser pass at 390 × 844: document width equals viewport width (390px), readable hero/controls, editor fits and scrolls. Print-mode chronological run sheet visually verified with the export modal open. Human final review remains pending.

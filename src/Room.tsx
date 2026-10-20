@@ -55,7 +55,7 @@ export default function Room({
     !!disruption && disruption.task === first.id && minute < disruption.minute;
   const visibleCapacity = first.capacity + (historical ? 1 : 0);
   const shown = Math.min(visibleCapacity, 6);
-  const isMicroscope = /observ|microsc|specimen/i.test(first.name);
+  const isMicroscope = /microsc|specimen/i.test(first.name);
   const stations = Array.from({ length: shown }, (_, i) => ({
     x: 590 + (i % 2) * 155,
     y: 115 + Math.floor(i / 2) * 105,

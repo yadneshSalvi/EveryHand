@@ -36,10 +36,15 @@ import {
   type Disruption,
 } from "./solver";
 type Dialog = "edit" | "import" | "export" | "about" | null;
+interface Baseline {
+  plan: Plan;
+  result: Schedule;
+}
 interface Snapshot {
   plan: Plan;
   result: Schedule;
   disruption: Disruption | null;
+  lossBaseline: Baseline | null;
 }
 const clone = <T,>(v: T): T => JSON.parse(JSON.stringify(v));
 function loadPlan(): Plan {
@@ -142,6 +147,7 @@ export default function App() {
   const [selected, setSelected] = useState<number | null>(null);
   const [disruption, setDisruption] = useState<Disruption | null>(null);
   const [undo, setUndo] = useState<Snapshot | null>(null);
+  const [lossBaseline, setLossBaseline] = useState<Baseline | null>(null);
   const [toast, setToast] = useState("");
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
@@ -155,6 +161,16 @@ export default function App() {
   const proof = capacityProof(plan, diagnosticTask);
   const finiteFix = proof.neededResources !== null;
   const provenShortfall = proof.wholeTurns < plan.learners.length;
+  const interruptedRestarted = disruption
+    ? disruption.interrupted.filter((a) =>
+        result.slots.some(
+          (s) =>
+            s.learner === a.learner &&
+            s.task === a.task &&
+            s.start >= disruption.minute,
+        ),
+      ).length
+    : 0;
   const missing = plan.learners.length - result.served;
   const servedPercent = Math.round(
     (result.served / plan.learners.length) * 100,
@@ -209,7 +225,8 @@ export default function App() {
     const id = setTimeout(() => setToast(""), 4000);
     return () => clearTimeout(id);
   }, [toast]);
-  const snapshot = () => setUndo(clone({ plan, result, disruption }));
+  const snapshot = () =>
+    setUndo(clone({ plan, result, disruption, lossBaseline }));
   function apply(next: Plan) {
     const problems = validatePlan(next);
     if (problems.length) {
@@ -220,6 +237,7 @@ export default function App() {
     setPlan(clone(next));
     setResult(schedule(next));
     setDisruption(null);
+    setLossBaseline(null);
     setPlaying(false);
     setMinute(Math.min(minute, next.minutes));
     setDialog(null);
@@ -256,6 +274,7 @@ export default function App() {
   function simulate() {
     snapshot();
     const next = repair(plan, result, minute);
+    setLossBaseline(clone({ plan, result }));
     setPlan(next.plan);
     setResult(next.schedule);
     setDisruption(next.disruption);
@@ -269,10 +288,21 @@ export default function App() {
     setPlan(undo.plan);
     setResult(undo.result);
     setDisruption(undo.disruption);
+    setLossBaseline(undo.lossBaseline);
     setMinute((m) => Math.min(m, undo.plan.minutes));
     setUndo(null);
     setPlaying(false);
     setToast("Previous plan restored.");
+  }
+  function restoreScenario() {
+    if (!lossBaseline) return;
+    snapshot();
+    setPlan(lossBaseline.plan);
+    setResult(lossBaseline.result);
+    setDisruption(null);
+    setLossBaseline(null);
+    setPlaying(false);
+    setToast("Resource-loss scenario removed. The original plan is restored.");
   }
   async function importLesson() {
     if (!importText.trim()) return;
@@ -404,9 +434,13 @@ export default function App() {
         </section>
         <section className="lesson-bar" aria-label="Current lesson">
           <div className="lesson-icon">
-            <svg viewBox="-35 -35 70 70" aria-hidden="true">
-              <Microscope scale={0.8} />
-            </svg>
+            {/microsc|specimen/i.test(first.name) ? (
+              <svg viewBox="-35 -35 70 70" aria-hidden="true">
+                <Microscope scale={0.8} />
+              </svg>
+            ) : (
+              <FileText size={24} strokeWidth={1.4} aria-hidden="true" />
+            )}
           </div>
           <div className="lesson-name">
             <div className="lesson-kicker">
@@ -527,7 +561,7 @@ export default function App() {
                   <b>{disruption.completed.length} completed turns preserved</b>
                   <span>
                     {disruption.interrupted.length
-                      ? `${disruption.interrupted.length} interrupted turn restarts in full.`
+                      ? `${disruption.interrupted.length} interrupted turn${disruption.interrupted.length === 1 ? " needs" : "s need"} a full restart; ${interruptedRestarted} fit in the remaining session.`
                       : "Unaffected active turns finish as planned."}
                   </span>
                   <small>
@@ -600,9 +634,10 @@ export default function App() {
                 What this plan assumes <ChevronDown size={14} />
               </summary>
               <p>
-                Each learner needs every activity in order. Durations include
-                reset and movement. Turns use whole minutes and one learner per
-                place.{" "}
+                Each learner needs every activity in order. Activities use
+                separate equipment places; combine steps sharing equipment.
+                Durations include reset and movement. Turns use whole minutes
+                and one learner per place.{" "}
                 {plan.tasks.length > 1
                   ? "The scheduler uses a deterministic heuristic; an unserved learner does not alone prove no better schedule exists."
                   : "The single-activity whole-turn bound is exact."}{" "}
@@ -626,7 +661,11 @@ export default function App() {
               </p>
             </div>
             {disruption ? (
-              <button className="button outline compact" onClick={restore}>
+              <button
+                className="button outline compact"
+                onClick={restoreScenario}
+                disabled={!lossBaseline}
+              >
                 <RotateCcw size={15} />
                 Restore previous plan
               </button>
@@ -822,6 +861,7 @@ export default function App() {
             snapshot();
             setPlan(clone(samplePlan));
             setResult(schedule(samplePlan));
+            setLossBaseline(null);
             setDisruption(null);
             setMinute(8);
             setPlaying(false);
@@ -963,6 +1003,8 @@ export default function App() {
                 <h3>The hands-on activities</h3>
                 <p>
                   In order. Each learner finishes one before starting the next.
+                  Give activities their own places; combine steps that share
+                  equipment.
                 </p>
               </div>
               <span>{draft.tasks.length}/4</span>
@@ -1421,6 +1463,24 @@ function PrintKit({
           ? `Simulated loss at minute ${disruption.minute}; historical turns preserved.`
           : ""}
       </p>
+      {disruption && disruption.interrupted.length > 0 && (
+        <p>
+          {disruption.interrupted.length} interrupted turn(s) need a full
+          restart.{" "}
+          {
+            disruption.interrupted.filter((a) =>
+              result.slots.some(
+                (s) =>
+                  s.learner === a.learner &&
+                  s.task === a.task &&
+                  s.start >= disruption.minute,
+              ),
+            ).length
+          }{" "}
+          have a new full slot in this plan; inspect any missing opportunities
+          below.
+        </p>
+      )}
       <table>
         <thead>
           <tr>

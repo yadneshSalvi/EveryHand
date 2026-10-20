@@ -22,7 +22,7 @@ Cream paper, forest ink, orange/coral, sage and subtle warm grey. Serif display 
 
 ## Features and Behavior
 ### Confirming a Plan
-Manual editor handles title, anonymous learner names/count, duration, parallel resources and ordered tasks. Numeric bounds show field-specific errors. Reordering changes prerequisite order. Saving validates before changing the current schedule. Fictional example reset is explicit and undoable.
+Manual editor handles title, anonymous learner names/count, duration, parallel resources and ordered tasks. Numeric bounds show field-specific errors. Reordering changes prerequisite order. Places are dedicated per activity; the editor explains combining steps that share the same equipment. Saving validates before changing the current schedule. Fictional example reset is explicit and undoable.
 ### Individual Opportunities
 A learner counts as fully served only when every required task has a complete valid slot inside the horizon. Show scheduled, active, completed-at-preview and unserved separately. Each slot gives task, resource, start and end. A learner never occupies two tasks simultaneously. Source: `scope.md > The Unique Kernel`.
 ### Explaining the Shortfall

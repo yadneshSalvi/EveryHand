@@ -3377,3 +3377,72 @@ footer .text-button {
     backdrop-filter: none !important;
   }
 }
+/* Anchor visually hidden table labels so wide inner tables cannot expand the page. */
+.sr-only {
+  left: 0;
+  top: 0;
+  clip-path: inset(50%);
+}
+/* Status is readable as text as well as color, including the quiet roster details. */
+.room-legend > span,
+.filter-tabs button {
+  color: #68795c;
+}
+.roster-table th {
+  color: #708060;
+}
+.slot-pill small,
+.search-box input::placeholder {
+  color: #728460;
+}
+.state-label {
+  color: #667b50;
+}
+.state-label.complete {
+  color: #587640;
+}
+.state-label.active {
+  color: #98623a;
+}
+.state-label.unserved {
+  color: #956a42;
+}
+.meter-caption {
+  color: #6a7b58;
+}
+.meter-caption > span:last-child {
+  color: #956a42;
+}
+.all-set .meter-caption > span:last-child {
+  color: #5f7e42;
+}
+.diagnosis .diagnosis-copy {
+  color: #697a5b;
+}
+.token-number {
+  fill: #4b633c;
+}
+.complete .token-circle {
+  fill: #b5c69e;
+  stroke: #91a97a;
+}
+.complete .token-number {
+  fill: #3c592e;
+}
+.unserved .token-number {
+  fill: #8d5939;
+}
+.active .token-number,
+.active-text {
+  fill: #4c2d1e;
+}
+.svg-eyebrow {
+  fill: #637952;
+}
+.station-label {
+  fill: #63774f;
+}
+.room-caption,
+.room-note {
+  fill: #6b7e59;
+}

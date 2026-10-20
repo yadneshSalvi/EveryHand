@@ -27,7 +27,7 @@ Implements `prd.md > Look and Feel`: cream #f7f5ee, forest #243d32, coral #e7784
 
 ## Components
 ### Plan Validation and Scheduler
-Implements `prd.md > Individual Opportunities` and `prd.md > Explaining the Shortfall`. Pure plan validator limits1–60 learners,5–120 minutes,1–4 ordered tasks,1–30-minute duration,1–16 resource capacity. Integer time scan schedules ready learners on lowest free station, with deterministic fewest-completed-task then roster tie break. Dependencies are previous task completion. No preemption. Capacity proof per task is capacity × floor(session/duration); schedule shortfall for multi-task plans is explicitly heuristic, never an optimality claim.
+Implements `prd.md > Individual Opportunities` and `prd.md > Explaining the Shortfall`. Pure plan validator limits1–60 learners,5–120 minutes,1–4 ordered tasks,1–30-minute duration,1–16 resource capacity. Integer time scan schedules ready learners on lowest free station, with deterministic fewest-completed-task then roster tie break. Dependencies are previous task completion. Resource pools are dedicated per task; shared equipment across tasks is not modeled and the editor explains that steps sharing equipment should be combined. No preemption. Capacity proof per task is capacity × floor(session/duration); schedule shortfall for multi-task plans is explicitly heuristic, never an optimality claim.
 ### Workshop Studio
 Implements `prd.md > Timeline and Room`. App owns plan, preview minute, selected learner, dialog and prior snapshot. Room reads slots, roster and statuses. Playback interval advances preview; selection exposes slots. Local storage is versioned and validated.
 ### Scenario Repair
@@ -38,7 +38,7 @@ Implements `prd.md > Confirming a Plan` and `prd.md > Importing Lesson Text`. Ed
 Implements `prd.md > Exporting a Run Sheet`. Current slots generate CSV and JSON downloads plus printable cards/run sheet using print CSS. CSV quotes/escapes fields and guards formula prefixes. Unsatisfied opportunities appear explicitly.
 
 ## Data Model
-Plan {title, learners:string[], minutes:number, tasks:{id,name,duration,capacity}[]}; task order defines prerequisite. Slot {learner,task,resource,start,end}; Schedule {slots,unserved}. Disruption {minute,task,resource,retained,interrupted}; previous snapshot supports undo. Plan lives in validated versioned localStorage; simulation state resets on reload and is never represented as actual attendance. Import text remains in dialog memory and is not persisted or logged.
+Plan {title, learners:string[], minutes:number, tasks:{id,name,duration,capacity}[]}; task order defines prerequisite. Slot {learner,task,resource,start,end}; Schedule {slots,unserved}. Disruption {minute,task,resource,retained,interrupted}; previous snapshot supports undo; a separate pre-loss baseline keeps scenario restoration available after editing and undoing into a disrupted snapshot. Plan lives in validated versioned localStorage; simulation state resets on reload and is never represented as actual attendance. Import text remains in dialog memory and is not persisted or logged.
 
 ## File Structure
 ```
