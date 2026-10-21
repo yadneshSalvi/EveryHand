@@ -67,3 +67,7 @@ The orchestration agent tested the public interface in the browser:
 - No browser errors were observed during this flow.
 
 Production tests also cover missing/foreign origins, HTTPS same-origin acceptance, malformed/oversized bodies, content type and best-effort per-instance burst limits, plus the actual Vercel Web handler export. No classroom use, real-user feedback, human-authored submission or final submission readiness is claimed by this deployment evidence.
+
+## Independent final-video audit — October 21, 2026
+
+Separate audit agents mapped the finished submission video to public-site actions and independently checked downloaded JSON, CSV and the three-page printed kit. The exact baseline alternatives, immutable preview, minute-8 disruption, preserved history and minute-36 recovery all passed. See the [timestamped video verification](../docs/video-verification.md) for reproduction steps, arithmetic proof, artifact checks and persistence limits.
