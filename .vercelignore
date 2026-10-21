@@ -1,0 +1,15 @@
+.env*
+plans/
+videos/
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+*.log
+*.tsbuildinfo
+.git/
+.agents/
+.claude/
+.eve/
+agent/

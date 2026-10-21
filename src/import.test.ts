@@ -77,3 +77,54 @@ test("local API validates request size, origin, JSON and input without cloud cal
     );
   }
 });
+
+test("deployed handler rejects foreign and missing origins before spending, accepts same-origin HTTPS", async () => {
+  const { createImportHandler } = await import("../server/import.ts");
+  let calls = 0;
+  const handler = createImportHandler(async () => {
+    calls++;
+    return { plan: samplePlan, assumptions: [] };
+  }, { production: true });
+  const request = (origin?: string, site?: string, url = "https://everyhand.example/api/import") =>
+    new Request(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", ...(origin ? { Origin: origin } : {}), ...(site ? { "Sec-Fetch-Site": site } : {}) },
+      body: JSON.stringify({ text: "28 learners with microscopes" }),
+    });
+  for (const req of [request(), request("https://foreign.example"), request("https://everyhand.example", "cross-site"), request("http://everyhand.example", undefined, "http://everyhand.example/api/import")])
+    assert.equal((await handler(req)).status, 403);
+  assert.equal(calls, 0);
+  const response = await handler(request("https://everyhand.example", "same-origin"));
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get("cache-control"), "no-store");
+  assert.equal(calls, 1);
+  assert.equal((await handler(new Request("https://everyhand.example/api/health?probe=1"))).status, 200);
+});
+
+test("deployed handler preserves input boundaries and per-instance burst protection", async () => {
+  const { createImportHandler } = await import("../server/import.ts");
+  let calls = 0;
+  const handler = createImportHandler(async () => {
+    calls++;
+    return { plan: samplePlan, assumptions: [] };
+  }, { production: true });
+  const post = (body: string, type = "application/json") => handler(new Request("https://everyhand.example/api/import", {
+    method: "POST", headers: { Origin: "https://everyhand.example", "Content-Type": type }, body,
+  }));
+  assert.equal((await post("broken")).status, 400);
+  assert.equal((await post(JSON.stringify({ text: "x".repeat(10001) }))).status, 400);
+  assert.equal((await post(JSON.stringify({ text: "x".repeat(24001) }))).status, 413);
+  assert.equal((await post('{"text":"notes"}', "text/plain")).status, 415);
+  assert.equal(calls, 0);
+  for (let i = 0; i < 6; i++) assert.equal((await post('{"text":"notes"}')).status, 200);
+  assert.equal((await post('{"text":"notes"}')).status, 429);
+  assert.equal(calls, 6);
+});
+
+
+test("Vercel entry point exports a shared Web handler without starting a server", async () => {
+  const { default: entry } = await import("../api/index.ts");
+  const response = await entry.fetch(new Request("https://everyhand.example/api/health"));
+  assert.equal(response.status, 200);
+  assert.equal((await response.json()).ok, true);
+});

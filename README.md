@@ -39,6 +39,16 @@ npm run server
 
 The local API listens on `127.0.0.1:3002`; Vite proxies `/api` to it. The default import model is `gpt-5.4-mini`; `OPENAI_IMPORT_MODEL` can override it with a model that supports structured outputs. The app sends lesson text to OpenAI only after the explicit **Create a draft** action. Draft fields remain editable and require applying before the current plan changes. API usage may incur charges under your account.
 
+## Host on Vercel
+
+Use this `EveryHand` directory as the Vercel project root, the Vite framework preset, Node.js 24, `npm run build`, and the `dist` output directory. `vercel.json` routes `/api/*` to one Node function; the shared handler does not start the local HTTP server. No database, paid add-on, cron job or external storage is required. Deploy only within the account's existing free hosting allowance; hosting usage limits still apply.
+
+Set `OPENAI_API_KEY` in Vercel's server environment settings for each desired deployment environment. Optionally set `OPENAI_IMPORT_MODEL`; never prefix either with `VITE_`. The key is never bundled into the browser. `.vercelignore` excludes all `.env*` files, planning files, video sources/renders and local artifacts from deployment uploads. Without a key, the manual app remains available and AI import returns a clear configuration message.
+
+Production import requests must use JSON and have the same HTTPS origin as the deployment. Notes are bounded to 10,000 characters and 24,000 UTF-8 bytes; OpenAI calls have a 25-second timeout and a 2,500-token output limit. The 30-second function limit bounds execution. Each warm function instance also permits at most two concurrent imports and six starts per minute. These memory counters reset and are **not a deployment-wide rate limit or spending cap**. Origin checks restrict browser requests but do not authenticate users. OpenAI usage remains billable under the existing API account; configure provider project budgets/limits and Vercel usage controls as appropriate for a public demo.
+
+After deployment, check `/api/health` for `ok: true` and `aiConfigured: true`, then create and review one lesson draft through the app. Keep the server key out of URLs, screenshots and logs.
+
 ## Walk through the proof
 
 1. Start with the labeled fictional example. Inspect **21 / 28** and the seven learners needing a turn.
@@ -73,7 +83,7 @@ npm run check
 npm run build
 ```
 
-The 20 tests cover the canonical 21/28 and 28/28 fixtures, +10-minute/+1-place alternatives and +6-minute recovery, locks, immutable preview and stale/tampered application rejection, 100 deterministic randomized plans, independent overlap/dependency invariants, disruption boundaries and mid-turn restart, invalid inputs, import HTTP boundaries, CSV data parity and spreadsheet formula escaping. See [the verification record](devpost/verification.md) for browser and live API evidence.
+The 23 tests cover the canonical 21/28 and 28/28 fixtures, +10-minute/+1-place alternatives and +6-minute recovery, locks, immutable preview and stale/tampered application rejection, 100 deterministic randomized plans, independent overlap/dependency invariants, disruption boundaries and mid-turn restart, invalid inputs, local and production import HTTP boundaries and per-instance burst protection, CSV data parity and spreadsheet formula escaping. See [the verification record](devpost/verification.md) for browser and live API evidence.
 
 ## Project map
 
@@ -86,7 +96,9 @@ The 20 tests cover the canonical 21/28 and 28/28 fixtures, +10-minute/+1-place a
 | `src/App.tsx` | Editing, timeline state, import review, learner detail and printable kit |
 | `src/Room.tsx` | SVG room driven by actual slots |
 | `src/export.ts` | CSV escaping and file downloads |
-| `server/index.ts` | Optional bounded, validated OpenAI importer |
+| `server/import.ts` | Shared bounded, validated OpenAI importer and request handler |
+| `server/index.ts` | Local HTTP server adapter |
+| `api/index.ts` | Vercel Node function adapter |
 | `src/styles.css` | Editorial studio, responsive layout, reduced motion and print styling |
 | `devpost/` | Scope, PRD, technical spec, build checklist and offline app map |
 
@@ -99,9 +111,9 @@ The 20 tests cover the canonical 21/28 and 28/28 fixtures, +10-minute/+1-place a
 - Durations include reset and movement; no additional physical travel time or learner availability model is inferred.
 - The room is a schedule preview. **A planned opportunity is not observed participation or evidence of learning.**
 - The current baseline plan is saved in this browser using versioned, validated local storage. The simulated loss, playback position and pasted import text are not persisted. Refresh returns to the baseline plan.
-- No accounts, collaboration, analytics, database or attendance hardware. The optional server binds only to localhost and does not log pasted text, API keys or raw provider errors.
+- No accounts, collaboration, analytics, database or attendance hardware. The optional local server binds only to localhost; the Vercel function accepts same-origin HTTPS imports. Neither logs pasted text, API keys or raw provider errors.
 - Local storage can be cleared through browser settings. Use anonymous labels when entering or importing classroom notes.
-- No deployment, classroom pilot, endorsement or educational-effectiveness claim is made. Human final review and the required narrated demo/submission remain pending.
+- No classroom pilot, endorsement or educational-effectiveness claim is made. Human final review and the required narrated demo/submission remain pending.
 
 ## Planning and attribution
 
