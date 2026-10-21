@@ -1,0 +1,43 @@
+{
+  "method": "Independent multimodal model observation of actual final synthetic audition master; not human listening",
+  "model": "gemini-3.1-pro-preview",
+  "model_catalog_name": "models/gemini-3.1-pro-preview",
+  "audio_sha256": "af273e2833b95fee4680cc49c54984e63a29c4390f377f7485a72a87f179dbc0",
+  "finish_reason": "STOP",
+  "usage": {
+    "promptTokenCount": 4354,
+    "candidatesTokenCount": 203,
+    "totalTokenCount": 5882,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 210
+      },
+      {
+        "modality": "AUDIO",
+        "tokenCount": 4144
+      }
+    ],
+    "thoughtsTokenCount": 1325,
+    "serviceTier": "standard"
+  },
+  "observation": {
+    "summary": "Audio features a clear synthetic voice with consistent quality and no significant degradation.",
+    "narrator_voice_description": "Female, instructional tone.",
+    "pace_observation": "Moderate and steady.",
+    "voice_identity_changes": [],
+    "unwanted_spoken_instructions": [
+      "Compare ways to make room",
+      "Apply it",
+      "Compare recovery",
+      "Open the facilitator kit"
+    ],
+    "truncated_or_missing_ending_observation": "Ending is fully resolved.",
+    "music_audibility_and_speech_masking": "Background music is present but remains unobtrusive.",
+    "clicks_hiss_mouth_noises_or_other_artifacts": [],
+    "overall_recommendation": "pass",
+    "limitations": "Subjective audio assessment without reference transcript.",
+    "mosaic_transcription": ""
+  },
+  "editorial_assessment": "The action quotations listed under unwanted_spoken_instructions are verbatim intended UI actions in the locked script, not leaked production directions. Script coverage is 100 percent after formatting normalization."
+}

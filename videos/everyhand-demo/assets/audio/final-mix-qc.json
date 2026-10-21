@@ -1,0 +1,117 @@
+{
+  "method": "Fresh Deepgram Nova-3 recognition of the actual finished MP4 mix; dry transcript/SRT/stems unchanged",
+  "source_path": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/renders/everyhand-submission.mp4",
+  "source_sha256": "969ece6b8bac762cba3b1769242ed3354a20b53a52b5d3c93ca29049a2935b5a",
+  "source_duration_s": 165.8,
+  "source_audio_streams": [
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration": "165.800000"
+    }
+  ],
+  "recognition_provider": "Deepgram",
+  "recognition_model": "nova-3",
+  "confidence": 0.9995117,
+  "recognized_word_count": 344,
+  "full_script_comparison": {
+    "normalized_similarity": 1.0,
+    "expected_token_coverage": 1.0,
+    "expected_token_count": 339,
+    "recognized_token_count": 339,
+    "differences": []
+  },
+  "chapters": [
+    {
+      "id": "act-01",
+      "title": "A learner without a turn",
+      "window_start_s": -0.1,
+      "window_end_s": 30.43,
+      "recognized_first_word_s": 0.71999997,
+      "recognized_last_word_s": 30.33,
+      "possibly_dropped_or_truncated": false,
+      "normalized_similarity": 1.0,
+      "expected_token_coverage": 1.0,
+      "expected_token_count": 61,
+      "recognized_token_count": 61,
+      "differences": []
+    },
+    {
+      "id": "act-02",
+      "title": "Two real ways to make room",
+      "window_start_s": 30.43,
+      "window_end_s": 61.98,
+      "recognized_first_word_s": 31.369999,
+      "recognized_last_word_s": 61.760002,
+      "possibly_dropped_or_truncated": false,
+      "normalized_similarity": 1.0,
+      "expected_token_coverage": 1.0,
+      "expected_token_count": 68,
+      "recognized_token_count": 68,
+      "differences": []
+    },
+    {
+      "id": "act-03",
+      "title": "The workshop changes",
+      "window_start_s": 61.98,
+      "window_end_s": 95.9,
+      "recognized_first_word_s": 62.800003,
+      "recognized_last_word_s": 95.715,
+      "possibly_dropped_or_truncated": false,
+      "normalized_similarity": 1.0,
+      "expected_token_coverage": 1.0,
+      "expected_token_count": 70,
+      "recognized_token_count": 70,
+      "differences": []
+    },
+    {
+      "id": "act-04",
+      "title": "Recover without starting over",
+      "window_start_s": 95.9,
+      "window_end_s": 131.9,
+      "recognized_first_word_s": 96.835,
+      "recognized_last_word_s": 131.43501,
+      "possibly_dropped_or_truncated": false,
+      "normalized_similarity": 1.0,
+      "expected_token_coverage": 1.0,
+      "expected_token_count": 73,
+      "recognized_token_count": 73,
+      "differences": []
+    },
+    {
+      "id": "act-05",
+      "title": "A plan the facilitator can use",
+      "window_start_s": 131.9,
+      "window_end_s": 165.9,
+      "recognized_first_word_s": 132.715,
+      "recognized_last_word_s": 163.265,
+      "possibly_dropped_or_truncated": false,
+      "normalized_similarity": 1.0,
+      "expected_token_coverage": 1.0,
+      "expected_token_count": 67,
+      "recognized_token_count": 67,
+      "differences": []
+    }
+  ],
+  "dropped_or_truncated_chapters": [],
+  "closing_nine_word_phrase_present": true,
+  "closing_expected_normalized": "hand make room for every learner's hands on turn",
+  "final_recognized_words": "documents. It plans opportunities. It doesn't measure attendance or learning. Every hand. Make room for every learner's hands on turn.",
+  "first_word_offset_from_dry_s": 0.0,
+  "last_word_offset_from_dry_s": -0.05987000000001785,
+  "measured_loudness": {
+    "integrated_lufs": "-16.02",
+    "true_peak_dbtp": "-1.51",
+    "loudness_range_lu": "3.50"
+  },
+  "canonical_files_unchanged": {
+    "script.json": true,
+    "transcript.json": true,
+    "transcript.srt": true,
+    "audio_meta.json": true
+  },
+  "status": "pass"
+}

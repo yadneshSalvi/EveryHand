@@ -1,0 +1,110 @@
+{
+  "scope": "Final frozen local audio assets; automated measurements and model observations, no human listening claim",
+  "duration_s": 165.75,
+  "script_coverage_similarity": 1.0,
+  "script_mismatches": [],
+  "word_timestamp_errors": [],
+  "caption_count": 48,
+  "caption_max_line_characters": 39,
+  "caption_invalid_intervals": [],
+  "caption_overlaps": [],
+  "narration_clipped_samples": 0,
+  "narration_seams": [
+    {
+      "act": "act-01",
+      "boundary": "speech_start_s",
+      "time_s": 0.65,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-01",
+      "boundary": "speech_end_s",
+      "time_s": 30.18,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-02",
+      "boundary": "speech_start_s",
+      "time_s": 31.18,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-02",
+      "boundary": "speech_end_s",
+      "time_s": 61.73,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-03",
+      "boundary": "speech_start_s",
+      "time_s": 62.73,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-03",
+      "boundary": "speech_end_s",
+      "time_s": 95.6,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-04",
+      "boundary": "speech_start_s",
+      "time_s": 96.65,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-04",
+      "boundary": "speech_end_s",
+      "time_s": 131.4,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-05",
+      "boundary": "speech_start_s",
+      "time_s": 132.65,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-05",
+      "boundary": "speech_end_s",
+      "time_s": 163.35,
+      "adjacent_sample_delta": 0.0
+    }
+  ],
+  "loudness": {
+    "narration": {
+      "integrated_lufs": -21.52,
+      "true_peak_dbtp": -2.75,
+      "loudness_range_lu": 3.5,
+      "duration_s": 165.75,
+      "bytes": 3916313
+    },
+    "music": {
+      "integrated_lufs": -42.08,
+      "true_peak_dbtp": -32.53,
+      "loudness_range_lu": 1.6,
+      "duration_s": 165.75,
+      "bytes": 4201752
+    },
+    "effects": {
+      "integrated_lufs": -48.35,
+      "true_peak_dbtp": -37.23,
+      "loudness_range_lu": 1.2,
+      "duration_s": 165.75,
+      "bytes": 168910
+    },
+    "master-audition": {
+      "integrated_lufs": -16.0,
+      "true_peak_dbtp": -1.5,
+      "loudness_range_lu": 3.6,
+      "duration_s": 165.75,
+      "bytes": 8212495
+    }
+  },
+  "stem_sha256": {
+    "narration": "41548cf3c6b7a10d928707c1d15ea20e3d429e371b1f1715dbeb71de7069bfee",
+    "music": "904c4cc448f0f2236ba787b1ea7b1fbec13cf519491681cd5f7c69804d96d68c",
+    "effects": "de6c166f1a617ce235ed302903aec101a272a88479821dcbe2c9e0a00c5b5af6"
+  },
+  "model_review_scope": "Final complete master; model review passes. Listed UI action quotations are intended script, not leaked production instructions."
+}

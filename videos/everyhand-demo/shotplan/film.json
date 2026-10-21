@@ -1,0 +1,1232 @@
+{
+  "format": "1920x1080",
+  "fps": 60,
+  "duration": 165.75,
+  "timing": "Actual Deepgram word timestamps",
+  "audio": "audio_meta.json",
+  "estimatedCues": 0,
+  "acts": [
+    {
+      "id": "everyhand-act-01",
+      "start": 0,
+      "end": 30.53,
+      "duration": 30.53,
+      "composition": "compositions/frames/act-01.html",
+      "shots": [
+        {
+          "start": 0,
+          "cue": {
+            "time": 0,
+            "phrase": "act boundary",
+            "wordId": null
+          },
+          "kind": "app",
+          "asset": "01-missing-zara",
+          "rect": [
+            520,
+            305,
+            560,
+            390
+          ],
+          "end": 3.71,
+          "duration": 3.71,
+          "camera": {
+            "departure": 0,
+            "arrival": 0,
+            "spokenCue": null
+          },
+          "pose": {
+            "x": -679.8596,
+            "y": -535.9123,
+            "scale": 1.9298
+          },
+          "media": {
+            "still": "assets/capture/01-missing-zara.webp",
+            "action": null,
+            "actionDuration": 0,
+            "playbackRate": 1
+          },
+          "retiming": "Actual final-state still."
+        },
+        {
+          "start": 3.71,
+          "cue": {
+            "time": 3.71,
+            "phrase": "For teachers",
+            "wordId": "w9",
+            "spokenTime": 4.56
+          },
+          "kind": "app",
+          "asset": "02-workshop-overview",
+          "rect": null,
+          "action": true,
+          "focus": [
+            {
+              "cue": {
+                "time": 7.52,
+                "phrase": "every hand",
+                "wordId": "w15",
+                "spokenTime": 7.52
+              },
+              "rect": [
+                85,
+                75,
+                1350,
+                720
+              ],
+              "camera": {
+                "departure": 6.67,
+                "arrival": 7.47,
+                "spokenCue": 7.52
+              }
+            }
+          ],
+          "end": 12.775,
+          "duration": 9.065,
+          "camera": {
+            "departure": 3.71,
+            "arrival": 4.51,
+            "spokenCue": 4.56
+          },
+          "pose": {
+            "x": 0,
+            "y": -3,
+            "scale": 1.08
+          },
+          "media": {
+            "still": "assets/capture/02-workshop-overview.webp",
+            "action": "assets/capture/02-workshop-overview.mp4",
+            "actionDuration": 3.73333,
+            "playbackRate": 1
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 12.775,
+          "cue": {
+            "time": 12.775,
+            "phrase": "This fictional lesson",
+            "wordId": "w28",
+            "spokenTime": 13.625
+          },
+          "kind": "app",
+          "asset": "03-whole-turns",
+          "rect": [
+            85,
+            85,
+            1400,
+            600
+          ],
+          "action": true,
+          "focus": [
+            {
+              "cue": {
+                "time": 20.905,
+                "phrase": "four full minutes",
+                "wordId": "w42",
+                "spokenTime": 20.905
+              },
+              "rect": [
+                1145,
+                395,
+                315,
+                145
+              ],
+              "camera": {
+                "departure": 20.055,
+                "arrival": 20.855,
+                "spokenCue": 20.905
+              }
+            },
+            {
+              "cue": {
+                "time": 24.345,
+                "phrase": "twenty one",
+                "wordId": "w48",
+                "spokenTime": 24.345
+              },
+              "rect": [
+                1110,
+                20,
+                380,
+                360
+              ],
+              "camera": {
+                "departure": 23.495,
+                "arrival": 24.295,
+                "spokenCue": 24.345
+              }
+            }
+          ],
+          "end": 26.04,
+          "duration": 13.265,
+          "camera": {
+            "departure": 12.775,
+            "arrival": 13.575,
+            "spokenCue": 13.625
+          },
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "scale": 1.0827
+          },
+          "media": {
+            "still": "assets/capture/03-whole-turns.webp",
+            "action": "assets/capture/03-whole-turns.mp4",
+            "actionDuration": 3.53333,
+            "playbackRate": 1
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 26.04,
+          "cue": {
+            "time": 26.04,
+            "phrase": "Zara is",
+            "wordId": "w52",
+            "spokenTime": 26.89
+          },
+          "kind": "app",
+          "asset": "01-missing-zara",
+          "rect": [
+            520,
+            305,
+            560,
+            390
+          ],
+          "end": 30.53,
+          "duration": 4.49,
+          "camera": {
+            "departure": 26.04,
+            "arrival": 26.84,
+            "spokenCue": 26.89
+          },
+          "pose": {
+            "x": -679.8596,
+            "y": -535.9123,
+            "scale": 1.9298
+          },
+          "media": {
+            "still": "assets/capture/01-missing-zara.webp",
+            "action": null,
+            "actionDuration": 0,
+            "playbackRate": 1
+          },
+          "retiming": "Actual final-state still."
+        }
+      ]
+    },
+    {
+      "id": "everyhand-act-02",
+      "start": 30.53,
+      "end": 62.08,
+      "duration": 31.55,
+      "composition": "compositions/frames/act-02.html",
+      "shots": [
+        {
+          "start": 0,
+          "cue": {
+            "time": 0,
+            "phrase": "act boundary",
+            "wordId": null
+          },
+          "kind": "app",
+          "asset": "04-compare-options",
+          "rect": [
+            315,
+            25,
+            975,
+            780
+          ],
+          "action": true,
+          "focus": [
+            {
+              "cue": {
+                "time": 3.08,
+                "phrase": "Keep the equipment",
+                "wordId": "w66",
+                "spokenTime": 3.08
+              },
+              "rect": [
+                340,
+                305,
+                585,
+                255
+              ],
+              "camera": {
+                "departure": 2.23,
+                "arrival": 3.03,
+                "spokenCue": 3.08
+              }
+            },
+            {
+              "cue": {
+                "time": 6.04,
+                "phrase": "or keep",
+                "wordId": "w73",
+                "spokenTime": 6.04
+              },
+              "rect": [
+                630,
+                305,
+                600,
+                255
+              ],
+              "camera": {
+                "departure": 5.19,
+                "arrival": 5.99,
+                "spokenCue": 6.04
+              }
+            }
+          ],
+          "end": 8.87,
+          "duration": 8.87,
+          "camera": {
+            "departure": 0,
+            "arrival": 0,
+            "spokenCue": null
+          },
+          "pose": {
+            "x": 0,
+            "y": -19.2,
+            "scale": 1.08
+          },
+          "media": {
+            "still": "assets/capture/04-compare-options.webp",
+            "action": "assets/capture/04-compare-options.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.51852
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 8.87,
+          "cue": {
+            "time": 8.87,
+            "phrase": "Neither choice",
+            "wordId": "w82",
+            "spokenTime": 9.72
+          },
+          "kind": "bridge",
+          "asset": null,
+          "rect": null,
+          "title": "4 minutes.",
+          "note": "Full turns stay fixed.",
+          "end": 11.875,
+          "duration": 3.005
+        },
+        {
+          "start": 11.875,
+          "cue": {
+            "time": 11.875,
+            "phrase": "If extra equipment",
+            "wordId": "w87",
+            "spokenTime": 12.725
+          },
+          "kind": "app",
+          "asset": "05-lock-equipment",
+          "rect": [
+            340,
+            150,
+            920,
+            410
+          ],
+          "action": true,
+          "focus": [
+            {
+              "cue": {
+                "time": 15.205,
+                "phrase": "lock it",
+                "wordId": "w92",
+                "spokenTime": 15.205
+              },
+              "rect": [
+                340,
+                235,
+                470,
+                310
+              ],
+              "camera": {
+                "departure": 14.355,
+                "arrival": 15.155,
+                "spokenCue": 15.205
+              }
+            }
+          ],
+          "end": 17.315,
+          "duration": 5.44,
+          "camera": {
+            "departure": 11.875,
+            "arrival": 12.675,
+            "spokenCue": 12.725
+          },
+          "pose": {
+            "x": -454.0778,
+            "y": -155.897,
+            "scale": 1.6476
+          },
+          "media": {
+            "still": "assets/capture/05-lock-equipment.webp",
+            "action": "assets/capture/05-lock-equipment.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.49383
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 17.315,
+          "cue": {
+            "time": 17.315,
+            "phrase": "Unlock it",
+            "wordId": "w98",
+            "spokenTime": 18.165
+          },
+          "kind": "app",
+          "asset": "06-preview-extra-place",
+          "rect": [
+            340,
+            150,
+            920,
+            410
+          ],
+          "action": true,
+          "focus": [
+            {
+              "cue": {
+                "time": 22.085,
+                "phrase": "Now Zara",
+                "wordId": "w106",
+                "spokenTime": 22.085
+              },
+              "rect": [
+                920,
+                305,
+                345,
+                260
+              ],
+              "camera": {
+                "departure": 21.235,
+                "arrival": 22.035,
+                "spokenCue": 22.085
+              }
+            },
+            {
+              "cue": {
+                "time": 28.05,
+                "phrase": "This is still a preview",
+                "wordId": "w121",
+                "spokenTime": 28.05
+              },
+              "rect": [
+                920,
+                305,
+                345,
+                260
+              ],
+              "camera": {
+                "departure": 27.2,
+                "arrival": 28,
+                "spokenCue": 28.05
+              }
+            }
+          ],
+          "end": 31.55,
+          "duration": 14.235,
+          "camera": {
+            "departure": 17.315,
+            "arrival": 18.115,
+            "spokenCue": 18.165
+          },
+          "pose": {
+            "x": -454.0778,
+            "y": -155.897,
+            "scale": 1.6476
+          },
+          "media": {
+            "still": "assets/capture/06-preview-extra-place.webp",
+            "action": "assets/capture/06-preview-extra-place.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.76543
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        }
+      ]
+    },
+    {
+      "id": "everyhand-act-03",
+      "start": 62.08,
+      "end": 96,
+      "duration": 33.92,
+      "composition": "compositions/frames/act-03.html",
+      "shots": [
+        {
+          "start": 0,
+          "cue": {
+            "time": 0,
+            "phrase": "act boundary",
+            "wordId": null
+          },
+          "kind": "app",
+          "asset": "07-apply-extra-place",
+          "rect": [
+            100,
+            30,
+            1375,
+            650
+          ],
+          "action": true,
+          "focus": [
+            {
+              "cue": {
+                "time": 2.18,
+                "phrase": "twenty eight",
+                "wordId": "w133",
+                "spokenTime": 2.18
+              },
+              "rect": [
+                1120,
+                20,
+                360,
+                390
+              ],
+              "camera": {
+                "departure": 1.33,
+                "arrival": 2.13,
+                "spokenCue": 2.18
+              }
+            }
+          ],
+          "end": 4.69,
+          "duration": 4.69,
+          "camera": {
+            "departure": 0,
+            "arrival": 0,
+            "spokenCue": null
+          },
+          "pose": {
+            "x": -4.134,
+            "y": 0,
+            "scale": 1.1024
+          },
+          "media": {
+            "still": "assets/capture/07-apply-extra-place.webp",
+            "action": "assets/capture/07-apply-extra-place.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.54321
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 4.69,
+          "cue": {
+            "time": 4.69,
+            "phrase": "The room",
+            "wordId": "w139",
+            "spokenTime": 5.54
+          },
+          "kind": "app",
+          "asset": "09-find-zara-in-room",
+          "rect": [
+            90,
+            160,
+            1050,
+            610
+          ],
+          "action": true,
+          "end": 7.65,
+          "duration": 2.96,
+          "camera": {
+            "departure": 4.69,
+            "arrival": 5.49,
+            "spokenCue": 5.54
+          },
+          "pose": {
+            "x": 0,
+            "y": -144.7274,
+            "scale": 1.2338
+          },
+          "media": {
+            "still": "assets/capture/09-find-zara-in-room.webp",
+            "action": "assets/capture/09-find-zara-in-room.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.49335
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 7.65,
+          "cue": {
+            "time": 7.65,
+            "phrase": "Select a learner",
+            "wordId": "w147",
+            "spokenTime": 8.5
+          },
+          "kind": "app",
+          "asset": "08-zara-scheduled",
+          "rect": [
+            520,
+            300,
+            560,
+            400
+          ],
+          "action": true,
+          "end": 10.65501,
+          "duration": 3.00501,
+          "camera": {
+            "departure": 7.65,
+            "arrival": 8.45,
+            "spokenCue": 8.5
+          },
+          "pose": {
+            "x": -641.2632,
+            "y": -511.7895,
+            "scale": 1.8816
+          },
+          "media": {
+            "still": "assets/capture/08-zara-scheduled.webp",
+            "action": "assets/capture/08-zara-scheduled.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.44444
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 10.65501,
+          "cue": {
+            "time": 10.65501,
+            "phrase": "But workshops change",
+            "wordId": "w156",
+            "spokenTime": 11.50501
+          },
+          "kind": "app",
+          "asset": "10-before-disruption",
+          "rect": [
+            90,
+            50,
+            1400,
+            720
+          ],
+          "focus": [
+            {
+              "cue": {
+                "time": 13.50501,
+                "phrase": "At minute eight",
+                "wordId": "w159",
+                "spokenTime": 13.50501
+              },
+              "rect": [
+                100,
+                510,
+                1000,
+                190
+              ],
+              "camera": {
+                "departure": 12.65501,
+                "arrival": 13.45501,
+                "spokenCue": 13.50501
+              }
+            }
+          ],
+          "end": 14.015,
+          "duration": 3.35999,
+          "camera": {
+            "departure": 10.65501,
+            "arrival": 11.45501,
+            "spokenCue": 11.50501
+          },
+          "pose": {
+            "x": 0,
+            "y": -13.8,
+            "scale": 1.08
+          },
+          "media": {
+            "still": "assets/capture/10-before-disruption.webp",
+            "action": null,
+            "actionDuration": 0,
+            "playbackRate": 1
+          },
+          "retiming": "Actual final-state still."
+        },
+        {
+          "start": 14.015,
+          "cue": {
+            "time": 14.015,
+            "phrase": "one microscope",
+            "wordId": "w162",
+            "spokenTime": 14.865
+          },
+          "kind": "app",
+          "asset": "11-lose-microscope",
+          "rect": [
+            90,
+            60,
+            1400,
+            720
+          ],
+          "action": true,
+          "end": 16.735,
+          "duration": 2.72,
+          "camera": {
+            "departure": 14.015,
+            "arrival": 14.815,
+            "spokenCue": 14.865
+          },
+          "pose": {
+            "x": 0,
+            "y": -24.6,
+            "scale": 1.08
+          },
+          "media": {
+            "still": "assets/capture/11-lose-microscope.webp",
+            "action": "assets/capture/11-lose-microscope.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.49383
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 16.735,
+          "cue": {
+            "time": 16.735,
+            "phrase": "Every hand preserves",
+            "wordId": "w166",
+            "spokenTime": 17.585
+          },
+          "kind": "app",
+          "asset": "17-loss-overview",
+          "rect": [
+            90,
+            20,
+            1400,
+            700
+          ],
+          "focus": [
+            {
+              "cue": {
+                "time": 19.10501,
+                "phrase": "eight completed",
+                "wordId": "w170",
+                "spokenTime": 19.10501
+              },
+              "rect": [
+                1120,
+                330,
+                370,
+                180
+              ],
+              "camera": {
+                "departure": 18.25501,
+                "arrival": 19.05501,
+                "spokenCue": 19.10501
+              }
+            },
+            {
+              "cue": {
+                "time": 24.705,
+                "phrase": "twenty three",
+                "wordId": "w182",
+                "spokenTime": 24.705
+              },
+              "rect": [
+                1110,
+                20,
+                380,
+                360
+              ],
+              "camera": {
+                "departure": 23.855,
+                "arrival": 24.655,
+                "spokenCue": 24.705
+              }
+            },
+            {
+              "cue": {
+                "time": 31.35999,
+                "phrase": "without erasing",
+                "wordId": "w195",
+                "spokenTime": 31.35999
+              },
+              "rect": [
+                1120,
+                330,
+                370,
+                180
+              ],
+              "camera": {
+                "departure": 30.50999,
+                "arrival": 31.30999,
+                "spokenCue": 31.35999
+              }
+            }
+          ],
+          "end": 33.92,
+          "duration": 17.185,
+          "camera": {
+            "departure": 16.735,
+            "arrival": 17.535,
+            "spokenCue": 17.585
+          },
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "scale": 1.08
+          },
+          "media": {
+            "still": "assets/capture/17-loss-overview.webp",
+            "action": null,
+            "actionDuration": 0,
+            "playbackRate": 1
+          },
+          "retiming": "Actual final-state still."
+        }
+      ]
+    },
+    {
+      "id": "everyhand-act-04",
+      "start": 96,
+      "end": 132,
+      "duration": 36,
+      "composition": "compositions/frames/act-04.html",
+      "shots": [
+        {
+          "start": 0,
+          "cue": {
+            "time": 0,
+            "phrase": "act boundary",
+            "wordId": null
+          },
+          "kind": "app",
+          "asset": "12-six-minute-recovery",
+          "rect": [
+            315,
+            25,
+            975,
+            780
+          ],
+          "action": true,
+          "focus": [
+            {
+              "cue": {
+                "time": 3.6,
+                "phrase": "six extra minutes",
+                "wordId": "w205",
+                "spokenTime": 3.6
+              },
+              "rect": [
+                340,
+                350,
+                590,
+                265
+              ],
+              "camera": {
+                "departure": 2.75,
+                "arrival": 3.55,
+                "spokenCue": 3.6
+              }
+            },
+            {
+              "cue": {
+                "time": 5.875,
+                "phrase": "The planner carries",
+                "wordId": "w210",
+                "spokenTime": 5.875
+              },
+              "rect": [
+                340,
+                155,
+                920,
+                180
+              ],
+              "camera": {
+                "departure": 5.025,
+                "arrival": 5.825,
+                "spokenCue": 5.875
+              }
+            }
+          ],
+          "end": 10.865,
+          "duration": 10.865,
+          "camera": {
+            "departure": 0,
+            "arrival": 0,
+            "spokenCue": null
+          },
+          "pose": {
+            "x": 0,
+            "y": -19.2,
+            "scale": 1.08
+          },
+          "media": {
+            "still": "assets/capture/12-six-minute-recovery.webp",
+            "action": "assets/capture/12-six-minute-recovery.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.54321
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 10.865,
+          "cue": {
+            "time": 10.865,
+            "phrase": "Apply the",
+            "wordId": "w223",
+            "spokenTime": 11.715
+          },
+          "kind": "app",
+          "asset": "13-apply-recovery",
+          "rect": [
+            90,
+            30,
+            1400,
+            710
+          ],
+          "action": true,
+          "focus": [
+            {
+              "cue": {
+                "time": 14.515,
+                "phrase": "All twenty eight",
+                "wordId": "w229",
+                "spokenTime": 14.515
+              },
+              "rect": [
+                1120,
+                25,
+                370,
+                440
+              ],
+              "camera": {
+                "departure": 13.665,
+                "arrival": 14.465,
+                "spokenCue": 14.515
+              }
+            }
+          ],
+          "end": 16.625,
+          "duration": 5.76,
+          "camera": {
+            "departure": 10.865,
+            "arrival": 11.665,
+            "spokenCue": 11.715
+          },
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "scale": 1.08
+          },
+          "media": {
+            "still": "assets/capture/13-apply-recovery.webp",
+            "action": "assets/capture/13-apply-recovery.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.51852
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 16.625,
+          "cue": {
+            "time": 16.625,
+            "phrase": "Zaras turn",
+            "wordId": "w235",
+            "spokenTime": 17.475
+          },
+          "kind": "app",
+          "asset": "14-zara-recovered",
+          "rect": [
+            520,
+            300,
+            560,
+            400
+          ],
+          "action": true,
+          "end": 21.98,
+          "duration": 5.355,
+          "camera": {
+            "departure": 16.625,
+            "arrival": 17.425,
+            "spokenCue": 17.475
+          },
+          "pose": {
+            "x": -641.2632,
+            "y": -511.7895,
+            "scale": 1.8816
+          },
+          "media": {
+            "still": "assets/capture/14-zara-recovered.webp",
+            "action": "assets/capture/14-zara-recovered.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.54297
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 21.98,
+          "cue": {
+            "time": 21.98,
+            "phrase": "Earlier completed",
+            "wordId": "w248",
+            "spokenTime": 22.83
+          },
+          "kind": "app",
+          "asset": "15-history-preserved",
+          "rect": [
+            520,
+            300,
+            560,
+            400
+          ],
+          "action": true,
+          "end": 26.38,
+          "duration": 4.4,
+          "camera": {
+            "departure": 21.98,
+            "arrival": 22.78,
+            "spokenCue": 22.83
+          },
+          "pose": {
+            "x": -641.2632,
+            "y": -511.7895,
+            "scale": 1.8816
+          },
+          "media": {
+            "still": "assets/capture/15-history-preserved.webp",
+            "action": "assets/capture/15-history-preserved.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.49335
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 26.38,
+          "cue": {
+            "time": 26.38,
+            "phrase": "The recovery changes",
+            "wordId": "w257",
+            "spokenTime": 27.23
+          },
+          "kind": "bridge",
+          "asset": null,
+          "rect": null,
+          "kicker": "RECOVER WITHOUT STARTING OVER",
+          "title": "The past stays put.",
+          "note": "8 completed turns preserved.",
+          "note2": "Every full turn stays intact.",
+          "reveal": {
+            "time": 31.71001,
+            "phrase": "every scheduled",
+            "wordId": "w268",
+            "spokenTime": 31.71001
+          },
+          "end": 36,
+          "duration": 9.62
+        }
+      ]
+    },
+    {
+      "id": "everyhand-act-05",
+      "start": 132,
+      "end": 165.75,
+      "duration": 33.75,
+      "composition": "compositions/frames/act-05.html",
+      "shots": [
+        {
+          "start": 0,
+          "cue": {
+            "time": 0,
+            "phrase": "act boundary",
+            "wordId": null
+          },
+          "kind": "app",
+          "asset": "16-facilitator-kit",
+          "rect": [
+            520,
+            295,
+            560,
+            410
+          ],
+          "action": true,
+          "end": 1.995,
+          "duration": 1.995,
+          "camera": {
+            "departure": 0,
+            "arrival": 0,
+            "spokenCue": null
+          },
+          "pose": {
+            "x": -604.5494,
+            "y": -488.8434,
+            "scale": 1.8357
+          },
+          "media": {
+            "still": "assets/capture/16-facilitator-kit.webp",
+            "action": "assets/capture/16-facilitator-kit.mp4",
+            "actionDuration": 1.35,
+            "playbackRate": 0.51852
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 1.995,
+          "cue": {
+            "time": 1.995,
+            "phrase": "The real run sheet",
+            "wordId": "w281",
+            "spokenTime": 2.845
+          },
+          "kind": "paper",
+          "asset": "assets/outputs/kit-page-1.png",
+          "rect": [
+            90,
+            90,
+            1500,
+            1640
+          ],
+          "focus": [
+            {
+              "cue": {
+                "time": 4.045,
+                "phrase": "lists every scheduled learner",
+                "wordId": "w285",
+                "spokenTime": 4.045
+              },
+              "rect": [
+                105,
+                330,
+                1475,
+                720
+              ],
+              "camera": {
+                "departure": 3.145,
+                "arrival": 4.045,
+                "spokenCue": 4.045
+              }
+            },
+            {
+              "cue": {
+                "time": 8.845,
+                "phrase": "Zaras row",
+                "wordId": "w293",
+                "spokenTime": 8.845
+              },
+              "rect": [
+                105,
+                1660,
+                1325,
+                240
+              ],
+              "crop": "inset(1590px 120px 585px 105px)",
+              "camera": {
+                "departure": 7.945,
+                "arrival": 8.845,
+                "spokenCue": 8.845
+              }
+            }
+          ],
+          "end": 10.875,
+          "duration": 8.88,
+          "camera": {
+            "departure": 1.995,
+            "arrival": 2.795,
+            "spokenCue": 2.845
+          },
+          "pose": {
+            "x": 474.6049,
+            "y": 0,
+            "scale": 0.4589
+          },
+          "sourcePixels": [
+            1697,
+            2400
+          ],
+          "provenance": "Rendered page of the actual PDF generated through the app."
+        },
+        {
+          "start": 10.875,
+          "cue": {
+            "time": 10.875,
+            "phrase": "Individual cards",
+            "wordId": "w299",
+            "spokenTime": 11.725
+          },
+          "kind": "paper",
+          "asset": "assets/outputs/kit-page-3.png",
+          "rect": [
+            860,
+            1870,
+            720,
+            270
+          ],
+          "crop": "inset(1865px 112px 260px 860px)",
+          "end": 17.08,
+          "duration": 6.205,
+          "camera": {
+            "departure": 10.875,
+            "arrival": 11.675,
+            "spokenCue": 11.725
+          },
+          "pose": {
+            "x": -1704.4211,
+            "y": -3792.0526,
+            "scale": 2.1053
+          },
+          "sourcePixels": [
+            1697,
+            2400
+          ],
+          "provenance": "Rendered page of the actual PDF generated through the app."
+        },
+        {
+          "start": 17.08,
+          "cue": {
+            "time": 17.08,
+            "phrase": "This is a local",
+            "wordId": "w312",
+            "spokenTime": 17.93
+          },
+          "kind": "app",
+          "asset": "18-finish-preview",
+          "rect": [
+            90,
+            20,
+            1400,
+            690
+          ],
+          "action": true,
+          "end": 26.28,
+          "duration": 9.2,
+          "camera": {
+            "departure": 17.08,
+            "arrival": 17.88,
+            "spokenCue": 17.93
+          },
+          "pose": {
+            "x": 0,
+            "y": 0,
+            "scale": 1.0827
+          },
+          "media": {
+            "still": "assets/capture/18-finish-preview.webp",
+            "action": "assets/capture/18-finish-preview.mp4",
+            "actionDuration": 5.73333,
+            "playbackRate": 1
+          },
+          "retiming": "Real action retimed uniformly; high-resolution final state follows."
+        },
+        {
+          "start": 26.28,
+          "cue": {
+            "time": 26.28,
+            "phrase": "Every hand",
+            "wordId": "w334",
+            "spokenTime": 27.13
+          },
+          "kind": "outro",
+          "asset": null,
+          "rect": null,
+          "end": 33.75,
+          "duration": 7.47
+        }
+      ]
+    }
+  ]
+}

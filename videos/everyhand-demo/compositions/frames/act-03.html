@@ -1,0 +1,77 @@
+<template>
+<style>
+@font-face{font-family:"DM Serif Display";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/dm-serif-regular.ttf") format("truetype");}
+@font-face{font-family:"DM Serif Display";font-style:italic;font-weight:400;font-display:block;src:url("assets/fonts/dm-serif-italic.ttf") format("truetype");}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/dm-sans-400.ttf") format("truetype");}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:500;font-display:block;src:url("assets/fonts/dm-sans-500.ttf") format("truetype");}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/dm-sans-600.ttf") format("truetype");}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:block;src:url("assets/fonts/dm-sans-700.ttf") format("truetype");}
+
+#root{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;color:#293e32;font-family:"DM Sans",sans-serif;}
+#everyhand-act-03-ground{position:absolute;inset:0;background:#f7f5ee;}
+
+  #everyhand-act-03-stage{position:absolute;left:96px;top:126px;width:1728px;height:858px;overflow:hidden;background:#f7f5ee;border:1px solid #d9dfd1;border-radius:12px;isolation:isolate;}
+  #everyhand-act-03-world{position:absolute;left:0;top:0;width:1600px;height:1000px;transform-origin:0 0;will-change:transform;}
+  #everyhand-act-03-world>img,#everyhand-act-03-world>video{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:fill;}
+  #everyhand-act-03-header{position:absolute;left:96px;right:96px;top:43px;display:flex;align-items:center;justify-content:space-between;gap:40px;color:#293e32;}
+  #everyhand-act-03-brand{font-size:30px;line-height:1.2;letter-spacing:-.04em;font-weight:700;display:flex;align-items:center;gap:13px;}
+  #everyhand-act-03-brand>img{display:block;width:32px;height:32px;}
+  #everyhand-act-03-chapter{font-size:24px;line-height:1.25;font-weight:500;letter-spacing:.015em;}
+  #everyhand-act-03-chapter>span{color:#a94d2b;margin-right:14px;font-variant-numeric:tabular-nums;}
+  #everyhand-act-03-footer{position:absolute;left:96px;right:96px;top:1016px;display:flex;justify-content:space-between;align-items:center;gap:32px;font-size:22px;line-height:1.4;color:#293e32;}
+  #everyhand-act-03-proof{position:absolute;z-index:3;left:32px;bottom:24px;max-width:70%;padding:13px 18px;background:#f7f5ee;border:1px solid #d9dfd1;border-radius:7px;color:#293e32;font-size:27px;font-weight:500;line-height:1.25;}
+
+#everyhand-act-03-world{width:1600px;height:1000px;}
+#everyhand-act-03-world>img,#everyhand-act-03-world>video{position:absolute;inset:0;width:1600px;height:1000px;object-fit:fill;}
+#everyhand-act-03-paper-world{position:absolute;left:0;top:0;width:1697px;height:2400px;transform-origin:0 0;}
+#everyhand-act-03-paper-world>img{position:absolute;inset:0;width:1697px;height:2400px;object-fit:fill;}
+#everyhand-act-03-brand{font-family:"DM Sans",sans-serif;font-weight:700;}
+#everyhand-act-03-chapter{font-size:26px;}
+#everyhand-act-03-footer{font-size:24px;}
+.everyhand-act-03-footer-left{position:relative;display:block;width:1200px;height:34px;}
+.everyhand-act-03-bridge{position:absolute;inset:0;background:#f7f5ee;padding:112px 122px;box-sizing:border-box;}
+.everyhand-act-03-bridge h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:158px;line-height:1.04;letter-spacing:-.045em;max-width:1400px;margin:62px 0 32px;}
+.everyhand-act-03-kicker{font-family:"DM Sans",sans-serif;font-size:26px;line-height:1.3;letter-spacing:.12em;font-weight:600;margin:0;color:#526750;}
+.everyhand-act-03-bridge-note{font-size:44px;font-weight:400;max-width:1400px;line-height:1.3;margin:0;}
+.everyhand-act-03-second-note{margin-top:32px;color:#526750;}
+.everyhand-act-03-outro{padding:77px 116px;}
+.everyhand-act-03-end-mark{width:60px;height:60px;display:block;margin-bottom:30px;}
+.everyhand-act-03-end-mark>svg{display:block;width:100%;height:100%;}
+.everyhand-act-03-outro h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:128px;line-height:.99;letter-spacing:-.045em;margin:22px 0 35px;max-width:1500px;}
+.everyhand-act-03-end-note{font-size:33px;line-height:1.3;margin:0 0 25px;}
+.everyhand-act-03-repo{font-size:29px;line-height:1.3;font-weight:600;margin:0;color:#293e32;}
+</style>
+<div id="root" data-composition-id="everyhand-act-03" data-width="1920" data-height="1080" data-duration="33.92">
+<div id="everyhand-act-03-ground" class="clip" data-start="0" data-duration="33.92" data-track-index="0"></div>
+<div id="everyhand-act-03-header"><div id="everyhand-act-03-brand"><img src="assets/brand/favicon.svg" alt=""/><span>every hand.</span></div><div id="everyhand-act-03-chapter"><span>03</span>When the room changes</div></div>
+<div id="everyhand-act-03-stage"><div id="everyhand-act-03-world" data-layout-allow-overflow><video id="everyhand-act-03-shot-01-action" class="clip" src="assets/capture/07-apply-extra-place.mp4" data-start="0" data-duration="1.35" data-media-start="0" data-playback-rate="0.54321" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="everyhand-act-03-shot-01-still" class="clip" src="assets/capture/07-apply-extra-place.webp" data-start="1.35" data-duration="3.34" data-track-index="1" alt="Actual Every Hand capture: 07-apply-extra-place"/>
+<video id="everyhand-act-03-shot-02-action" class="clip" src="assets/capture/09-find-zara-in-room.mp4" data-start="4.69" data-duration="1.35" data-media-start="0" data-playback-rate="0.49335" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="everyhand-act-03-shot-02-still" class="clip" src="assets/capture/09-find-zara-in-room.webp" data-start="6.04" data-duration="1.61" data-track-index="1" alt="Actual Every Hand capture: 09-find-zara-in-room"/>
+<video id="everyhand-act-03-shot-03-action" class="clip" src="assets/capture/08-zara-scheduled.mp4" data-start="7.65" data-duration="1.35" data-media-start="0" data-playback-rate="0.44444" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="everyhand-act-03-shot-03-still" class="clip" src="assets/capture/08-zara-scheduled.webp" data-start="9" data-duration="1.65501" data-track-index="1" alt="Actual Every Hand capture: 08-zara-scheduled"/>
+<img id="everyhand-act-03-shot-04-still" class="clip" src="assets/capture/10-before-disruption.webp" data-start="10.65501" data-duration="3.35999" data-track-index="1" alt="Actual Every Hand capture: 10-before-disruption"/>
+<video id="everyhand-act-03-shot-05-action" class="clip" src="assets/capture/11-lose-microscope.mp4" data-start="14.015" data-duration="1.35" data-media-start="0" data-playback-rate="0.49383" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="everyhand-act-03-shot-05-still" class="clip" src="assets/capture/11-lose-microscope.webp" data-start="15.365" data-duration="1.37" data-track-index="1" alt="Actual Every Hand capture: 11-lose-microscope"/>
+<img id="everyhand-act-03-shot-06-still" class="clip" src="assets/capture/17-loss-overview.webp" data-start="16.735" data-duration="17.185" data-track-index="1" alt="Actual Every Hand capture: 17-loss-overview"/></div><div id="everyhand-act-03-paper-world" data-layout-allow-overflow></div></div>
+<div id="everyhand-act-03-footer"><span>Fictional lesson · Schedule preview</span><span>Full turns include reset</span></div>
+</div>
+<script src="assets/vendor/gsap.min.js"></script>
+<script>
+{ const tl=gsap.timeline({paused:true});
+tl.set("#everyhand-act-03-world",{"x":-4.134,"y":0,"scale":1.1024,"transformOrigin":"0 0"},0);
+tl.set("#everyhand-act-03-paper-world",{x:560,y:0,scale:.3575,transformOrigin:"0 0"},0);
+tl.fromTo("#everyhand-act-03-world",{"x":-4.134,"y":0,"scale":1.1024},{"x":-4.134,"y":0,"scale":1.1024,"duration":0,"ease":"power3.inOut","immediateRender":false},0);
+tl.fromTo("#everyhand-act-03-world",{"x":-4.134,"y":0,"scale":1.1024},{"x":-1359.7193,"y":0,"scale":1.9298,"duration":0.8,"ease":"power3.inOut","immediateRender":false},1.33);
+tl.fromTo("#everyhand-act-03-world",{"x":-1359.7193,"y":0,"scale":1.9298},{"x":0,"y":-144.7274,"scale":1.2338,"duration":0.8,"ease":"power3.inOut","immediateRender":false},4.69);
+tl.fromTo("#everyhand-act-03-world",{"x":0,"y":-144.7274,"scale":1.2338},{"x":-641.2632,"y":-511.7895,"scale":1.8816,"duration":0.8,"ease":"power3.inOut","immediateRender":false},7.65);
+tl.fromTo("#everyhand-act-03-world",{"x":-641.2632,"y":-511.7895,"scale":1.8816},{"x":0,"y":-13.8,"scale":1.08,"duration":0.8,"ease":"power3.inOut","immediateRender":false},10.65501);
+tl.fromTo("#everyhand-act-03-world",{"x":0,"y":-13.8,"scale":1.08},{"x":-45.4737,"y":-488.0526,"scale":1.5158,"duration":0.8,"ease":"power3.inOut","immediateRender":false},12.65501);
+tl.fromTo("#everyhand-act-03-world",{"x":-45.4737,"y":-488.0526,"scale":1.5158},{"x":0,"y":-24.6,"scale":1.08,"duration":0.8,"ease":"power3.inOut","immediateRender":false},14.015);
+tl.fromTo("#everyhand-act-03-world",{"x":0,"y":-24.6,"scale":1.08},{"x":0,"y":0,"scale":1.08,"duration":0.8,"ease":"power3.inOut","immediateRender":false},16.735);
+tl.fromTo("#everyhand-act-03-world",{"x":0,"y":0,"scale":1.08},{"x":-3181.5,"y":-873,"scale":3.1,"duration":0.8,"ease":"power3.inOut","immediateRender":false},18.25501);
+tl.fromTo("#everyhand-act-03-world",{"x":-3181.5,"y":-873,"scale":3.1},{"x":-1617.0292,"y":0,"scale":2.0906,"duration":0.8,"ease":"power3.inOut","immediateRender":false},23.855);
+tl.fromTo("#everyhand-act-03-world",{"x":-1617.0292,"y":0,"scale":2.0906},{"x":-3181.5,"y":-873,"scale":3.1,"duration":0.8,"ease":"power3.inOut","immediateRender":false},30.50999);
+window.__timelines["everyhand-act-03"]=tl; }
+</script>
+</template>

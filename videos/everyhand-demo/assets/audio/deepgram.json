@@ -1,0 +1,5620 @@
+{
+  "metadata": {
+    "transaction_key": "deprecated",
+    "request_id": "01a15d11-b280-7041-a9a6-ad7d75d93c33",
+    "sha256": "989b72adb5eb74eace356decdf4b9856d41776dd07bb1fcfd995cb6a1ba1fa49",
+    "created": "2026-10-21T06:06:48.034Z",
+    "duration": 165.74994,
+    "channels": 1,
+    "models": [
+      "2187e11a-3532-4498-b076-81fa530bdd49"
+    ],
+    "model_info": {
+      "2187e11a-3532-4498-b076-81fa530bdd49": {
+        "name": "general-nova-3",
+        "version": "2025-07-31.0",
+        "arch": "nova-3"
+      }
+    }
+  },
+  "results": {
+    "channels": [
+      {
+        "alternatives": [
+          {
+            "transcript": "A place in a group doesn't guarantee a turn. For teachers planning a practical workshop, every hand makes that missing turn visible, then helps make room for it. This fictional lesson has 28 learners, three microscopes, and thirty minutes. Each learner needs four full minutes, including reset. Only 21 complete turns fit. Zara is one of seven learners without a turn. Compare ways to make room. Keep the equipment and add ten minutes, or keep the finish time and add one microscope. Neither choice shortens anyone's turn. If extra equipment isn't available, lock it. The time option remains. Unlock it and preview the extra place instead. Now Zara has a real slot, minute twenty four to twenty eight at place four. This is still a preview. The current plan hasn't changed. Apply it. 28 learners now have complete turns. The room is driven by those scheduled slots. Select a learner to see their time and place. But workshops change. At minute eight, one microscope stops working. Every hand preserves the eight completed turns and rebuilds what comes next. The remaining plan serves 23. Five learners still need a full turn. The shortage is visible again, without erasing the work already done. Compare recovery. This time, six extra minutes are enough. The planner carries forward the completed turns and uses the three remaining places. Apply the thirty six minute plan. All 28 have complete paths again. Zara's turn is now minute thirty two to thirty six at place two. Earlier completed turns keep their original times and places. The recovery changes the future schedule while preserving the past, and every scheduled turn still lasts the full four minutes. Open the facilitator kit. The real run sheet lists every scheduled learner, activity, time, and place. Zara's row matches the recovered plan. Individual cards carry the same schedule, while any missing turns are marked explicitly. This is a local proof of concept with public source and planning documents. It plans opportunities. It doesn't measure attendance or learning. Every hand. Make room for every learner's hands on turn.",
+            "confidence": 1.0,
+            "words": [
+              {
+                "word": "a",
+                "start": 0.71999997,
+                "end": 0.96,
+                "confidence": 0.99902344,
+                "punctuated_word": "A"
+              },
+              {
+                "word": "place",
+                "start": 0.96,
+                "end": 1.28,
+                "confidence": 0.99902344,
+                "punctuated_word": "place"
+              },
+              {
+                "word": "in",
+                "start": 1.28,
+                "end": 1.52,
+                "confidence": 0.98291016,
+                "punctuated_word": "in"
+              },
+              {
+                "word": "a",
+                "start": 1.52,
+                "end": 1.68,
+                "confidence": 0.99902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "group",
+                "start": 1.68,
+                "end": 2.1599998,
+                "confidence": 1.0,
+                "punctuated_word": "group"
+              },
+              {
+                "word": "doesn't",
+                "start": 2.1599998,
+                "end": 2.6399999,
+                "confidence": 0.99902344,
+                "punctuated_word": "doesn't"
+              },
+              {
+                "word": "guarantee",
+                "start": 2.6399999,
+                "end": 3.28,
+                "confidence": 1.0,
+                "punctuated_word": "guarantee"
+              },
+              {
+                "word": "a",
+                "start": 3.28,
+                "end": 3.6,
+                "confidence": 0.99902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "turn",
+                "start": 3.6,
+                "end": 4.24,
+                "confidence": 0.9951172,
+                "punctuated_word": "turn."
+              },
+              {
+                "word": "for",
+                "start": 4.56,
+                "end": 4.7999997,
+                "confidence": 1.0,
+                "punctuated_word": "For"
+              },
+              {
+                "word": "teachers",
+                "start": 4.7999997,
+                "end": 5.2,
+                "confidence": 0.9980469,
+                "punctuated_word": "teachers"
+              },
+              {
+                "word": "planning",
+                "start": 5.2,
+                "end": 5.6,
+                "confidence": 0.99902344,
+                "punctuated_word": "planning"
+              },
+              {
+                "word": "a",
+                "start": 5.6,
+                "end": 5.8399997,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "practical",
+                "start": 5.8399997,
+                "end": 6.3999996,
+                "confidence": 0.99902344,
+                "punctuated_word": "practical"
+              },
+              {
+                "word": "workshop",
+                "start": 6.3999996,
+                "end": 7.2,
+                "confidence": 0.99560547,
+                "punctuated_word": "workshop,"
+              },
+              {
+                "word": "every",
+                "start": 7.52,
+                "end": 7.8399997,
+                "confidence": 0.87597656,
+                "punctuated_word": "every"
+              },
+              {
+                "word": "hand",
+                "start": 7.8399997,
+                "end": 8.32,
+                "confidence": 0.99902344,
+                "punctuated_word": "hand"
+              },
+              {
+                "word": "makes",
+                "start": 8.32,
+                "end": 8.72,
+                "confidence": 1.0,
+                "punctuated_word": "makes"
+              },
+              {
+                "word": "that",
+                "start": 8.72,
+                "end": 8.96,
+                "confidence": 1.0,
+                "punctuated_word": "that"
+              },
+              {
+                "word": "missing",
+                "start": 8.96,
+                "end": 9.44,
+                "confidence": 1.0,
+                "punctuated_word": "missing"
+              },
+              {
+                "word": "turn",
+                "start": 9.44,
+                "end": 9.92,
+                "confidence": 0.99902344,
+                "punctuated_word": "turn"
+              },
+              {
+                "word": "visible",
+                "start": 9.92,
+                "end": 10.719999,
+                "confidence": 0.8144531,
+                "punctuated_word": "visible,"
+              },
+              {
+                "word": "then",
+                "start": 11.12,
+                "end": 11.36,
+                "confidence": 0.99902344,
+                "punctuated_word": "then"
+              },
+              {
+                "word": "helps",
+                "start": 11.36,
+                "end": 11.759999,
+                "confidence": 0.9863281,
+                "punctuated_word": "helps"
+              },
+              {
+                "word": "make",
+                "start": 11.759999,
+                "end": 12.0,
+                "confidence": 0.99902344,
+                "punctuated_word": "make"
+              },
+              {
+                "word": "room",
+                "start": 12.0,
+                "end": 12.24,
+                "confidence": 1.0,
+                "punctuated_word": "room"
+              },
+              {
+                "word": "for",
+                "start": 12.24,
+                "end": 12.48,
+                "confidence": 1.0,
+                "punctuated_word": "for"
+              },
+              {
+                "word": "it",
+                "start": 12.48,
+                "end": 12.639999,
+                "confidence": 1.0,
+                "punctuated_word": "it."
+              },
+              {
+                "word": "this",
+                "start": 13.625,
+                "end": 13.945,
+                "confidence": 1.0,
+                "punctuated_word": "This"
+              },
+              {
+                "word": "fictional",
+                "start": 13.945,
+                "end": 14.505,
+                "confidence": 1.0,
+                "punctuated_word": "fictional"
+              },
+              {
+                "word": "lesson",
+                "start": 14.505,
+                "end": 14.905,
+                "confidence": 1.0,
+                "punctuated_word": "lesson"
+              },
+              {
+                "word": "has",
+                "start": 14.905,
+                "end": 15.385,
+                "confidence": 1.0,
+                "punctuated_word": "has"
+              },
+              {
+                "word": "28",
+                "start": 15.385,
+                "end": 15.945,
+                "confidence": 0.9995117,
+                "punctuated_word": "28"
+              },
+              {
+                "word": "learners",
+                "start": 15.945,
+                "end": 16.664999,
+                "confidence": 0.9975586,
+                "punctuated_word": "learners,"
+              },
+              {
+                "word": "three",
+                "start": 16.744999,
+                "end": 16.985,
+                "confidence": 1.0,
+                "punctuated_word": "three"
+              },
+              {
+                "word": "microscopes",
+                "start": 16.985,
+                "end": 18.025,
+                "confidence": 0.96940106,
+                "punctuated_word": "microscopes,"
+              },
+              {
+                "word": "and",
+                "start": 18.025,
+                "end": 18.185,
+                "confidence": 0.9980469,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "thirty",
+                "start": 18.185,
+                "end": 18.585,
+                "confidence": 1.0,
+                "punctuated_word": "thirty"
+              },
+              {
+                "word": "minutes",
+                "start": 18.585,
+                "end": 19.224998,
+                "confidence": 0.99902344,
+                "punctuated_word": "minutes."
+              },
+              {
+                "word": "each",
+                "start": 19.705,
+                "end": 20.025,
+                "confidence": 1.0,
+                "punctuated_word": "Each"
+              },
+              {
+                "word": "learner",
+                "start": 20.025,
+                "end": 20.425,
+                "confidence": 0.99853516,
+                "punctuated_word": "learner"
+              },
+              {
+                "word": "needs",
+                "start": 20.425,
+                "end": 20.904999,
+                "confidence": 1.0,
+                "punctuated_word": "needs"
+              },
+              {
+                "word": "four",
+                "start": 20.904999,
+                "end": 21.224998,
+                "confidence": 0.99902344,
+                "punctuated_word": "four"
+              },
+              {
+                "word": "full",
+                "start": 21.224998,
+                "end": 21.545,
+                "confidence": 0.99902344,
+                "punctuated_word": "full"
+              },
+              {
+                "word": "minutes",
+                "start": 21.545,
+                "end": 22.265,
+                "confidence": 0.82910156,
+                "punctuated_word": "minutes,"
+              },
+              {
+                "word": "including",
+                "start": 22.345,
+                "end": 22.744999,
+                "confidence": 1.0,
+                "punctuated_word": "including"
+              },
+              {
+                "word": "reset",
+                "start": 22.744999,
+                "end": 23.465,
+                "confidence": 0.9897461,
+                "punctuated_word": "reset."
+              },
+              {
+                "word": "only",
+                "start": 24.025,
+                "end": 24.345,
+                "confidence": 1.0,
+                "punctuated_word": "Only"
+              },
+              {
+                "word": "21",
+                "start": 24.345,
+                "end": 25.145,
+                "confidence": 1.0,
+                "punctuated_word": "21"
+              },
+              {
+                "word": "complete",
+                "start": 25.145,
+                "end": 25.625,
+                "confidence": 1.0,
+                "punctuated_word": "complete"
+              },
+              {
+                "word": "turns",
+                "start": 25.625,
+                "end": 25.945,
+                "confidence": 1.0,
+                "punctuated_word": "turns"
+              },
+              {
+                "word": "fit",
+                "start": 25.945,
+                "end": 26.345,
+                "confidence": 0.99853516,
+                "punctuated_word": "fit."
+              },
+              {
+                "word": "zara",
+                "start": 26.89,
+                "end": 27.689999,
+                "confidence": 1.0,
+                "punctuated_word": "Zara"
+              },
+              {
+                "word": "is",
+                "start": 27.689999,
+                "end": 28.01,
+                "confidence": 0.9970703,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "one",
+                "start": 28.01,
+                "end": 28.25,
+                "confidence": 1.0,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "of",
+                "start": 28.25,
+                "end": 28.41,
+                "confidence": 1.0,
+                "punctuated_word": "of"
+              },
+              {
+                "word": "seven",
+                "start": 28.41,
+                "end": 28.73,
+                "confidence": 1.0,
+                "punctuated_word": "seven"
+              },
+              {
+                "word": "learners",
+                "start": 28.73,
+                "end": 29.21,
+                "confidence": 0.9970703,
+                "punctuated_word": "learners"
+              },
+              {
+                "word": "without",
+                "start": 29.21,
+                "end": 29.529999,
+                "confidence": 1.0,
+                "punctuated_word": "without"
+              },
+              {
+                "word": "a",
+                "start": 29.529999,
+                "end": 29.77,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "turn",
+                "start": 29.77,
+                "end": 30.33,
+                "confidence": 0.9995117,
+                "punctuated_word": "turn."
+              },
+              {
+                "word": "compare",
+                "start": 31.369999,
+                "end": 31.77,
+                "confidence": 0.99902344,
+                "punctuated_word": "Compare"
+              },
+              {
+                "word": "ways",
+                "start": 31.77,
+                "end": 32.25,
+                "confidence": 1.0,
+                "punctuated_word": "ways"
+              },
+              {
+                "word": "to",
+                "start": 32.25,
+                "end": 32.41,
+                "confidence": 1.0,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "make",
+                "start": 32.41,
+                "end": 32.73,
+                "confidence": 1.0,
+                "punctuated_word": "make"
+              },
+              {
+                "word": "room",
+                "start": 32.73,
+                "end": 33.449997,
+                "confidence": 0.9555664,
+                "punctuated_word": "room."
+              },
+              {
+                "word": "keep",
+                "start": 33.61,
+                "end": 33.93,
+                "confidence": 1.0,
+                "punctuated_word": "Keep"
+              },
+              {
+                "word": "the",
+                "start": 33.93,
+                "end": 34.17,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "equipment",
+                "start": 34.17,
+                "end": 34.649998,
+                "confidence": 1.0,
+                "punctuated_word": "equipment"
+              },
+              {
+                "word": "and",
+                "start": 34.649998,
+                "end": 34.97,
+                "confidence": 0.94140625,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "add",
+                "start": 34.97,
+                "end": 35.29,
+                "confidence": 1.0,
+                "punctuated_word": "add"
+              },
+              {
+                "word": "ten",
+                "start": 35.29,
+                "end": 35.61,
+                "confidence": 1.0,
+                "punctuated_word": "ten"
+              },
+              {
+                "word": "minutes",
+                "start": 35.61,
+                "end": 36.25,
+                "confidence": 0.70251465,
+                "punctuated_word": "minutes,"
+              },
+              {
+                "word": "or",
+                "start": 36.57,
+                "end": 36.89,
+                "confidence": 1.0,
+                "punctuated_word": "or"
+              },
+              {
+                "word": "keep",
+                "start": 36.89,
+                "end": 37.29,
+                "confidence": 0.9980469,
+                "punctuated_word": "keep"
+              },
+              {
+                "word": "the",
+                "start": 37.29,
+                "end": 37.449997,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "finish",
+                "start": 37.449997,
+                "end": 37.77,
+                "confidence": 0.98828125,
+                "punctuated_word": "finish"
+              },
+              {
+                "word": "time",
+                "start": 37.77,
+                "end": 38.09,
+                "confidence": 1.0,
+                "punctuated_word": "time"
+              },
+              {
+                "word": "and",
+                "start": 38.09,
+                "end": 38.329998,
+                "confidence": 0.98095703,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "add",
+                "start": 38.329998,
+                "end": 38.65,
+                "confidence": 1.0,
+                "punctuated_word": "add"
+              },
+              {
+                "word": "one",
+                "start": 38.65,
+                "end": 38.89,
+                "confidence": 1.0,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "microscope",
+                "start": 38.89,
+                "end": 39.85,
+                "confidence": 0.9951172,
+                "punctuated_word": "microscope."
+              },
+              {
+                "word": "neither",
+                "start": 40.25,
+                "end": 40.57,
+                "confidence": 0.99902344,
+                "punctuated_word": "Neither"
+              },
+              {
+                "word": "choice",
+                "start": 40.57,
+                "end": 41.129997,
+                "confidence": 1.0,
+                "punctuated_word": "choice"
+              },
+              {
+                "word": "shortens",
+                "start": 41.129997,
+                "end": 41.61,
+                "confidence": 0.9995117,
+                "punctuated_word": "shortens"
+              },
+              {
+                "word": "anyone's",
+                "start": 41.61,
+                "end": 42.25,
+                "confidence": 0.9970703,
+                "punctuated_word": "anyone's"
+              },
+              {
+                "word": "turn",
+                "start": 42.25,
+                "end": 42.57,
+                "confidence": 0.9995117,
+                "punctuated_word": "turn."
+              },
+              {
+                "word": "if",
+                "start": 43.255,
+                "end": 43.575,
+                "confidence": 1.0,
+                "punctuated_word": "If"
+              },
+              {
+                "word": "extra",
+                "start": 43.575,
+                "end": 43.975002,
+                "confidence": 1.0,
+                "punctuated_word": "extra"
+              },
+              {
+                "word": "equipment",
+                "start": 43.975002,
+                "end": 44.455,
+                "confidence": 1.0,
+                "punctuated_word": "equipment"
+              },
+              {
+                "word": "isn't",
+                "start": 44.455,
+                "end": 44.855003,
+                "confidence": 1.0,
+                "punctuated_word": "isn't"
+              },
+              {
+                "word": "available",
+                "start": 44.855003,
+                "end": 45.575,
+                "confidence": 0.99853516,
+                "punctuated_word": "available,"
+              },
+              {
+                "word": "lock",
+                "start": 45.735,
+                "end": 46.055,
+                "confidence": 1.0,
+                "punctuated_word": "lock"
+              },
+              {
+                "word": "it",
+                "start": 46.055,
+                "end": 46.535,
+                "confidence": 0.98950195,
+                "punctuated_word": "it."
+              },
+              {
+                "word": "the",
+                "start": 46.615,
+                "end": 46.855003,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "time",
+                "start": 46.855003,
+                "end": 47.175003,
+                "confidence": 1.0,
+                "punctuated_word": "time"
+              },
+              {
+                "word": "option",
+                "start": 47.175003,
+                "end": 47.575,
+                "confidence": 1.0,
+                "punctuated_word": "option"
+              },
+              {
+                "word": "remains",
+                "start": 47.575,
+                "end": 48.295002,
+                "confidence": 0.99609375,
+                "punctuated_word": "remains."
+              },
+              {
+                "word": "unlock",
+                "start": 48.695,
+                "end": 49.175003,
+                "confidence": 1.0,
+                "punctuated_word": "Unlock"
+              },
+              {
+                "word": "it",
+                "start": 49.175003,
+                "end": 49.415,
+                "confidence": 1.0,
+                "punctuated_word": "it"
+              },
+              {
+                "word": "and",
+                "start": 49.415,
+                "end": 49.735,
+                "confidence": 0.90771484,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "preview",
+                "start": 49.735,
+                "end": 50.215,
+                "confidence": 1.0,
+                "punctuated_word": "preview"
+              },
+              {
+                "word": "the",
+                "start": 50.215,
+                "end": 50.455,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "extra",
+                "start": 50.455,
+                "end": 50.855003,
+                "confidence": 0.99902344,
+                "punctuated_word": "extra"
+              },
+              {
+                "word": "place",
+                "start": 50.855003,
+                "end": 51.255,
+                "confidence": 1.0,
+                "punctuated_word": "place"
+              },
+              {
+                "word": "instead",
+                "start": 51.255,
+                "end": 51.975002,
+                "confidence": 0.99902344,
+                "punctuated_word": "instead."
+              },
+              {
+                "word": "now",
+                "start": 52.615,
+                "end": 52.855003,
+                "confidence": 1.0,
+                "punctuated_word": "Now"
+              },
+              {
+                "word": "zara",
+                "start": 52.855003,
+                "end": 53.335,
+                "confidence": 0.97802734,
+                "punctuated_word": "Zara"
+              },
+              {
+                "word": "has",
+                "start": 53.335,
+                "end": 53.655003,
+                "confidence": 1.0,
+                "punctuated_word": "has"
+              },
+              {
+                "word": "a",
+                "start": 53.655003,
+                "end": 53.815002,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "real",
+                "start": 53.815002,
+                "end": 54.135002,
+                "confidence": 0.9873047,
+                "punctuated_word": "real"
+              },
+              {
+                "word": "slot",
+                "start": 54.135002,
+                "end": 54.855003,
+                "confidence": 0.8432617,
+                "punctuated_word": "slot,"
+              },
+              {
+                "word": "minute",
+                "start": 54.935,
+                "end": 55.335,
+                "confidence": 0.9980469,
+                "punctuated_word": "minute"
+              },
+              {
+                "word": "twenty",
+                "start": 55.335,
+                "end": 55.655003,
+                "confidence": 1.0,
+                "punctuated_word": "twenty"
+              },
+              {
+                "word": "four",
+                "start": 55.655003,
+                "end": 55.975002,
+                "confidence": 1.0,
+                "punctuated_word": "four"
+              },
+              {
+                "word": "to",
+                "start": 55.975002,
+                "end": 56.295002,
+                "confidence": 0.99902344,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "twenty",
+                "start": 56.295002,
+                "end": 56.535004,
+                "confidence": 1.0,
+                "punctuated_word": "twenty"
+              },
+              {
+                "word": "eight",
+                "start": 56.535004,
+                "end": 56.935,
+                "confidence": 1.0,
+                "punctuated_word": "eight"
+              },
+              {
+                "word": "at",
+                "start": 56.935,
+                "end": 57.335,
+                "confidence": 0.9003906,
+                "punctuated_word": "at"
+              },
+              {
+                "word": "place",
+                "start": 57.335,
+                "end": 57.575,
+                "confidence": 0.9951172,
+                "punctuated_word": "place"
+              },
+              {
+                "word": "four",
+                "start": 57.575,
+                "end": 57.975002,
+                "confidence": 0.9995117,
+                "punctuated_word": "four."
+              },
+              {
+                "word": "this",
+                "start": 58.58,
+                "end": 58.82,
+                "confidence": 1.0,
+                "punctuated_word": "This"
+              },
+              {
+                "word": "is",
+                "start": 58.82,
+                "end": 58.98,
+                "confidence": 1.0,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "still",
+                "start": 58.98,
+                "end": 59.22,
+                "confidence": 1.0,
+                "punctuated_word": "still"
+              },
+              {
+                "word": "a",
+                "start": 59.22,
+                "end": 59.38,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "preview",
+                "start": 59.38,
+                "end": 60.1,
+                "confidence": 0.86572266,
+                "punctuated_word": "preview."
+              },
+              {
+                "word": "the",
+                "start": 60.1,
+                "end": 60.26,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "current",
+                "start": 60.26,
+                "end": 60.58,
+                "confidence": 1.0,
+                "punctuated_word": "current"
+              },
+              {
+                "word": "plan",
+                "start": 60.58,
+                "end": 60.9,
+                "confidence": 1.0,
+                "punctuated_word": "plan"
+              },
+              {
+                "word": "hasn't",
+                "start": 60.9,
+                "end": 61.22,
+                "confidence": 1.0,
+                "punctuated_word": "hasn't"
+              },
+              {
+                "word": "changed",
+                "start": 61.22,
+                "end": 61.78,
+                "confidence": 0.9975586,
+                "punctuated_word": "changed."
+              },
+              {
+                "word": "apply",
+                "start": 62.739998,
+                "end": 63.3,
+                "confidence": 0.99902344,
+                "punctuated_word": "Apply"
+              },
+              {
+                "word": "it",
+                "start": 63.3,
+                "end": 63.86,
+                "confidence": 0.95703125,
+                "punctuated_word": "it."
+              },
+              {
+                "word": "28",
+                "start": 64.26,
+                "end": 64.82,
+                "confidence": 0.9394531,
+                "punctuated_word": "28"
+              },
+              {
+                "word": "learners",
+                "start": 64.82,
+                "end": 65.3,
+                "confidence": 0.99902344,
+                "punctuated_word": "learners"
+              },
+              {
+                "word": "now",
+                "start": 65.3,
+                "end": 65.7,
+                "confidence": 0.99902344,
+                "punctuated_word": "now"
+              },
+              {
+                "word": "have",
+                "start": 65.7,
+                "end": 66.02,
+                "confidence": 1.0,
+                "punctuated_word": "have"
+              },
+              {
+                "word": "complete",
+                "start": 66.02,
+                "end": 66.5,
+                "confidence": 1.0,
+                "punctuated_word": "complete"
+              },
+              {
+                "word": "turns",
+                "start": 66.5,
+                "end": 67.22,
+                "confidence": 0.99853516,
+                "punctuated_word": "turns."
+              },
+              {
+                "word": "the",
+                "start": 67.62,
+                "end": 67.78,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "room",
+                "start": 67.78,
+                "end": 68.1,
+                "confidence": 1.0,
+                "punctuated_word": "room"
+              },
+              {
+                "word": "is",
+                "start": 68.1,
+                "end": 68.26,
+                "confidence": 0.99902344,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "driven",
+                "start": 68.26,
+                "end": 68.66,
+                "confidence": 1.0,
+                "punctuated_word": "driven"
+              },
+              {
+                "word": "by",
+                "start": 68.66,
+                "end": 68.82,
+                "confidence": 1.0,
+                "punctuated_word": "by"
+              },
+              {
+                "word": "those",
+                "start": 68.82,
+                "end": 69.06,
+                "confidence": 1.0,
+                "punctuated_word": "those"
+              },
+              {
+                "word": "scheduled",
+                "start": 69.06,
+                "end": 69.62,
+                "confidence": 0.99902344,
+                "punctuated_word": "scheduled"
+              },
+              {
+                "word": "slots",
+                "start": 69.62,
+                "end": 70.42,
+                "confidence": 0.99365234,
+                "punctuated_word": "slots."
+              },
+              {
+                "word": "select",
+                "start": 70.58,
+                "end": 70.979996,
+                "confidence": 1.0,
+                "punctuated_word": "Select"
+              },
+              {
+                "word": "a",
+                "start": 70.979996,
+                "end": 71.22,
+                "confidence": 0.98291016,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "learner",
+                "start": 71.22,
+                "end": 71.46,
+                "confidence": 0.9995117,
+                "punctuated_word": "learner"
+              },
+              {
+                "word": "to",
+                "start": 71.46,
+                "end": 71.7,
+                "confidence": 1.0,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "see",
+                "start": 71.7,
+                "end": 71.86,
+                "confidence": 1.0,
+                "punctuated_word": "see"
+              },
+              {
+                "word": "their",
+                "start": 71.86,
+                "end": 72.1,
+                "confidence": 1.0,
+                "punctuated_word": "their"
+              },
+              {
+                "word": "time",
+                "start": 72.1,
+                "end": 72.34,
+                "confidence": 1.0,
+                "punctuated_word": "time"
+              },
+              {
+                "word": "and",
+                "start": 72.34,
+                "end": 72.66,
+                "confidence": 0.83740234,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "place",
+                "start": 72.66,
+                "end": 72.9,
+                "confidence": 0.78271484,
+                "punctuated_word": "place."
+              },
+              {
+                "word": "but",
+                "start": 73.58501,
+                "end": 73.90501,
+                "confidence": 1.0,
+                "punctuated_word": "But"
+              },
+              {
+                "word": "workshops",
+                "start": 73.90501,
+                "end": 74.545006,
+                "confidence": 0.98828125,
+                "punctuated_word": "workshops"
+              },
+              {
+                "word": "change",
+                "start": 74.545006,
+                "end": 75.265,
+                "confidence": 0.9921875,
+                "punctuated_word": "change."
+              },
+              {
+                "word": "at",
+                "start": 75.58501,
+                "end": 75.90501,
+                "confidence": 1.0,
+                "punctuated_word": "At"
+              },
+              {
+                "word": "minute",
+                "start": 75.90501,
+                "end": 76.225006,
+                "confidence": 0.99902344,
+                "punctuated_word": "minute"
+              },
+              {
+                "word": "eight",
+                "start": 76.225006,
+                "end": 76.945,
+                "confidence": 0.9921875,
+                "punctuated_word": "eight,"
+              },
+              {
+                "word": "one",
+                "start": 76.945,
+                "end": 77.265,
+                "confidence": 0.99316406,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "microscope",
+                "start": 77.265,
+                "end": 77.985,
+                "confidence": 1.0,
+                "punctuated_word": "microscope"
+              },
+              {
+                "word": "stops",
+                "start": 77.985,
+                "end": 78.465004,
+                "confidence": 1.0,
+                "punctuated_word": "stops"
+              },
+              {
+                "word": "working",
+                "start": 78.465004,
+                "end": 79.025,
+                "confidence": 0.9946289,
+                "punctuated_word": "working."
+              },
+              {
+                "word": "every",
+                "start": 79.665,
+                "end": 79.985,
+                "confidence": 1.0,
+                "punctuated_word": "Every"
+              },
+              {
+                "word": "hand",
+                "start": 79.985,
+                "end": 80.465004,
+                "confidence": 0.52783203,
+                "punctuated_word": "hand"
+              },
+              {
+                "word": "preserves",
+                "start": 80.465004,
+                "end": 81.025,
+                "confidence": 0.9995117,
+                "punctuated_word": "preserves"
+              },
+              {
+                "word": "the",
+                "start": 81.025,
+                "end": 81.185005,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "eight",
+                "start": 81.185005,
+                "end": 81.505005,
+                "confidence": 1.0,
+                "punctuated_word": "eight"
+              },
+              {
+                "word": "completed",
+                "start": 81.505005,
+                "end": 81.985,
+                "confidence": 1.0,
+                "punctuated_word": "completed"
+              },
+              {
+                "word": "turns",
+                "start": 81.985,
+                "end": 82.625,
+                "confidence": 1.0,
+                "punctuated_word": "turns"
+              },
+              {
+                "word": "and",
+                "start": 82.625,
+                "end": 82.945,
+                "confidence": 0.8676758,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "rebuilds",
+                "start": 82.945,
+                "end": 83.665,
+                "confidence": 0.99902344,
+                "punctuated_word": "rebuilds"
+              },
+              {
+                "word": "what",
+                "start": 83.665,
+                "end": 83.825005,
+                "confidence": 1.0,
+                "punctuated_word": "what"
+              },
+              {
+                "word": "comes",
+                "start": 83.825005,
+                "end": 84.145004,
+                "confidence": 1.0,
+                "punctuated_word": "comes"
+              },
+              {
+                "word": "next",
+                "start": 84.145004,
+                "end": 84.705,
+                "confidence": 1.0,
+                "punctuated_word": "next."
+              },
+              {
+                "word": "the",
+                "start": 85.265,
+                "end": 85.505005,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "remaining",
+                "start": 85.505005,
+                "end": 85.985,
+                "confidence": 1.0,
+                "punctuated_word": "remaining"
+              },
+              {
+                "word": "plan",
+                "start": 85.985,
+                "end": 86.305,
+                "confidence": 0.99609375,
+                "punctuated_word": "plan"
+              },
+              {
+                "word": "serves",
+                "start": 86.305,
+                "end": 86.785,
+                "confidence": 1.0,
+                "punctuated_word": "serves"
+              },
+              {
+                "word": "23",
+                "start": 86.785,
+                "end": 87.425,
+                "confidence": 0.9876709,
+                "punctuated_word": "23."
+              },
+              {
+                "word": "five",
+                "start": 88.24,
+                "end": 88.56,
+                "confidence": 0.98828125,
+                "punctuated_word": "Five"
+              },
+              {
+                "word": "learners",
+                "start": 88.56,
+                "end": 88.96,
+                "confidence": 0.9941406,
+                "punctuated_word": "learners"
+              },
+              {
+                "word": "still",
+                "start": 88.96,
+                "end": 89.35999,
+                "confidence": 0.99902344,
+                "punctuated_word": "still"
+              },
+              {
+                "word": "need",
+                "start": 89.35999,
+                "end": 89.6,
+                "confidence": 1.0,
+                "punctuated_word": "need"
+              },
+              {
+                "word": "a",
+                "start": 89.6,
+                "end": 89.759995,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "full",
+                "start": 89.759995,
+                "end": 90.0,
+                "confidence": 1.0,
+                "punctuated_word": "full"
+              },
+              {
+                "word": "turn",
+                "start": 90.0,
+                "end": 90.64,
+                "confidence": 0.9975586,
+                "punctuated_word": "turn."
+              },
+              {
+                "word": "the",
+                "start": 91.2,
+                "end": 91.439995,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "shortage",
+                "start": 91.439995,
+                "end": 91.84,
+                "confidence": 1.0,
+                "punctuated_word": "shortage"
+              },
+              {
+                "word": "is",
+                "start": 91.84,
+                "end": 92.079994,
+                "confidence": 1.0,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "visible",
+                "start": 92.079994,
+                "end": 92.479996,
+                "confidence": 1.0,
+                "punctuated_word": "visible"
+              },
+              {
+                "word": "again",
+                "start": 92.479996,
+                "end": 93.119995,
+                "confidence": 0.76000977,
+                "punctuated_word": "again,"
+              },
+              {
+                "word": "without",
+                "start": 93.439995,
+                "end": 93.759995,
+                "confidence": 1.0,
+                "punctuated_word": "without"
+              },
+              {
+                "word": "erasing",
+                "start": 93.759995,
+                "end": 94.24,
+                "confidence": 1.0,
+                "punctuated_word": "erasing"
+              },
+              {
+                "word": "the",
+                "start": 94.24,
+                "end": 94.479996,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "work",
+                "start": 94.479996,
+                "end": 94.71999,
+                "confidence": 1.0,
+                "punctuated_word": "work"
+              },
+              {
+                "word": "already",
+                "start": 94.71999,
+                "end": 95.119995,
+                "confidence": 1.0,
+                "punctuated_word": "already"
+              },
+              {
+                "word": "done",
+                "start": 95.119995,
+                "end": 95.67999,
+                "confidence": 0.9995117,
+                "punctuated_word": "done."
+              },
+              {
+                "word": "compare",
+                "start": 96.799995,
+                "end": 97.35999,
+                "confidence": 0.99609375,
+                "punctuated_word": "Compare"
+              },
+              {
+                "word": "recovery",
+                "start": 97.35999,
+                "end": 98.24,
+                "confidence": 0.95043945,
+                "punctuated_word": "recovery."
+              },
+              {
+                "word": "this",
+                "start": 98.64,
+                "end": 98.96,
+                "confidence": 1.0,
+                "punctuated_word": "This"
+              },
+              {
+                "word": "time",
+                "start": 98.96,
+                "end": 99.52,
+                "confidence": 0.82910156,
+                "punctuated_word": "time,"
+              },
+              {
+                "word": "six",
+                "start": 99.6,
+                "end": 99.84,
+                "confidence": 1.0,
+                "punctuated_word": "six"
+              },
+              {
+                "word": "extra",
+                "start": 99.84,
+                "end": 100.24,
+                "confidence": 1.0,
+                "punctuated_word": "extra"
+              },
+              {
+                "word": "minutes",
+                "start": 100.24,
+                "end": 100.64,
+                "confidence": 1.0,
+                "punctuated_word": "minutes"
+              },
+              {
+                "word": "are",
+                "start": 100.64,
+                "end": 100.88,
+                "confidence": 0.99902344,
+                "punctuated_word": "are"
+              },
+              {
+                "word": "enough",
+                "start": 100.88,
+                "end": 101.2,
+                "confidence": 0.99902344,
+                "punctuated_word": "enough."
+              },
+              {
+                "word": "the",
+                "start": 101.875,
+                "end": 102.115,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "planner",
+                "start": 102.115,
+                "end": 102.515,
+                "confidence": 0.9892578,
+                "punctuated_word": "planner"
+              },
+              {
+                "word": "carries",
+                "start": 102.515,
+                "end": 102.915,
+                "confidence": 1.0,
+                "punctuated_word": "carries"
+              },
+              {
+                "word": "forward",
+                "start": 102.915,
+                "end": 103.314995,
+                "confidence": 1.0,
+                "punctuated_word": "forward"
+              },
+              {
+                "word": "the",
+                "start": 103.314995,
+                "end": 103.634995,
+                "confidence": 0.99609375,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "completed",
+                "start": 103.634995,
+                "end": 104.115,
+                "confidence": 1.0,
+                "punctuated_word": "completed"
+              },
+              {
+                "word": "turns",
+                "start": 104.115,
+                "end": 104.595,
+                "confidence": 1.0,
+                "punctuated_word": "turns"
+              },
+              {
+                "word": "and",
+                "start": 104.595,
+                "end": 104.835,
+                "confidence": 0.9526367,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "uses",
+                "start": 104.835,
+                "end": 105.235,
+                "confidence": 1.0,
+                "punctuated_word": "uses"
+              },
+              {
+                "word": "the",
+                "start": 105.235,
+                "end": 105.475,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "three",
+                "start": 105.475,
+                "end": 105.875,
+                "confidence": 1.0,
+                "punctuated_word": "three"
+              },
+              {
+                "word": "remaining",
+                "start": 105.875,
+                "end": 106.435,
+                "confidence": 1.0,
+                "punctuated_word": "remaining"
+              },
+              {
+                "word": "places",
+                "start": 106.435,
+                "end": 107.155,
+                "confidence": 0.99609375,
+                "punctuated_word": "places."
+              },
+              {
+                "word": "apply",
+                "start": 107.715,
+                "end": 108.195,
+                "confidence": 0.9970703,
+                "punctuated_word": "Apply"
+              },
+              {
+                "word": "the",
+                "start": 108.195,
+                "end": 108.515,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "thirty",
+                "start": 108.515,
+                "end": 108.835,
+                "confidence": 0.99902344,
+                "punctuated_word": "thirty"
+              },
+              {
+                "word": "six",
+                "start": 108.835,
+                "end": 109.075,
+                "confidence": 1.0,
+                "punctuated_word": "six"
+              },
+              {
+                "word": "minute",
+                "start": 109.075,
+                "end": 109.395,
+                "confidence": 0.9838867,
+                "punctuated_word": "minute"
+              },
+              {
+                "word": "plan",
+                "start": 109.395,
+                "end": 110.034996,
+                "confidence": 0.98706055,
+                "punctuated_word": "plan."
+              },
+              {
+                "word": "all",
+                "start": 110.515,
+                "end": 110.835,
+                "confidence": 1.0,
+                "punctuated_word": "All"
+              },
+              {
+                "word": "28",
+                "start": 110.835,
+                "end": 111.315,
+                "confidence": 1.0,
+                "punctuated_word": "28"
+              },
+              {
+                "word": "have",
+                "start": 111.315,
+                "end": 111.634995,
+                "confidence": 1.0,
+                "punctuated_word": "have"
+              },
+              {
+                "word": "complete",
+                "start": 111.634995,
+                "end": 112.034996,
+                "confidence": 0.9980469,
+                "punctuated_word": "complete"
+              },
+              {
+                "word": "paths",
+                "start": 112.034996,
+                "end": 112.435,
+                "confidence": 0.99902344,
+                "punctuated_word": "paths"
+              },
+              {
+                "word": "again",
+                "start": 112.435,
+                "end": 113.075,
+                "confidence": 0.99316406,
+                "punctuated_word": "again."
+              },
+              {
+                "word": "zara's",
+                "start": 113.475,
+                "end": 114.195,
+                "confidence": 0.99397784,
+                "punctuated_word": "Zara's"
+              },
+              {
+                "word": "turn",
+                "start": 114.195,
+                "end": 114.354996,
+                "confidence": 1.0,
+                "punctuated_word": "turn"
+              },
+              {
+                "word": "is",
+                "start": 114.354996,
+                "end": 114.595,
+                "confidence": 0.99902344,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "now",
+                "start": 114.595,
+                "end": 114.835,
+                "confidence": 1.0,
+                "punctuated_word": "now"
+              },
+              {
+                "word": "minute",
+                "start": 114.835,
+                "end": 115.155,
+                "confidence": 0.98828125,
+                "punctuated_word": "minute"
+              },
+              {
+                "word": "thirty",
+                "start": 115.155,
+                "end": 115.555,
+                "confidence": 1.0,
+                "punctuated_word": "thirty"
+              },
+              {
+                "word": "two",
+                "start": 115.555,
+                "end": 115.875,
+                "confidence": 0.99902344,
+                "punctuated_word": "two"
+              },
+              {
+                "word": "to",
+                "start": 115.875,
+                "end": 116.115,
+                "confidence": 0.9902344,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "thirty",
+                "start": 116.115,
+                "end": 116.435,
+                "confidence": 0.9980469,
+                "punctuated_word": "thirty"
+              },
+              {
+                "word": "six",
+                "start": 116.435,
+                "end": 117.075,
+                "confidence": 1.0,
+                "punctuated_word": "six"
+              },
+              {
+                "word": "at",
+                "start": 116.91,
+                "end": 117.15,
+                "confidence": 0.95703125,
+                "punctuated_word": "at"
+              },
+              {
+                "word": "place",
+                "start": 117.15,
+                "end": 117.39001,
+                "confidence": 0.94628906,
+                "punctuated_word": "place"
+              },
+              {
+                "word": "two",
+                "start": 117.39001,
+                "end": 118.03001,
+                "confidence": 0.9975586,
+                "punctuated_word": "two."
+              },
+              {
+                "word": "earlier",
+                "start": 118.83,
+                "end": 119.310005,
+                "confidence": 1.0,
+                "punctuated_word": "Earlier"
+              },
+              {
+                "word": "completed",
+                "start": 119.310005,
+                "end": 119.79,
+                "confidence": 0.9980469,
+                "punctuated_word": "completed"
+              },
+              {
+                "word": "turns",
+                "start": 119.79,
+                "end": 120.19,
+                "confidence": 1.0,
+                "punctuated_word": "turns"
+              },
+              {
+                "word": "keep",
+                "start": 120.19,
+                "end": 120.51,
+                "confidence": 0.9716797,
+                "punctuated_word": "keep"
+              },
+              {
+                "word": "their",
+                "start": 120.51,
+                "end": 120.75,
+                "confidence": 1.0,
+                "punctuated_word": "their"
+              },
+              {
+                "word": "original",
+                "start": 120.75,
+                "end": 121.310005,
+                "confidence": 1.0,
+                "punctuated_word": "original"
+              },
+              {
+                "word": "times",
+                "start": 121.310005,
+                "end": 121.55,
+                "confidence": 1.0,
+                "punctuated_word": "times"
+              },
+              {
+                "word": "and",
+                "start": 121.55,
+                "end": 121.79,
+                "confidence": 0.99121094,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "places",
+                "start": 121.79,
+                "end": 122.43,
+                "confidence": 0.9995117,
+                "punctuated_word": "places."
+              },
+              {
+                "word": "the",
+                "start": 123.23,
+                "end": 123.47,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "recovery",
+                "start": 123.47,
+                "end": 124.03001,
+                "confidence": 0.9970703,
+                "punctuated_word": "recovery"
+              },
+              {
+                "word": "changes",
+                "start": 124.03001,
+                "end": 124.51,
+                "confidence": 1.0,
+                "punctuated_word": "changes"
+              },
+              {
+                "word": "the",
+                "start": 124.51,
+                "end": 124.670006,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "future",
+                "start": 124.670006,
+                "end": 125.07001,
+                "confidence": 1.0,
+                "punctuated_word": "future"
+              },
+              {
+                "word": "schedule",
+                "start": 125.07001,
+                "end": 125.55,
+                "confidence": 1.0,
+                "punctuated_word": "schedule"
+              },
+              {
+                "word": "while",
+                "start": 125.55,
+                "end": 125.87,
+                "confidence": 0.8588867,
+                "punctuated_word": "while"
+              },
+              {
+                "word": "preserving",
+                "start": 125.87,
+                "end": 126.350006,
+                "confidence": 1.0,
+                "punctuated_word": "preserving"
+              },
+              {
+                "word": "the",
+                "start": 126.350006,
+                "end": 126.670006,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "past",
+                "start": 126.670006,
+                "end": 127.23,
+                "confidence": 0.72595215,
+                "punctuated_word": "past,"
+              },
+              {
+                "word": "and",
+                "start": 127.47,
+                "end": 127.71001,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "every",
+                "start": 127.71001,
+                "end": 128.11,
+                "confidence": 1.0,
+                "punctuated_word": "every"
+              },
+              {
+                "word": "scheduled",
+                "start": 128.11,
+                "end": 128.51001,
+                "confidence": 0.9790039,
+                "punctuated_word": "scheduled"
+              },
+              {
+                "word": "turn",
+                "start": 128.51001,
+                "end": 129.07,
+                "confidence": 1.0,
+                "punctuated_word": "turn"
+              },
+              {
+                "word": "still",
+                "start": 129.07,
+                "end": 129.47,
+                "confidence": 0.9980469,
+                "punctuated_word": "still"
+              },
+              {
+                "word": "lasts",
+                "start": 129.47,
+                "end": 129.87001,
+                "confidence": 0.99316406,
+                "punctuated_word": "lasts"
+              },
+              {
+                "word": "the",
+                "start": 129.87001,
+                "end": 130.19,
+                "confidence": 0.9980469,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "full",
+                "start": 130.19,
+                "end": 130.51001,
+                "confidence": 1.0,
+                "punctuated_word": "full"
+              },
+              {
+                "word": "four",
+                "start": 130.51001,
+                "end": 130.83,
+                "confidence": 1.0,
+                "punctuated_word": "four"
+              },
+              {
+                "word": "minutes",
+                "start": 130.83,
+                "end": 131.15001,
+                "confidence": 0.9995117,
+                "punctuated_word": "minutes."
+              },
+              {
+                "word": "open",
+                "start": 132.685,
+                "end": 133.085,
+                "confidence": 1.0,
+                "punctuated_word": "Open"
+              },
+              {
+                "word": "the",
+                "start": 133.085,
+                "end": 133.325,
+                "confidence": 0.9980469,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "facilitator",
+                "start": 133.325,
+                "end": 133.88501,
+                "confidence": 0.9482422,
+                "punctuated_word": "facilitator"
+              },
+              {
+                "word": "kit",
+                "start": 133.88501,
+                "end": 134.60501,
+                "confidence": 0.9765625,
+                "punctuated_word": "kit."
+              },
+              {
+                "word": "the",
+                "start": 134.845,
+                "end": 135.085,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "real",
+                "start": 135.085,
+                "end": 135.405,
+                "confidence": 0.89208984,
+                "punctuated_word": "real"
+              },
+              {
+                "word": "run",
+                "start": 135.405,
+                "end": 135.725,
+                "confidence": 0.9970703,
+                "punctuated_word": "run"
+              },
+              {
+                "word": "sheet",
+                "start": 135.725,
+                "end": 136.045,
+                "confidence": 0.9980469,
+                "punctuated_word": "sheet"
+              },
+              {
+                "word": "lists",
+                "start": 136.045,
+                "end": 136.52501,
+                "confidence": 0.9873047,
+                "punctuated_word": "lists"
+              },
+              {
+                "word": "every",
+                "start": 136.52501,
+                "end": 136.925,
+                "confidence": 0.99902344,
+                "punctuated_word": "every"
+              },
+              {
+                "word": "scheduled",
+                "start": 136.925,
+                "end": 137.485,
+                "confidence": 0.99902344,
+                "punctuated_word": "scheduled"
+              },
+              {
+                "word": "learner",
+                "start": 137.485,
+                "end": 138.285,
+                "confidence": 0.99104816,
+                "punctuated_word": "learner,"
+              },
+              {
+                "word": "activity",
+                "start": 138.285,
+                "end": 139.16501,
+                "confidence": 0.99853516,
+                "punctuated_word": "activity,"
+              },
+              {
+                "word": "time",
+                "start": 139.245,
+                "end": 139.725,
+                "confidence": 0.8601074,
+                "punctuated_word": "time,"
+              },
+              {
+                "word": "and",
+                "start": 139.725,
+                "end": 139.88501,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "place",
+                "start": 139.88501,
+                "end": 140.52501,
+                "confidence": 0.9995117,
+                "punctuated_word": "place."
+              },
+              {
+                "word": "zara's",
+                "start": 140.845,
+                "end": 141.485,
+                "confidence": 0.9996745,
+                "punctuated_word": "Zara's"
+              },
+              {
+                "word": "row",
+                "start": 141.485,
+                "end": 141.725,
+                "confidence": 0.9370117,
+                "punctuated_word": "row"
+              },
+              {
+                "word": "matches",
+                "start": 141.725,
+                "end": 142.125,
+                "confidence": 1.0,
+                "punctuated_word": "matches"
+              },
+              {
+                "word": "the",
+                "start": 142.125,
+                "end": 142.285,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "recovered",
+                "start": 142.285,
+                "end": 142.685,
+                "confidence": 0.99609375,
+                "punctuated_word": "recovered"
+              },
+              {
+                "word": "plan",
+                "start": 142.685,
+                "end": 143.32501,
+                "confidence": 0.99365234,
+                "punctuated_word": "plan."
+              },
+              {
+                "word": "individual",
+                "start": 143.725,
+                "end": 144.285,
+                "confidence": 0.99902344,
+                "punctuated_word": "Individual"
+              },
+              {
+                "word": "cards",
+                "start": 144.285,
+                "end": 144.685,
+                "confidence": 1.0,
+                "punctuated_word": "cards"
+              },
+              {
+                "word": "carry",
+                "start": 144.685,
+                "end": 145.16501,
+                "confidence": 1.0,
+                "punctuated_word": "carry"
+              },
+              {
+                "word": "the",
+                "start": 145.16501,
+                "end": 145.325,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "same",
+                "start": 145.325,
+                "end": 145.645,
+                "confidence": 1.0,
+                "punctuated_word": "same"
+              },
+              {
+                "word": "schedule",
+                "start": 145.645,
+                "end": 146.045,
+                "confidence": 0.86938477,
+                "punctuated_word": "schedule,"
+              },
+              {
+                "word": "while",
+                "start": 146.41,
+                "end": 146.73,
+                "confidence": 1.0,
+                "punctuated_word": "while"
+              },
+              {
+                "word": "any",
+                "start": 146.73,
+                "end": 147.05,
+                "confidence": 0.99902344,
+                "punctuated_word": "any"
+              },
+              {
+                "word": "missing",
+                "start": 147.05,
+                "end": 147.45,
+                "confidence": 1.0,
+                "punctuated_word": "missing"
+              },
+              {
+                "word": "turns",
+                "start": 147.45,
+                "end": 147.77,
+                "confidence": 0.99902344,
+                "punctuated_word": "turns"
+              },
+              {
+                "word": "are",
+                "start": 147.77,
+                "end": 148.09,
+                "confidence": 0.9980469,
+                "punctuated_word": "are"
+              },
+              {
+                "word": "marked",
+                "start": 148.09,
+                "end": 148.49,
+                "confidence": 1.0,
+                "punctuated_word": "marked"
+              },
+              {
+                "word": "explicitly",
+                "start": 148.49,
+                "end": 149.37001,
+                "confidence": 0.9995117,
+                "punctuated_word": "explicitly."
+              },
+              {
+                "word": "this",
+                "start": 149.93,
+                "end": 150.25,
+                "confidence": 1.0,
+                "punctuated_word": "This"
+              },
+              {
+                "word": "is",
+                "start": 150.25,
+                "end": 150.49,
+                "confidence": 0.99902344,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "a",
+                "start": 150.49,
+                "end": 150.57,
+                "confidence": 0.9980469,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "local",
+                "start": 150.57,
+                "end": 150.97,
+                "confidence": 0.99902344,
+                "punctuated_word": "local"
+              },
+              {
+                "word": "proof",
+                "start": 150.97,
+                "end": 151.21,
+                "confidence": 0.99902344,
+                "punctuated_word": "proof"
+              },
+              {
+                "word": "of",
+                "start": 151.21,
+                "end": 151.37,
+                "confidence": 0.99902344,
+                "punctuated_word": "of"
+              },
+              {
+                "word": "concept",
+                "start": 151.37,
+                "end": 151.77,
+                "confidence": 1.0,
+                "punctuated_word": "concept"
+              },
+              {
+                "word": "with",
+                "start": 151.77,
+                "end": 152.17,
+                "confidence": 0.9013672,
+                "punctuated_word": "with"
+              },
+              {
+                "word": "public",
+                "start": 152.17,
+                "end": 152.49,
+                "confidence": 0.97802734,
+                "punctuated_word": "public"
+              },
+              {
+                "word": "source",
+                "start": 152.49,
+                "end": 152.89,
+                "confidence": 0.9951172,
+                "punctuated_word": "source"
+              },
+              {
+                "word": "and",
+                "start": 152.89,
+                "end": 153.13,
+                "confidence": 0.9970703,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "planning",
+                "start": 153.13,
+                "end": 153.45,
+                "confidence": 1.0,
+                "punctuated_word": "planning"
+              },
+              {
+                "word": "documents",
+                "start": 153.45,
+                "end": 154.25,
+                "confidence": 0.9941406,
+                "punctuated_word": "documents."
+              },
+              {
+                "word": "it",
+                "start": 154.41,
+                "end": 154.73,
+                "confidence": 1.0,
+                "punctuated_word": "It"
+              },
+              {
+                "word": "plans",
+                "start": 154.73,
+                "end": 155.13,
+                "confidence": 0.99902344,
+                "punctuated_word": "plans"
+              },
+              {
+                "word": "opportunities",
+                "start": 155.13,
+                "end": 156.09001,
+                "confidence": 0.9345703,
+                "punctuated_word": "opportunities."
+              },
+              {
+                "word": "it",
+                "start": 156.17,
+                "end": 156.33,
+                "confidence": 1.0,
+                "punctuated_word": "It"
+              },
+              {
+                "word": "doesn't",
+                "start": 156.33,
+                "end": 156.65,
+                "confidence": 1.0,
+                "punctuated_word": "doesn't"
+              },
+              {
+                "word": "measure",
+                "start": 156.65,
+                "end": 156.97,
+                "confidence": 1.0,
+                "punctuated_word": "measure"
+              },
+              {
+                "word": "attendance",
+                "start": 156.97,
+                "end": 157.61,
+                "confidence": 1.0,
+                "punctuated_word": "attendance"
+              },
+              {
+                "word": "or",
+                "start": 157.61,
+                "end": 157.85,
+                "confidence": 0.9941406,
+                "punctuated_word": "or"
+              },
+              {
+                "word": "learning",
+                "start": 157.85,
+                "end": 158.49,
+                "confidence": 0.9667969,
+                "punctuated_word": "learning."
+              },
+              {
+                "word": "every",
+                "start": 159.13,
+                "end": 159.53,
+                "confidence": 1.0,
+                "punctuated_word": "Every"
+              },
+              {
+                "word": "hand",
+                "start": 159.53,
+                "end": 160.01,
+                "confidence": 0.6569824,
+                "punctuated_word": "hand."
+              },
+              {
+                "word": "make",
+                "start": 160.60487,
+                "end": 160.92487,
+                "confidence": 1.0,
+                "punctuated_word": "Make"
+              },
+              {
+                "word": "room",
+                "start": 160.92487,
+                "end": 161.24487,
+                "confidence": 1.0,
+                "punctuated_word": "room"
+              },
+              {
+                "word": "for",
+                "start": 161.24487,
+                "end": 161.56487,
+                "confidence": 1.0,
+                "punctuated_word": "for"
+              },
+              {
+                "word": "every",
+                "start": 161.56487,
+                "end": 161.88487,
+                "confidence": 0.9980469,
+                "punctuated_word": "every"
+              },
+              {
+                "word": "learner's",
+                "start": 161.88487,
+                "end": 162.52487,
+                "confidence": 0.9899089,
+                "punctuated_word": "learner's"
+              },
+              {
+                "word": "hands",
+                "start": 162.52487,
+                "end": 162.76486,
+                "confidence": 0.9941406,
+                "punctuated_word": "hands"
+              },
+              {
+                "word": "on",
+                "start": 162.76486,
+                "end": 163.00487,
+                "confidence": 1.0,
+                "punctuated_word": "on"
+              },
+              {
+                "word": "turn",
+                "start": 163.00487,
+                "end": 163.32487,
+                "confidence": 0.9980469,
+                "punctuated_word": "turn."
+              }
+            ],
+            "paragraphs": {
+              "transcript": "\nA place in a group doesn't guarantee a turn. For teachers planning a practical workshop, every hand makes that missing turn visible, then helps make room for it. This fictional lesson has 28 learners, three microscopes, and thirty minutes. Each learner needs four full minutes, including reset. Only 21 complete turns fit.\n\nZara is one of seven learners without a turn. Compare ways to make room. Keep the equipment and add ten minutes, or keep the finish time and add one microscope. Neither choice shortens anyone's turn. If extra equipment isn't available, lock it.\n\nThe time option remains. Unlock it and preview the extra place instead. Now Zara has a real slot, minute twenty four to twenty eight at place four. This is still a preview. The current plan hasn't changed.\n\nApply it. 28 learners now have complete turns. The room is driven by those scheduled slots. Select a learner to see their time and place. But workshops change.\n\nAt minute eight, one microscope stops working. Every hand preserves the eight completed turns and rebuilds what comes next. The remaining plan serves 23. Five learners still need a full turn. The shortage is visible again, without erasing the work already done.\n\nCompare recovery. This time, six extra minutes are enough. The planner carries forward the completed turns and uses the three remaining places. Apply the thirty six minute plan. All 28 have complete paths again.\n\nZara's turn is now minute thirty two to thirty six at place two. Earlier completed turns keep their original times and places. The recovery changes the future schedule while preserving the past, and every scheduled turn still lasts the full four minutes. Open the facilitator kit. The real run sheet lists every scheduled learner, activity, time, and place.\n\nZara's row matches the recovered plan. Individual cards carry the same schedule, while any missing turns are marked explicitly. This is a local proof of concept with public source and planning documents. It plans opportunities. It doesn't measure attendance or learning.\n\nEvery hand. Make room for every learner's hands on turn.",
+              "paragraphs": [
+                {
+                  "sentences": [
+                    {
+                      "text": "A place in a group doesn't guarantee a turn.",
+                      "start": 0.71999997,
+                      "end": 4.24
+                    },
+                    {
+                      "text": "For teachers planning a practical workshop, every hand makes that missing turn visible, then helps make room for it.",
+                      "start": 4.56,
+                      "end": 12.639999
+                    },
+                    {
+                      "text": "This fictional lesson has 28 learners, three microscopes, and thirty minutes.",
+                      "start": 13.625,
+                      "end": 19.224998
+                    },
+                    {
+                      "text": "Each learner needs four full minutes, including reset.",
+                      "start": 19.705,
+                      "end": 23.465
+                    },
+                    {
+                      "text": "Only 21 complete turns fit.",
+                      "start": 24.025,
+                      "end": 26.345
+                    }
+                  ],
+                  "num_words": 52,
+                  "start": 0.71999997,
+                  "end": 26.345
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Zara is one of seven learners without a turn.",
+                      "start": 26.89,
+                      "end": 30.33
+                    },
+                    {
+                      "text": "Compare ways to make room.",
+                      "start": 31.369999,
+                      "end": 33.449997
+                    },
+                    {
+                      "text": "Keep the equipment and add ten minutes, or keep the finish time and add one microscope.",
+                      "start": 33.61,
+                      "end": 39.85
+                    },
+                    {
+                      "text": "Neither choice shortens anyone's turn.",
+                      "start": 40.25,
+                      "end": 42.57
+                    },
+                    {
+                      "text": "If extra equipment isn't available, lock it.",
+                      "start": 43.255,
+                      "end": 46.535
+                    }
+                  ],
+                  "num_words": 42,
+                  "start": 26.89,
+                  "end": 46.535
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "The time option remains.",
+                      "start": 46.615,
+                      "end": 48.295002
+                    },
+                    {
+                      "text": "Unlock it and preview the extra place instead.",
+                      "start": 48.695,
+                      "end": 51.975002
+                    },
+                    {
+                      "text": "Now Zara has a real slot, minute twenty four to twenty eight at place four.",
+                      "start": 52.615,
+                      "end": 57.975002
+                    },
+                    {
+                      "text": "This is still a preview.",
+                      "start": 58.58,
+                      "end": 60.1
+                    },
+                    {
+                      "text": "The current plan hasn't changed.",
+                      "start": 60.1,
+                      "end": 61.78
+                    }
+                  ],
+                  "num_words": 37,
+                  "start": 46.615,
+                  "end": 61.78
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Apply it.",
+                      "start": 62.739998,
+                      "end": 63.86
+                    },
+                    {
+                      "text": "28 learners now have complete turns.",
+                      "start": 64.26,
+                      "end": 67.22
+                    },
+                    {
+                      "text": "The room is driven by those scheduled slots.",
+                      "start": 67.62,
+                      "end": 70.42
+                    },
+                    {
+                      "text": "Select a learner to see their time and place.",
+                      "start": 70.58,
+                      "end": 72.9
+                    },
+                    {
+                      "text": "But workshops change.",
+                      "start": 73.58501,
+                      "end": 75.265
+                    }
+                  ],
+                  "num_words": 28,
+                  "start": 62.739998,
+                  "end": 75.265
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "At minute eight, one microscope stops working.",
+                      "start": 75.58501,
+                      "end": 79.025
+                    },
+                    {
+                      "text": "Every hand preserves the eight completed turns and rebuilds what comes next.",
+                      "start": 79.665,
+                      "end": 84.705
+                    },
+                    {
+                      "text": "The remaining plan serves 23.",
+                      "start": 85.265,
+                      "end": 87.425
+                    },
+                    {
+                      "text": "Five learners still need a full turn.",
+                      "start": 88.24,
+                      "end": 90.64
+                    },
+                    {
+                      "text": "The shortage is visible again, without erasing the work already done.",
+                      "start": 91.2,
+                      "end": 95.67999
+                    }
+                  ],
+                  "num_words": 42,
+                  "start": 75.58501,
+                  "end": 95.67999
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Compare recovery.",
+                      "start": 96.799995,
+                      "end": 98.24
+                    },
+                    {
+                      "text": "This time, six extra minutes are enough.",
+                      "start": 98.64,
+                      "end": 101.2
+                    },
+                    {
+                      "text": "The planner carries forward the completed turns and uses the three remaining places.",
+                      "start": 101.875,
+                      "end": 107.155
+                    },
+                    {
+                      "text": "Apply the thirty six minute plan.",
+                      "start": 107.715,
+                      "end": 110.034996
+                    },
+                    {
+                      "text": "All 28 have complete paths again.",
+                      "start": 110.515,
+                      "end": 113.075
+                    }
+                  ],
+                  "num_words": 34,
+                  "start": 96.799995,
+                  "end": 113.075
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Zara's turn is now minute thirty two to thirty six at place two.",
+                      "start": 113.475,
+                      "end": 118.03001
+                    },
+                    {
+                      "text": "Earlier completed turns keep their original times and places.",
+                      "start": 118.83,
+                      "end": 122.43
+                    },
+                    {
+                      "text": "The recovery changes the future schedule while preserving the past, and every scheduled turn still lasts the full four minutes.",
+                      "start": 123.23,
+                      "end": 131.15001
+                    },
+                    {
+                      "text": "Open the facilitator kit.",
+                      "start": 132.685,
+                      "end": 134.60501
+                    },
+                    {
+                      "text": "The real run sheet lists every scheduled learner, activity, time, and place.",
+                      "start": 134.845,
+                      "end": 140.52501
+                    }
+                  ],
+                  "num_words": 58,
+                  "start": 113.475,
+                  "end": 140.52501
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Zara's row matches the recovered plan.",
+                      "start": 140.845,
+                      "end": 143.32501
+                    },
+                    {
+                      "text": "Individual cards carry the same schedule, while any missing turns are marked explicitly.",
+                      "start": 143.725,
+                      "end": 149.37001
+                    },
+                    {
+                      "text": "This is a local proof of concept with public source and planning documents.",
+                      "start": 149.93,
+                      "end": 154.25
+                    },
+                    {
+                      "text": "It plans opportunities.",
+                      "start": 154.41,
+                      "end": 156.09001
+                    },
+                    {
+                      "text": "It doesn't measure attendance or learning.",
+                      "start": 156.17,
+                      "end": 158.49
+                    }
+                  ],
+                  "num_words": 41,
+                  "start": 140.845,
+                  "end": 158.49
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Every hand.",
+                      "start": 159.13,
+                      "end": 160.01
+                    },
+                    {
+                      "text": "Make room for every learner's hands on turn.",
+                      "start": 160.60487,
+                      "end": 163.32487
+                    }
+                  ],
+                  "num_words": 10,
+                  "start": 159.13,
+                  "end": 163.32487
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "utterances": [
+      {
+        "start": 0.71999997,
+        "end": 4.24,
+        "confidence": 0.9970161,
+        "channel": 0,
+        "transcript": "A place in a group doesn't guarantee a turn.",
+        "words": [
+          {
+            "word": "a",
+            "start": 0.71999997,
+            "end": 0.96,
+            "confidence": 0.99902344,
+            "punctuated_word": "A"
+          },
+          {
+            "word": "place",
+            "start": 0.96,
+            "end": 1.28,
+            "confidence": 0.99902344,
+            "punctuated_word": "place"
+          },
+          {
+            "word": "in",
+            "start": 1.28,
+            "end": 1.52,
+            "confidence": 0.98291016,
+            "punctuated_word": "in"
+          },
+          {
+            "word": "a",
+            "start": 1.52,
+            "end": 1.68,
+            "confidence": 0.99902344,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "group",
+            "start": 1.68,
+            "end": 2.1599998,
+            "confidence": 1.0,
+            "punctuated_word": "group"
+          },
+          {
+            "word": "doesn't",
+            "start": 2.1599998,
+            "end": 2.6399999,
+            "confidence": 0.99902344,
+            "punctuated_word": "doesn't"
+          },
+          {
+            "word": "guarantee",
+            "start": 2.6399999,
+            "end": 3.28,
+            "confidence": 1.0,
+            "punctuated_word": "guarantee"
+          },
+          {
+            "word": "a",
+            "start": 3.28,
+            "end": 3.6,
+            "confidence": 0.99902344,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "turn",
+            "start": 3.6,
+            "end": 4.24,
+            "confidence": 0.9951172,
+            "punctuated_word": "turn."
+          }
+        ],
+        "id": "6d3b859d-3a01-4202-86c6-16202b1f7e55"
+      },
+      {
+        "start": 4.56,
+        "end": 7.2,
+        "confidence": 0.9986165,
+        "channel": 0,
+        "transcript": "For teachers planning a practical workshop,",
+        "words": [
+          {
+            "word": "for",
+            "start": 4.56,
+            "end": 4.7999997,
+            "confidence": 1.0,
+            "punctuated_word": "For"
+          },
+          {
+            "word": "teachers",
+            "start": 4.7999997,
+            "end": 5.2,
+            "confidence": 0.9980469,
+            "punctuated_word": "teachers"
+          },
+          {
+            "word": "planning",
+            "start": 5.2,
+            "end": 5.6,
+            "confidence": 0.99902344,
+            "punctuated_word": "planning"
+          },
+          {
+            "word": "a",
+            "start": 5.6,
+            "end": 5.8399997,
+            "confidence": 1.0,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "practical",
+            "start": 5.8399997,
+            "end": 6.3999996,
+            "confidence": 0.99902344,
+            "punctuated_word": "practical"
+          },
+          {
+            "word": "workshop",
+            "start": 6.3999996,
+            "end": 7.2,
+            "confidence": 0.99560547,
+            "punctuated_word": "workshop,"
+          }
+        ],
+        "id": "345adbaf-07a5-4b20-a4c2-9a072166a263"
+      },
+      {
+        "start": 7.52,
+        "end": 10.719999,
+        "confidence": 0.95549667,
+        "channel": 0,
+        "transcript": "every hand makes that missing turn visible,",
+        "words": [
+          {
+            "word": "every",
+            "start": 7.52,
+            "end": 7.8399997,
+            "confidence": 0.87597656,
+            "punctuated_word": "every"
+          },
+          {
+            "word": "hand",
+            "start": 7.8399997,
+            "end": 8.32,
+            "confidence": 0.99902344,
+            "punctuated_word": "hand"
+          },
+          {
+            "word": "makes",
+            "start": 8.32,
+            "end": 8.72,
+            "confidence": 1.0,
+            "punctuated_word": "makes"
+          },
+          {
+            "word": "that",
+            "start": 8.72,
+            "end": 8.96,
+            "confidence": 1.0,
+            "punctuated_word": "that"
+          },
+          {
+            "word": "missing",
+            "start": 8.96,
+            "end": 9.44,
+            "confidence": 1.0,
+            "punctuated_word": "missing"
+          },
+          {
+            "word": "turn",
+            "start": 9.44,
+            "end": 9.92,
+            "confidence": 0.99902344,
+            "punctuated_word": "turn"
+          },
+          {
+            "word": "visible",
+            "start": 9.92,
+            "end": 10.719999,
+            "confidence": 0.8144531,
+            "punctuated_word": "visible,"
+          }
+        ],
+        "id": "36a12d30-db9f-48d4-b029-27f00050b8ef"
+      },
+      {
+        "start": 11.12,
+        "end": 12.639999,
+        "confidence": 0.9973958,
+        "channel": 0,
+        "transcript": "then helps make room for it.",
+        "words": [
+          {
+            "word": "then",
+            "start": 11.12,
+            "end": 11.36,
+            "confidence": 0.99902344,
+            "punctuated_word": "then"
+          },
+          {
+            "word": "helps",
+            "start": 11.36,
+            "end": 11.759999,
+            "confidence": 0.9863281,
+            "punctuated_word": "helps"
+          },
+          {
+            "word": "make",
+            "start": 11.759999,
+            "end": 12.0,
+            "confidence": 0.99902344,
+            "punctuated_word": "make"
+          },
+          {
+            "word": "room",
+            "start": 12.0,
+            "end": 12.24,
+            "confidence": 1.0,
+            "punctuated_word": "room"
+          },
+          {
+            "word": "for",
+            "start": 12.24,
+            "end": 12.48,
+            "confidence": 1.0,
+            "punctuated_word": "for"
+          },
+          {
+            "word": "it",
+            "start": 12.48,
+            "end": 12.639999,
+            "confidence": 1.0,
+            "punctuated_word": "it."
+          }
+        ],
+        "id": "67ac41e4-857b-41ab-bcf6-05f91578dc7d"
+      },
+      {
+        "start": 13.625,
+        "end": 18.025,
+        "confidence": 0.9958089,
+        "channel": 0,
+        "transcript": "This fictional lesson has 28 learners, three microscopes,",
+        "words": [
+          {
+            "word": "this",
+            "start": 13.625,
+            "end": 13.945,
+            "confidence": 1.0,
+            "punctuated_word": "This"
+          },
+          {
+            "word": "fictional",
+            "start": 13.945,
+            "end": 14.505,
+            "confidence": 1.0,
+            "punctuated_word": "fictional"
+          },
+          {
+            "word": "lesson",
+            "start": 14.505,
+            "end": 14.905,
+            "confidence": 1.0,
+            "punctuated_word": "lesson"
+          },
+          {
+            "word": "has",
+            "start": 14.905,
+            "end": 15.385,
+            "confidence": 1.0,
+            "punctuated_word": "has"
+          },
+          {
+            "word": "28",
+            "start": 15.385,
+            "end": 15.945,
+            "confidence": 0.9995117,
+            "punctuated_word": "28"
+          },
+          {
+            "word": "learners",
+            "start": 15.945,
+            "end": 16.664999,
+            "confidence": 0.9975586,
+            "punctuated_word": "learners,"
+          },
+          {
+            "word": "three",
+            "start": 16.744999,
+            "end": 16.985,
+            "confidence": 1.0,
+            "punctuated_word": "three"
+          },
+          {
+            "word": "microscopes",
+            "start": 16.985,
+            "end": 18.025,
+            "confidence": 0.96940106,
+            "punctuated_word": "microscopes,"
+          }
+        ],
+        "id": "9eec9c51-8917-43fa-9ee5-745715cef53e"
+      },
+      {
+        "start": 18.025,
+        "end": 19.224998,
+        "confidence": 0.99902344,
+        "channel": 0,
+        "transcript": "and thirty minutes.",
+        "words": [
+          {
+            "word": "and",
+            "start": 18.025,
+            "end": 18.185,
+            "confidence": 0.9980469,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "thirty",
+            "start": 18.185,
+            "end": 18.585,
+            "confidence": 1.0,
+            "punctuated_word": "thirty"
+          },
+          {
+            "word": "minutes",
+            "start": 18.585,
+            "end": 19.224998,
+            "confidence": 0.99902344,
+            "punctuated_word": "minutes."
+          }
+        ],
+        "id": "d3994c90-6e02-4c9b-8370-082ee1853bfa"
+      },
+      {
+        "start": 19.705,
+        "end": 23.465,
+        "confidence": 0.9769287,
+        "channel": 0,
+        "transcript": "Each learner needs four full minutes, including reset.",
+        "words": [
+          {
+            "word": "each",
+            "start": 19.705,
+            "end": 20.025,
+            "confidence": 1.0,
+            "punctuated_word": "Each"
+          },
+          {
+            "word": "learner",
+            "start": 20.025,
+            "end": 20.425,
+            "confidence": 0.99853516,
+            "punctuated_word": "learner"
+          },
+          {
+            "word": "needs",
+            "start": 20.425,
+            "end": 20.904999,
+            "confidence": 1.0,
+            "punctuated_word": "needs"
+          },
+          {
+            "word": "four",
+            "start": 20.904999,
+            "end": 21.224998,
+            "confidence": 0.99902344,
+            "punctuated_word": "four"
+          },
+          {
+            "word": "full",
+            "start": 21.224998,
+            "end": 21.545,
+            "confidence": 0.99902344,
+            "punctuated_word": "full"
+          },
+          {
+            "word": "minutes",
+            "start": 21.545,
+            "end": 22.265,
+            "confidence": 0.82910156,
+            "punctuated_word": "minutes,"
+          },
+          {
+            "word": "including",
+            "start": 22.345,
+            "end": 22.744999,
+            "confidence": 1.0,
+            "punctuated_word": "including"
+          },
+          {
+            "word": "reset",
+            "start": 22.744999,
+            "end": 23.465,
+            "confidence": 0.9897461,
+            "punctuated_word": "reset."
+          }
+        ],
+        "id": "83bdb93c-a71e-4471-a674-dfec87d28b62"
+      },
+      {
+        "start": 24.025,
+        "end": 25.145,
+        "confidence": 1.0,
+        "channel": 0,
+        "transcript": "Only 21",
+        "words": [
+          {
+            "word": "only",
+            "start": 24.025,
+            "end": 24.345,
+            "confidence": 1.0,
+            "punctuated_word": "Only"
+          },
+          {
+            "word": "21",
+            "start": 24.345,
+            "end": 25.145,
+            "confidence": 1.0,
+            "punctuated_word": "21"
+          }
+        ],
+        "id": "908f5529-ea77-4589-b3ee-f803d93bc2be"
+      },
+      {
+        "start": 25.145,
+        "end": 26.345,
+        "confidence": 0.9995117,
+        "channel": 0,
+        "transcript": "complete turns fit.",
+        "words": [
+          {
+            "word": "complete",
+            "start": 25.145,
+            "end": 25.625,
+            "confidence": 1.0,
+            "punctuated_word": "complete"
+          },
+          {
+            "word": "turns",
+            "start": 25.625,
+            "end": 25.945,
+            "confidence": 1.0,
+            "punctuated_word": "turns"
+          },
+          {
+            "word": "fit",
+            "start": 25.945,
+            "end": 26.345,
+            "confidence": 0.99853516,
+            "punctuated_word": "fit."
+          }
+        ],
+        "id": "75d011bd-1889-48b2-9ed2-ee7afbfb0438"
+      },
+      {
+        "start": 26.89,
+        "end": 30.33,
+        "confidence": 0.9992947,
+        "channel": 0,
+        "transcript": "Zara is one of seven learners without a turn.",
+        "words": [
+          {
+            "word": "zara",
+            "start": 26.89,
+            "end": 27.689999,
+            "confidence": 1.0,
+            "punctuated_word": "Zara"
+          },
+          {
+            "word": "is",
+            "start": 27.689999,
+            "end": 28.01,
+            "confidence": 0.9970703,
+            "punctuated_word": "is"
+          },
+          {
+            "word": "one",
+            "start": 28.01,
+            "end": 28.25,
+            "confidence": 1.0,
+            "punctuated_word": "one"
+          },
+          {
+            "word": "of",
+            "start": 28.25,
+            "end": 28.41,
+            "confidence": 1.0,
+            "punctuated_word": "of"
+          },
+          {
+            "word": "seven",
+            "start": 28.41,
+            "end": 28.73,
+            "confidence": 1.0,
+            "punctuated_word": "seven"
+          },
+          {
+            "word": "learners",
+            "start": 28.73,
+            "end": 29.21,
+            "confidence": 0.9970703,
+            "punctuated_word": "learners"
+          },
+          {
+            "word": "without",
+            "start": 29.21,
+            "end": 29.529999,
+            "confidence": 1.0,
+            "punctuated_word": "without"
+          },
+          {
+            "word": "a",
+            "start": 29.529999,
+            "end": 29.77,
+            "confidence": 1.0,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "turn",
+            "start": 29.77,
+            "end": 30.33,
+            "confidence": 0.9995117,
+            "punctuated_word": "turn."
+          }
+        ],
+        "id": "a2bf772e-66e3-48ed-94a3-e0485be16544"
+      },
+      {
+        "start": 31.369999,
+        "end": 33.449997,
+        "confidence": 0.990918,
+        "channel": 0,
+        "transcript": "Compare ways to make room.",
+        "words": [
+          {
+            "word": "compare",
+            "start": 31.369999,
+            "end": 31.77,
+            "confidence": 0.99902344,
+            "punctuated_word": "Compare"
+          },
+          {
+            "word": "ways",
+            "start": 31.77,
+            "end": 32.25,
+            "confidence": 1.0,
+            "punctuated_word": "ways"
+          },
+          {
+            "word": "to",
+            "start": 32.25,
+            "end": 32.41,
+            "confidence": 1.0,
+            "punctuated_word": "to"
+          },
+          {
+            "word": "make",
+            "start": 32.41,
+            "end": 32.73,
+            "confidence": 1.0,
+            "punctuated_word": "make"
+          },
+          {
+            "word": "room",
+            "start": 32.73,
+            "end": 33.449997,
+            "confidence": 0.9555664,
+            "punctuated_word": "room."
+          }
+        ],
+        "id": "d71f945a-7a0d-4611-bfd3-f1586168ddfa"
+      },
+      {
+        "start": 33.61,
+        "end": 36.25,
+        "confidence": 0.94913155,
+        "channel": 0,
+        "transcript": "Keep the equipment and add ten minutes,",
+        "words": [
+          {
+            "word": "keep",
+            "start": 33.61,
+            "end": 33.93,
+            "confidence": 1.0,
+            "punctuated_word": "Keep"
+          },
+          {
+            "word": "the",
+            "start": 33.93,
+            "end": 34.17,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "equipment",
+            "start": 34.17,
+            "end": 34.649998,
+            "confidence": 1.0,
+            "punctuated_word": "equipment"
+          },
+          {
+            "word": "and",
+            "start": 34.649998,
+            "end": 34.97,
+            "confidence": 0.94140625,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "add",
+            "start": 34.97,
+            "end": 35.29,
+            "confidence": 1.0,
+            "punctuated_word": "add"
+          },
+          {
+            "word": "ten",
+            "start": 35.29,
+            "end": 35.61,
+            "confidence": 1.0,
+            "punctuated_word": "ten"
+          },
+          {
+            "word": "minutes",
+            "start": 35.61,
+            "end": 36.25,
+            "confidence": 0.70251465,
+            "punctuated_word": "minutes,"
+          }
+        ],
+        "id": "cf7bc68e-6387-45d5-9de8-9227b81340c7"
+      },
+      {
+        "start": 36.57,
+        "end": 39.85,
+        "confidence": 0.9958225,
+        "channel": 0,
+        "transcript": "or keep the finish time and add one microscope.",
+        "words": [
+          {
+            "word": "or",
+            "start": 36.57,
+            "end": 36.89,
+            "confidence": 1.0,
+            "punctuated_word": "or"
+          },
+          {
+            "word": "keep",
+            "start": 36.89,
+            "end": 37.29,
+            "confidence": 0.9980469,
+            "punctuated_word": "keep"
+          },
+          {
+            "word": "the",
+            "start": 37.29,
+            "end": 37.449997,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "finish",
+            "start": 37.449997,
+            "end": 37.77,
+            "confidence": 0.98828125,
+            "punctuated_word": "finish"
+          },
+          {
+            "word": "time",
+            "start": 37.77,
+            "end": 38.09,
+            "confidence": 1.0,
+            "punctuated_word": "time"
+          },
+          {
+            "word": "and",
+            "start": 38.09,
+            "end": 38.329998,
+            "confidence": 0.98095703,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "add",
+            "start": 38.329998,
+            "end": 38.65,
+            "confidence": 1.0,
+            "punctuated_word": "add"
+          },
+          {
+            "word": "one",
+            "start": 38.65,
+            "end": 38.89,
+            "confidence": 1.0,
+            "punctuated_word": "one"
+          },
+          {
+            "word": "microscope",
+            "start": 38.89,
+            "end": 39.85,
+            "confidence": 0.9951172,
+            "punctuated_word": "microscope."
+          }
+        ],
+        "id": "18d37e13-fa87-4c95-9b1c-15ed077eb1c2"
+      },
+      {
+        "start": 40.25,
+        "end": 42.57,
+        "confidence": 0.99902344,
+        "channel": 0,
+        "transcript": "Neither choice shortens anyone's turn.",
+        "words": [
+          {
+            "word": "neither",
+            "start": 40.25,
+            "end": 40.57,
+            "confidence": 0.99902344,
+            "punctuated_word": "Neither"
+          },
+          {
+            "word": "choice",
+            "start": 40.57,
+            "end": 41.129997,
+            "confidence": 1.0,
+            "punctuated_word": "choice"
+          },
+          {
+            "word": "shortens",
+            "start": 41.129997,
+            "end": 41.61,
+            "confidence": 0.9995117,
+            "punctuated_word": "shortens"
+          },
+          {
+            "word": "anyone's",
+            "start": 41.61,
+            "end": 42.25,
+            "confidence": 0.9970703,
+            "punctuated_word": "anyone's"
+          },
+          {
+            "word": "turn",
+            "start": 42.25,
+            "end": 42.57,
+            "confidence": 0.9995117,
+            "punctuated_word": "turn."
+          }
+        ],
+        "id": "3352cd30-c9a6-4714-928c-7eceec5a475b"
+      },
+      {
+        "start": 43.255,
+        "end": 45.575,
+        "confidence": 0.99970704,
+        "channel": 0,
+        "transcript": "If extra equipment isn't available,",
+        "words": [
+          {
+            "word": "if",
+            "start": 43.255,
+            "end": 43.575,
+            "confidence": 1.0,
+            "punctuated_word": "If"
+          },
+          {
+            "word": "extra",
+            "start": 43.575,
+            "end": 43.975002,
+            "confidence": 1.0,
+            "punctuated_word": "extra"
+          },
+          {
+            "word": "equipment",
+            "start": 43.975002,
+            "end": 44.455,
+            "confidence": 1.0,
+            "punctuated_word": "equipment"
+          },
+          {
+            "word": "isn't",
+            "start": 44.455,
+            "end": 44.855003,
+            "confidence": 1.0,
+            "punctuated_word": "isn't"
+          },
+          {
+            "word": "available",
+            "start": 44.855003,
+            "end": 45.575,
+            "confidence": 0.99853516,
+            "punctuated_word": "available,"
+          }
+        ],
+        "id": "8a8ce79e-7bdb-4b3b-97fe-9c5bfcc8495c"
+      },
+      {
+        "start": 45.735,
+        "end": 48.295002,
+        "confidence": 0.9975993,
+        "channel": 0,
+        "transcript": "lock it. The time option remains.",
+        "words": [
+          {
+            "word": "lock",
+            "start": 45.735,
+            "end": 46.055,
+            "confidence": 1.0,
+            "punctuated_word": "lock"
+          },
+          {
+            "word": "it",
+            "start": 46.055,
+            "end": 46.535,
+            "confidence": 0.98950195,
+            "punctuated_word": "it."
+          },
+          {
+            "word": "the",
+            "start": 46.615,
+            "end": 46.855003,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "time",
+            "start": 46.855003,
+            "end": 47.175003,
+            "confidence": 1.0,
+            "punctuated_word": "time"
+          },
+          {
+            "word": "option",
+            "start": 47.175003,
+            "end": 47.575,
+            "confidence": 1.0,
+            "punctuated_word": "option"
+          },
+          {
+            "word": "remains",
+            "start": 47.575,
+            "end": 48.295002,
+            "confidence": 0.99609375,
+            "punctuated_word": "remains."
+          }
+        ],
+        "id": "30ffefa7-7181-41f0-a768-c5534b80015d"
+      },
+      {
+        "start": 48.695,
+        "end": 51.975002,
+        "confidence": 0.9882202,
+        "channel": 0,
+        "transcript": "Unlock it and preview the extra place instead.",
+        "words": [
+          {
+            "word": "unlock",
+            "start": 48.695,
+            "end": 49.175003,
+            "confidence": 1.0,
+            "punctuated_word": "Unlock"
+          },
+          {
+            "word": "it",
+            "start": 49.175003,
+            "end": 49.415,
+            "confidence": 1.0,
+            "punctuated_word": "it"
+          },
+          {
+            "word": "and",
+            "start": 49.415,
+            "end": 49.735,
+            "confidence": 0.90771484,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "preview",
+            "start": 49.735,
+            "end": 50.215,
+            "confidence": 1.0,
+            "punctuated_word": "preview"
+          },
+          {
+            "word": "the",
+            "start": 50.215,
+            "end": 50.455,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "extra",
+            "start": 50.455,
+            "end": 50.855003,
+            "confidence": 0.99902344,
+            "punctuated_word": "extra"
+          },
+          {
+            "word": "place",
+            "start": 50.855003,
+            "end": 51.255,
+            "confidence": 1.0,
+            "punctuated_word": "place"
+          },
+          {
+            "word": "instead",
+            "start": 51.255,
+            "end": 51.975002,
+            "confidence": 0.99902344,
+            "punctuated_word": "instead."
+          }
+        ],
+        "id": "ab16ed02-dd86-4aa6-91ee-cce8b0a45ec0"
+      },
+      {
+        "start": 52.615,
+        "end": 57.975002,
+        "confidence": 0.98004556,
+        "channel": 0,
+        "transcript": "Now Zara has a real slot, minute twenty four to twenty eight at place four.",
+        "words": [
+          {
+            "word": "now",
+            "start": 52.615,
+            "end": 52.855003,
+            "confidence": 1.0,
+            "punctuated_word": "Now"
+          },
+          {
+            "word": "zara",
+            "start": 52.855003,
+            "end": 53.335,
+            "confidence": 0.97802734,
+            "punctuated_word": "Zara"
+          },
+          {
+            "word": "has",
+            "start": 53.335,
+            "end": 53.655003,
+            "confidence": 1.0,
+            "punctuated_word": "has"
+          },
+          {
+            "word": "a",
+            "start": 53.655003,
+            "end": 53.815002,
+            "confidence": 1.0,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "real",
+            "start": 53.815002,
+            "end": 54.135002,
+            "confidence": 0.9873047,
+            "punctuated_word": "real"
+          },
+          {
+            "word": "slot",
+            "start": 54.135002,
+            "end": 54.855003,
+            "confidence": 0.8432617,
+            "punctuated_word": "slot,"
+          },
+          {
+            "word": "minute",
+            "start": 54.935,
+            "end": 55.335,
+            "confidence": 0.9980469,
+            "punctuated_word": "minute"
+          },
+          {
+            "word": "twenty",
+            "start": 55.335,
+            "end": 55.655003,
+            "confidence": 1.0,
+            "punctuated_word": "twenty"
+          },
+          {
+            "word": "four",
+            "start": 55.655003,
+            "end": 55.975002,
+            "confidence": 1.0,
+            "punctuated_word": "four"
+          },
+          {
+            "word": "to",
+            "start": 55.975002,
+            "end": 56.295002,
+            "confidence": 0.99902344,
+            "punctuated_word": "to"
+          },
+          {
+            "word": "twenty",
+            "start": 56.295002,
+            "end": 56.535004,
+            "confidence": 1.0,
+            "punctuated_word": "twenty"
+          },
+          {
+            "word": "eight",
+            "start": 56.535004,
+            "end": 56.935,
+            "confidence": 1.0,
+            "punctuated_word": "eight"
+          },
+          {
+            "word": "at",
+            "start": 56.935,
+            "end": 57.335,
+            "confidence": 0.9003906,
+            "punctuated_word": "at"
+          },
+          {
+            "word": "place",
+            "start": 57.335,
+            "end": 57.575,
+            "confidence": 0.9951172,
+            "punctuated_word": "place"
+          },
+          {
+            "word": "four",
+            "start": 57.575,
+            "end": 57.975002,
+            "confidence": 0.9995117,
+            "punctuated_word": "four."
+          }
+        ],
+        "id": "f78c4a4e-00b5-4565-afab-765e53a94fea"
+      },
+      {
+        "start": 58.58,
+        "end": 61.78,
+        "confidence": 0.9863281,
+        "channel": 0,
+        "transcript": "This is still a preview. The current plan hasn't changed.",
+        "words": [
+          {
+            "word": "this",
+            "start": 58.58,
+            "end": 58.82,
+            "confidence": 1.0,
+            "punctuated_word": "This"
+          },
+          {
+            "word": "is",
+            "start": 58.82,
+            "end": 58.98,
+            "confidence": 1.0,
+            "punctuated_word": "is"
+          },
+          {
+            "word": "still",
+            "start": 58.98,
+            "end": 59.22,
+            "confidence": 1.0,
+            "punctuated_word": "still"
+          },
+          {
+            "word": "a",
+            "start": 59.22,
+            "end": 59.38,
+            "confidence": 1.0,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "preview",
+            "start": 59.38,
+            "end": 60.1,
+            "confidence": 0.86572266,
+            "punctuated_word": "preview."
+          },
+          {
+            "word": "the",
+            "start": 60.1,
+            "end": 60.26,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "current",
+            "start": 60.26,
+            "end": 60.58,
+            "confidence": 1.0,
+            "punctuated_word": "current"
+          },
+          {
+            "word": "plan",
+            "start": 60.58,
+            "end": 60.9,
+            "confidence": 1.0,
+            "punctuated_word": "plan"
+          },
+          {
+            "word": "hasn't",
+            "start": 60.9,
+            "end": 61.22,
+            "confidence": 1.0,
+            "punctuated_word": "hasn't"
+          },
+          {
+            "word": "changed",
+            "start": 61.22,
+            "end": 61.78,
+            "confidence": 0.9975586,
+            "punctuated_word": "changed."
+          }
+        ],
+        "id": "cd4be341-a8b4-4d59-9f64-1c024d264b85"
+      },
+      {
+        "start": 62.739998,
+        "end": 63.86,
+        "confidence": 0.97802734,
+        "channel": 0,
+        "transcript": "Apply it.",
+        "words": [
+          {
+            "word": "apply",
+            "start": 62.739998,
+            "end": 63.3,
+            "confidence": 0.99902344,
+            "punctuated_word": "Apply"
+          },
+          {
+            "word": "it",
+            "start": 63.3,
+            "end": 63.86,
+            "confidence": 0.95703125,
+            "punctuated_word": "it."
+          }
+        ],
+        "id": "f5a09c68-9916-42f9-b74c-05fe02848e68"
+      },
+      {
+        "start": 64.26,
+        "end": 67.22,
+        "confidence": 0.9893392,
+        "channel": 0,
+        "transcript": "28 learners now have complete turns.",
+        "words": [
+          {
+            "word": "28",
+            "start": 64.26,
+            "end": 64.82,
+            "confidence": 0.9394531,
+            "punctuated_word": "28"
+          },
+          {
+            "word": "learners",
+            "start": 64.82,
+            "end": 65.3,
+            "confidence": 0.99902344,
+            "punctuated_word": "learners"
+          },
+          {
+            "word": "now",
+            "start": 65.3,
+            "end": 65.7,
+            "confidence": 0.99902344,
+            "punctuated_word": "now"
+          },
+          {
+            "word": "have",
+            "start": 65.7,
+            "end": 66.02,
+            "confidence": 1.0,
+            "punctuated_word": "have"
+          },
+          {
+            "word": "complete",
+            "start": 66.02,
+            "end": 66.5,
+            "confidence": 1.0,
+            "punctuated_word": "complete"
+          },
+          {
+            "word": "turns",
+            "start": 66.5,
+            "end": 67.22,
+            "confidence": 0.99853516,
+            "punctuated_word": "turns."
+          }
+        ],
+        "id": "5aae8cf6-cc0b-4b39-a398-37ecdc0c034b"
+      },
+      {
+        "start": 67.62,
+        "end": 70.42,
+        "confidence": 0.9989624,
+        "channel": 0,
+        "transcript": "The room is driven by those scheduled slots.",
+        "words": [
+          {
+            "word": "the",
+            "start": 67.62,
+            "end": 67.78,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "room",
+            "start": 67.78,
+            "end": 68.1,
+            "confidence": 1.0,
+            "punctuated_word": "room"
+          },
+          {
+            "word": "is",
+            "start": 68.1,
+            "end": 68.26,
+            "confidence": 0.99902344,
+            "punctuated_word": "is"
+          },
+          {
+            "word": "driven",
+            "start": 68.26,
+            "end": 68.66,
+            "confidence": 1.0,
+            "punctuated_word": "driven"
+          },
+          {
+            "word": "by",
+            "start": 68.66,
+            "end": 68.82,
+            "confidence": 1.0,
+            "punctuated_word": "by"
+          },
+          {
+            "word": "those",
+            "start": 68.82,
+            "end": 69.06,
+            "confidence": 1.0,
+            "punctuated_word": "those"
+          },
+          {
+            "word": "scheduled",
+            "start": 69.06,
+            "end": 69.62,
+            "confidence": 0.99902344,
+            "punctuated_word": "scheduled"
+          },
+          {
+            "word": "slots",
+            "start": 69.62,
+            "end": 70.42,
+            "confidence": 0.99365234,
+            "punctuated_word": "slots."
+          }
+        ],
+        "id": "5bfeb7c5-809f-4a7b-8fdf-94a14aaa6bc1"
+      },
+      {
+        "start": 70.58,
+        "end": 72.9,
+        "confidence": 0.95583767,
+        "channel": 0,
+        "transcript": "Select a learner to see their time and place.",
+        "words": [
+          {
+            "word": "select",
+            "start": 70.58,
+            "end": 70.979996,
+            "confidence": 1.0,
+            "punctuated_word": "Select"
+          },
+          {
+            "word": "a",
+            "start": 70.979996,
+            "end": 71.22,
+            "confidence": 0.98291016,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "learner",
+            "start": 71.22,
+            "end": 71.46,
+            "confidence": 0.9995117,
+            "punctuated_word": "learner"
+          },
+          {
+            "word": "to",
+            "start": 71.46,
+            "end": 71.7,
+            "confidence": 1.0,
+            "punctuated_word": "to"
+          },
+          {
+            "word": "see",
+            "start": 71.7,
+            "end": 71.86,
+            "confidence": 1.0,
+            "punctuated_word": "see"
+          },
+          {
+            "word": "their",
+            "start": 71.86,
+            "end": 72.1,
+            "confidence": 1.0,
+            "punctuated_word": "their"
+          },
+          {
+            "word": "time",
+            "start": 72.1,
+            "end": 72.34,
+            "confidence": 1.0,
+            "punctuated_word": "time"
+          },
+          {
+            "word": "and",
+            "start": 72.34,
+            "end": 72.66,
+            "confidence": 0.83740234,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "place",
+            "start": 72.66,
+            "end": 72.9,
+            "confidence": 0.78271484,
+            "punctuated_word": "place."
+          }
+        ],
+        "id": "5e58f21f-7167-4ce7-9452-ce79aa22829c"
+      },
+      {
+        "start": 73.58501,
+        "end": 75.265,
+        "confidence": 0.99348956,
+        "channel": 0,
+        "transcript": "But workshops change.",
+        "words": [
+          {
+            "word": "but",
+            "start": 73.58501,
+            "end": 73.90501,
+            "confidence": 1.0,
+            "punctuated_word": "But"
+          },
+          {
+            "word": "workshops",
+            "start": 73.90501,
+            "end": 74.545006,
+            "confidence": 0.98828125,
+            "punctuated_word": "workshops"
+          },
+          {
+            "word": "change",
+            "start": 74.545006,
+            "end": 75.265,
+            "confidence": 0.9921875,
+            "punctuated_word": "change."
+          }
+        ],
+        "id": "cae00af6-d65c-4b91-acff-71db59e7ff7e"
+      },
+      {
+        "start": 75.58501,
+        "end": 79.025,
+        "confidence": 0.9970006,
+        "channel": 0,
+        "transcript": "At minute eight, one microscope stops working.",
+        "words": [
+          {
+            "word": "at",
+            "start": 75.58501,
+            "end": 75.90501,
+            "confidence": 1.0,
+            "punctuated_word": "At"
+          },
+          {
+            "word": "minute",
+            "start": 75.90501,
+            "end": 76.225006,
+            "confidence": 0.99902344,
+            "punctuated_word": "minute"
+          },
+          {
+            "word": "eight",
+            "start": 76.225006,
+            "end": 76.945,
+            "confidence": 0.9921875,
+            "punctuated_word": "eight,"
+          },
+          {
+            "word": "one",
+            "start": 76.945,
+            "end": 77.265,
+            "confidence": 0.99316406,
+            "punctuated_word": "one"
+          },
+          {
+            "word": "microscope",
+            "start": 77.265,
+            "end": 77.985,
+            "confidence": 1.0,
+            "punctuated_word": "microscope"
+          },
+          {
+            "word": "stops",
+            "start": 77.985,
+            "end": 78.465004,
+            "confidence": 1.0,
+            "punctuated_word": "stops"
+          },
+          {
+            "word": "working",
+            "start": 78.465004,
+            "end": 79.025,
+            "confidence": 0.9946289,
+            "punctuated_word": "working."
+          }
+        ],
+        "id": "4e97db9a-dbc2-4fd1-9d3d-2ade8fea9a61"
+      },
+      {
+        "start": 79.665,
+        "end": 84.705,
+        "confidence": 0.9495036,
+        "channel": 0,
+        "transcript": "Every hand preserves the eight completed turns and rebuilds what comes next.",
+        "words": [
+          {
+            "word": "every",
+            "start": 79.665,
+            "end": 79.985,
+            "confidence": 1.0,
+            "punctuated_word": "Every"
+          },
+          {
+            "word": "hand",
+            "start": 79.985,
+            "end": 80.465004,
+            "confidence": 0.52783203,
+            "punctuated_word": "hand"
+          },
+          {
+            "word": "preserves",
+            "start": 80.465004,
+            "end": 81.025,
+            "confidence": 0.9995117,
+            "punctuated_word": "preserves"
+          },
+          {
+            "word": "the",
+            "start": 81.025,
+            "end": 81.185005,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "eight",
+            "start": 81.185005,
+            "end": 81.505005,
+            "confidence": 1.0,
+            "punctuated_word": "eight"
+          },
+          {
+            "word": "completed",
+            "start": 81.505005,
+            "end": 81.985,
+            "confidence": 1.0,
+            "punctuated_word": "completed"
+          },
+          {
+            "word": "turns",
+            "start": 81.985,
+            "end": 82.625,
+            "confidence": 1.0,
+            "punctuated_word": "turns"
+          },
+          {
+            "word": "and",
+            "start": 82.625,
+            "end": 82.945,
+            "confidence": 0.8676758,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "rebuilds",
+            "start": 82.945,
+            "end": 83.665,
+            "confidence": 0.99902344,
+            "punctuated_word": "rebuilds"
+          },
+          {
+            "word": "what",
+            "start": 83.665,
+            "end": 83.825005,
+            "confidence": 1.0,
+            "punctuated_word": "what"
+          },
+          {
+            "word": "comes",
+            "start": 83.825005,
+            "end": 84.145004,
+            "confidence": 1.0,
+            "punctuated_word": "comes"
+          },
+          {
+            "word": "next",
+            "start": 84.145004,
+            "end": 84.705,
+            "confidence": 1.0,
+            "punctuated_word": "next."
+          }
+        ],
+        "id": "060afceb-d789-48e1-8183-02400231d19a"
+      },
+      {
+        "start": 85.265,
+        "end": 87.425,
+        "confidence": 0.9967529,
+        "channel": 0,
+        "transcript": "The remaining plan serves 23.",
+        "words": [
+          {
+            "word": "the",
+            "start": 85.265,
+            "end": 85.505005,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "remaining",
+            "start": 85.505005,
+            "end": 85.985,
+            "confidence": 1.0,
+            "punctuated_word": "remaining"
+          },
+          {
+            "word": "plan",
+            "start": 85.985,
+            "end": 86.305,
+            "confidence": 0.99609375,
+            "punctuated_word": "plan"
+          },
+          {
+            "word": "serves",
+            "start": 86.305,
+            "end": 86.785,
+            "confidence": 1.0,
+            "punctuated_word": "serves"
+          },
+          {
+            "word": "23",
+            "start": 86.785,
+            "end": 87.425,
+            "confidence": 0.9876709,
+            "punctuated_word": "23."
+          }
+        ],
+        "id": "81013add-d66f-43ab-b317-041667dec10a"
+      },
+      {
+        "start": 88.24,
+        "end": 90.64,
+        "confidence": 0.9970006,
+        "channel": 0,
+        "transcript": "Five learners still need a full turn.",
+        "words": [
+          {
+            "word": "five",
+            "start": 88.24,
+            "end": 88.56,
+            "confidence": 0.98828125,
+            "punctuated_word": "Five"
+          },
+          {
+            "word": "learners",
+            "start": 88.56,
+            "end": 88.96,
+            "confidence": 0.9941406,
+            "punctuated_word": "learners"
+          },
+          {
+            "word": "still",
+            "start": 88.96,
+            "end": 89.35999,
+            "confidence": 0.99902344,
+            "punctuated_word": "still"
+          },
+          {
+            "word": "need",
+            "start": 89.35999,
+            "end": 89.6,
+            "confidence": 1.0,
+            "punctuated_word": "need"
+          },
+          {
+            "word": "a",
+            "start": 89.6,
+            "end": 89.759995,
+            "confidence": 1.0,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "full",
+            "start": 89.759995,
+            "end": 90.0,
+            "confidence": 1.0,
+            "punctuated_word": "full"
+          },
+          {
+            "word": "turn",
+            "start": 90.0,
+            "end": 90.64,
+            "confidence": 0.9975586,
+            "punctuated_word": "turn."
+          }
+        ],
+        "id": "0e010118-9cb8-4e39-8758-8770df7d3abb"
+      },
+      {
+        "start": 91.2,
+        "end": 93.119995,
+        "confidence": 0.9520019,
+        "channel": 0,
+        "transcript": "The shortage is visible again,",
+        "words": [
+          {
+            "word": "the",
+            "start": 91.2,
+            "end": 91.439995,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "shortage",
+            "start": 91.439995,
+            "end": 91.84,
+            "confidence": 1.0,
+            "punctuated_word": "shortage"
+          },
+          {
+            "word": "is",
+            "start": 91.84,
+            "end": 92.079994,
+            "confidence": 1.0,
+            "punctuated_word": "is"
+          },
+          {
+            "word": "visible",
+            "start": 92.079994,
+            "end": 92.479996,
+            "confidence": 1.0,
+            "punctuated_word": "visible"
+          },
+          {
+            "word": "again",
+            "start": 92.479996,
+            "end": 93.119995,
+            "confidence": 0.76000977,
+            "punctuated_word": "again,"
+          }
+        ],
+        "id": "ca7f18bb-429d-4b0d-bb00-d9ed558e800f"
+      },
+      {
+        "start": 93.439995,
+        "end": 95.67999,
+        "confidence": 0.99991864,
+        "channel": 0,
+        "transcript": "without erasing the work already done.",
+        "words": [
+          {
+            "word": "without",
+            "start": 93.439995,
+            "end": 93.759995,
+            "confidence": 1.0,
+            "punctuated_word": "without"
+          },
+          {
+            "word": "erasing",
+            "start": 93.759995,
+            "end": 94.24,
+            "confidence": 1.0,
+            "punctuated_word": "erasing"
+          },
+          {
+            "word": "the",
+            "start": 94.24,
+            "end": 94.479996,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "work",
+            "start": 94.479996,
+            "end": 94.71999,
+            "confidence": 1.0,
+            "punctuated_word": "work"
+          },
+          {
+            "word": "already",
+            "start": 94.71999,
+            "end": 95.119995,
+            "confidence": 1.0,
+            "punctuated_word": "already"
+          },
+          {
+            "word": "done",
+            "start": 95.119995,
+            "end": 95.67999,
+            "confidence": 0.9995117,
+            "punctuated_word": "done."
+          }
+        ],
+        "id": "5fc29df6-c6cc-480d-8f67-f7a199111773"
+      },
+      {
+        "start": 96.799995,
+        "end": 98.24,
+        "confidence": 0.9732666,
+        "channel": 0,
+        "transcript": "Compare recovery.",
+        "words": [
+          {
+            "word": "compare",
+            "start": 96.799995,
+            "end": 97.35999,
+            "confidence": 0.99609375,
+            "punctuated_word": "Compare"
+          },
+          {
+            "word": "recovery",
+            "start": 97.35999,
+            "end": 98.24,
+            "confidence": 0.95043945,
+            "punctuated_word": "recovery."
+          }
+        ],
+        "id": "984a2bca-1e8d-4114-8972-fdfc5f27488a"
+      },
+      {
+        "start": 98.64,
+        "end": 101.2,
+        "confidence": 0.9753069,
+        "channel": 0,
+        "transcript": "This time, six extra minutes are enough.",
+        "words": [
+          {
+            "word": "this",
+            "start": 98.64,
+            "end": 98.96,
+            "confidence": 1.0,
+            "punctuated_word": "This"
+          },
+          {
+            "word": "time",
+            "start": 98.96,
+            "end": 99.52,
+            "confidence": 0.82910156,
+            "punctuated_word": "time,"
+          },
+          {
+            "word": "six",
+            "start": 99.6,
+            "end": 99.84,
+            "confidence": 1.0,
+            "punctuated_word": "six"
+          },
+          {
+            "word": "extra",
+            "start": 99.84,
+            "end": 100.24,
+            "confidence": 1.0,
+            "punctuated_word": "extra"
+          },
+          {
+            "word": "minutes",
+            "start": 100.24,
+            "end": 100.64,
+            "confidence": 1.0,
+            "punctuated_word": "minutes"
+          },
+          {
+            "word": "are",
+            "start": 100.64,
+            "end": 100.88,
+            "confidence": 0.99902344,
+            "punctuated_word": "are"
+          },
+          {
+            "word": "enough",
+            "start": 100.88,
+            "end": 101.2,
+            "confidence": 0.99902344,
+            "punctuated_word": "enough."
+          }
+        ],
+        "id": "87349973-6fde-4365-a866-ecee76f5d7b3"
+      },
+      {
+        "start": 101.875,
+        "end": 107.155,
+        "confidence": 0.9949294,
+        "channel": 0,
+        "transcript": "The planner carries forward the completed turns and uses the three remaining places.",
+        "words": [
+          {
+            "word": "the",
+            "start": 101.875,
+            "end": 102.115,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "planner",
+            "start": 102.115,
+            "end": 102.515,
+            "confidence": 0.9892578,
+            "punctuated_word": "planner"
+          },
+          {
+            "word": "carries",
+            "start": 102.515,
+            "end": 102.915,
+            "confidence": 1.0,
+            "punctuated_word": "carries"
+          },
+          {
+            "word": "forward",
+            "start": 102.915,
+            "end": 103.314995,
+            "confidence": 1.0,
+            "punctuated_word": "forward"
+          },
+          {
+            "word": "the",
+            "start": 103.314995,
+            "end": 103.634995,
+            "confidence": 0.99609375,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "completed",
+            "start": 103.634995,
+            "end": 104.115,
+            "confidence": 1.0,
+            "punctuated_word": "completed"
+          },
+          {
+            "word": "turns",
+            "start": 104.115,
+            "end": 104.595,
+            "confidence": 1.0,
+            "punctuated_word": "turns"
+          },
+          {
+            "word": "and",
+            "start": 104.595,
+            "end": 104.835,
+            "confidence": 0.9526367,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "uses",
+            "start": 104.835,
+            "end": 105.235,
+            "confidence": 1.0,
+            "punctuated_word": "uses"
+          },
+          {
+            "word": "the",
+            "start": 105.235,
+            "end": 105.475,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "three",
+            "start": 105.475,
+            "end": 105.875,
+            "confidence": 1.0,
+            "punctuated_word": "three"
+          },
+          {
+            "word": "remaining",
+            "start": 105.875,
+            "end": 106.435,
+            "confidence": 1.0,
+            "punctuated_word": "remaining"
+          },
+          {
+            "word": "places",
+            "start": 106.435,
+            "end": 107.155,
+            "confidence": 0.99609375,
+            "punctuated_word": "places."
+          }
+        ],
+        "id": "9687da4c-2895-4a21-908d-b064b5b4cfc1"
+      },
+      {
+        "start": 107.715,
+        "end": 110.034996,
+        "confidence": 0.99450684,
+        "channel": 0,
+        "transcript": "Apply the thirty six minute plan.",
+        "words": [
+          {
+            "word": "apply",
+            "start": 107.715,
+            "end": 108.195,
+            "confidence": 0.9970703,
+            "punctuated_word": "Apply"
+          },
+          {
+            "word": "the",
+            "start": 108.195,
+            "end": 108.515,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "thirty",
+            "start": 108.515,
+            "end": 108.835,
+            "confidence": 0.99902344,
+            "punctuated_word": "thirty"
+          },
+          {
+            "word": "six",
+            "start": 108.835,
+            "end": 109.075,
+            "confidence": 1.0,
+            "punctuated_word": "six"
+          },
+          {
+            "word": "minute",
+            "start": 109.075,
+            "end": 109.395,
+            "confidence": 0.9838867,
+            "punctuated_word": "minute"
+          },
+          {
+            "word": "plan",
+            "start": 109.395,
+            "end": 110.034996,
+            "confidence": 0.98706055,
+            "punctuated_word": "plan."
+          }
+        ],
+        "id": "7ed3fd2b-8db5-47df-88d9-e941a21a0f43"
+      },
+      {
+        "start": 110.515,
+        "end": 113.075,
+        "confidence": 0.9983724,
+        "channel": 0,
+        "transcript": "All 28 have complete paths again.",
+        "words": [
+          {
+            "word": "all",
+            "start": 110.515,
+            "end": 110.835,
+            "confidence": 1.0,
+            "punctuated_word": "All"
+          },
+          {
+            "word": "28",
+            "start": 110.835,
+            "end": 111.315,
+            "confidence": 1.0,
+            "punctuated_word": "28"
+          },
+          {
+            "word": "have",
+            "start": 111.315,
+            "end": 111.634995,
+            "confidence": 1.0,
+            "punctuated_word": "have"
+          },
+          {
+            "word": "complete",
+            "start": 111.634995,
+            "end": 112.034996,
+            "confidence": 0.9980469,
+            "punctuated_word": "complete"
+          },
+          {
+            "word": "paths",
+            "start": 112.034996,
+            "end": 112.435,
+            "confidence": 0.99902344,
+            "punctuated_word": "paths"
+          },
+          {
+            "word": "again",
+            "start": 112.435,
+            "end": 113.075,
+            "confidence": 0.99316406,
+            "punctuated_word": "again."
+          }
+        ],
+        "id": "8a531a2b-f460-4792-9e05-b84831460b64"
+      },
+      {
+        "start": 113.475,
+        "end": 118.03001,
+        "confidence": 0.9899589,
+        "channel": 0,
+        "transcript": "Zara's turn is now minute thirty two to thirty six at place two.",
+        "words": [
+          {
+            "word": "zara's",
+            "start": 113.475,
+            "end": 114.195,
+            "confidence": 0.99397784,
+            "punctuated_word": "Zara's"
+          },
+          {
+            "word": "turn",
+            "start": 114.195,
+            "end": 114.354996,
+            "confidence": 1.0,
+            "punctuated_word": "turn"
+          },
+          {
+            "word": "is",
+            "start": 114.354996,
+            "end": 114.595,
+            "confidence": 0.99902344,
+            "punctuated_word": "is"
+          },
+          {
+            "word": "now",
+            "start": 114.595,
+            "end": 114.835,
+            "confidence": 1.0,
+            "punctuated_word": "now"
+          },
+          {
+            "word": "minute",
+            "start": 114.835,
+            "end": 115.155,
+            "confidence": 0.98828125,
+            "punctuated_word": "minute"
+          },
+          {
+            "word": "thirty",
+            "start": 115.155,
+            "end": 115.555,
+            "confidence": 1.0,
+            "punctuated_word": "thirty"
+          },
+          {
+            "word": "two",
+            "start": 115.555,
+            "end": 115.875,
+            "confidence": 0.99902344,
+            "punctuated_word": "two"
+          },
+          {
+            "word": "to",
+            "start": 115.875,
+            "end": 116.115,
+            "confidence": 0.9902344,
+            "punctuated_word": "to"
+          },
+          {
+            "word": "thirty",
+            "start": 116.115,
+            "end": 116.435,
+            "confidence": 0.9980469,
+            "punctuated_word": "thirty"
+          },
+          {
+            "word": "six",
+            "start": 116.435,
+            "end": 117.075,
+            "confidence": 1.0,
+            "punctuated_word": "six"
+          },
+          {
+            "word": "at",
+            "start": 116.91,
+            "end": 117.15,
+            "confidence": 0.95703125,
+            "punctuated_word": "at"
+          },
+          {
+            "word": "place",
+            "start": 117.15,
+            "end": 117.39001,
+            "confidence": 0.94628906,
+            "punctuated_word": "place"
+          },
+          {
+            "word": "two",
+            "start": 117.39001,
+            "end": 118.03001,
+            "confidence": 0.9975586,
+            "punctuated_word": "two."
+          }
+        ],
+        "id": "e3a77991-5001-4e19-916f-c5728ce67f83"
+      },
+      {
+        "start": 118.83,
+        "end": 122.43,
+        "confidence": 0.99560547,
+        "channel": 0,
+        "transcript": "Earlier completed turns keep their original times and places.",
+        "words": [
+          {
+            "word": "earlier",
+            "start": 118.83,
+            "end": 119.310005,
+            "confidence": 1.0,
+            "punctuated_word": "Earlier"
+          },
+          {
+            "word": "completed",
+            "start": 119.310005,
+            "end": 119.79,
+            "confidence": 0.9980469,
+            "punctuated_word": "completed"
+          },
+          {
+            "word": "turns",
+            "start": 119.79,
+            "end": 120.19,
+            "confidence": 1.0,
+            "punctuated_word": "turns"
+          },
+          {
+            "word": "keep",
+            "start": 120.19,
+            "end": 120.51,
+            "confidence": 0.9716797,
+            "punctuated_word": "keep"
+          },
+          {
+            "word": "their",
+            "start": 120.51,
+            "end": 120.75,
+            "confidence": 1.0,
+            "punctuated_word": "their"
+          },
+          {
+            "word": "original",
+            "start": 120.75,
+            "end": 121.310005,
+            "confidence": 1.0,
+            "punctuated_word": "original"
+          },
+          {
+            "word": "times",
+            "start": 121.310005,
+            "end": 121.55,
+            "confidence": 1.0,
+            "punctuated_word": "times"
+          },
+          {
+            "word": "and",
+            "start": 121.55,
+            "end": 121.79,
+            "confidence": 0.99121094,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "places",
+            "start": 121.79,
+            "end": 122.43,
+            "confidence": 0.9995117,
+            "punctuated_word": "places."
+          }
+        ],
+        "id": "356d8ce2-5bc5-4d34-8b11-894f929788a6"
+      },
+      {
+        "start": 123.23,
+        "end": 131.15001,
+        "confidence": 0.9774841,
+        "channel": 0,
+        "transcript": "The recovery changes the future schedule while preserving the past, and every scheduled turn still lasts the full four minutes.",
+        "words": [
+          {
+            "word": "the",
+            "start": 123.23,
+            "end": 123.47,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "recovery",
+            "start": 123.47,
+            "end": 124.03001,
+            "confidence": 0.9970703,
+            "punctuated_word": "recovery"
+          },
+          {
+            "word": "changes",
+            "start": 124.03001,
+            "end": 124.51,
+            "confidence": 1.0,
+            "punctuated_word": "changes"
+          },
+          {
+            "word": "the",
+            "start": 124.51,
+            "end": 124.670006,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "future",
+            "start": 124.670006,
+            "end": 125.07001,
+            "confidence": 1.0,
+            "punctuated_word": "future"
+          },
+          {
+            "word": "schedule",
+            "start": 125.07001,
+            "end": 125.55,
+            "confidence": 1.0,
+            "punctuated_word": "schedule"
+          },
+          {
+            "word": "while",
+            "start": 125.55,
+            "end": 125.87,
+            "confidence": 0.8588867,
+            "punctuated_word": "while"
+          },
+          {
+            "word": "preserving",
+            "start": 125.87,
+            "end": 126.350006,
+            "confidence": 1.0,
+            "punctuated_word": "preserving"
+          },
+          {
+            "word": "the",
+            "start": 126.350006,
+            "end": 126.670006,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "past",
+            "start": 126.670006,
+            "end": 127.23,
+            "confidence": 0.72595215,
+            "punctuated_word": "past,"
+          },
+          {
+            "word": "and",
+            "start": 127.47,
+            "end": 127.71001,
+            "confidence": 1.0,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "every",
+            "start": 127.71001,
+            "end": 128.11,
+            "confidence": 1.0,
+            "punctuated_word": "every"
+          },
+          {
+            "word": "scheduled",
+            "start": 128.11,
+            "end": 128.51001,
+            "confidence": 0.9790039,
+            "punctuated_word": "scheduled"
+          },
+          {
+            "word": "turn",
+            "start": 128.51001,
+            "end": 129.07,
+            "confidence": 1.0,
+            "punctuated_word": "turn"
+          },
+          {
+            "word": "still",
+            "start": 129.07,
+            "end": 129.47,
+            "confidence": 0.9980469,
+            "punctuated_word": "still"
+          },
+          {
+            "word": "lasts",
+            "start": 129.47,
+            "end": 129.87001,
+            "confidence": 0.99316406,
+            "punctuated_word": "lasts"
+          },
+          {
+            "word": "the",
+            "start": 129.87001,
+            "end": 130.19,
+            "confidence": 0.9980469,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "full",
+            "start": 130.19,
+            "end": 130.51001,
+            "confidence": 1.0,
+            "punctuated_word": "full"
+          },
+          {
+            "word": "four",
+            "start": 130.51001,
+            "end": 130.83,
+            "confidence": 1.0,
+            "punctuated_word": "four"
+          },
+          {
+            "word": "minutes",
+            "start": 130.83,
+            "end": 131.15001,
+            "confidence": 0.9995117,
+            "punctuated_word": "minutes."
+          }
+        ],
+        "id": "9d52958f-d0bf-4b1b-a9c7-32c23bb011f9"
+      },
+      {
+        "start": 132.685,
+        "end": 134.60501,
+        "confidence": 0.9807129,
+        "channel": 0,
+        "transcript": "Open the facilitator kit.",
+        "words": [
+          {
+            "word": "open",
+            "start": 132.685,
+            "end": 133.085,
+            "confidence": 1.0,
+            "punctuated_word": "Open"
+          },
+          {
+            "word": "the",
+            "start": 133.085,
+            "end": 133.325,
+            "confidence": 0.9980469,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "facilitator",
+            "start": 133.325,
+            "end": 133.88501,
+            "confidence": 0.9482422,
+            "punctuated_word": "facilitator"
+          },
+          {
+            "word": "kit",
+            "start": 133.88501,
+            "end": 134.60501,
+            "confidence": 0.9765625,
+            "punctuated_word": "kit."
+          }
+        ],
+        "id": "64a33b31-6d72-4c4c-8367-9ddf1d58e11a"
+      },
+      {
+        "start": 134.845,
+        "end": 138.285,
+        "confidence": 0.98295087,
+        "channel": 0,
+        "transcript": "The real run sheet lists every scheduled learner,",
+        "words": [
+          {
+            "word": "the",
+            "start": 134.845,
+            "end": 135.085,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "real",
+            "start": 135.085,
+            "end": 135.405,
+            "confidence": 0.89208984,
+            "punctuated_word": "real"
+          },
+          {
+            "word": "run",
+            "start": 135.405,
+            "end": 135.725,
+            "confidence": 0.9970703,
+            "punctuated_word": "run"
+          },
+          {
+            "word": "sheet",
+            "start": 135.725,
+            "end": 136.045,
+            "confidence": 0.9980469,
+            "punctuated_word": "sheet"
+          },
+          {
+            "word": "lists",
+            "start": 136.045,
+            "end": 136.52501,
+            "confidence": 0.9873047,
+            "punctuated_word": "lists"
+          },
+          {
+            "word": "every",
+            "start": 136.52501,
+            "end": 136.925,
+            "confidence": 0.99902344,
+            "punctuated_word": "every"
+          },
+          {
+            "word": "scheduled",
+            "start": 136.925,
+            "end": 137.485,
+            "confidence": 0.99902344,
+            "punctuated_word": "scheduled"
+          },
+          {
+            "word": "learner",
+            "start": 137.485,
+            "end": 138.285,
+            "confidence": 0.99104816,
+            "punctuated_word": "learner,"
+          }
+        ],
+        "id": "05e67737-8652-44d9-a7c9-83692cf073c4"
+      },
+      {
+        "start": 138.285,
+        "end": 139.16501,
+        "confidence": 0.99853516,
+        "channel": 0,
+        "transcript": "activity,",
+        "words": [
+          {
+            "word": "activity",
+            "start": 138.285,
+            "end": 139.16501,
+            "confidence": 0.99853516,
+            "punctuated_word": "activity,"
+          }
+        ],
+        "id": "ef6c7a9a-54aa-4d3a-9517-87a91a4ef5be"
+      },
+      {
+        "start": 139.245,
+        "end": 140.52501,
+        "confidence": 0.95320636,
+        "channel": 0,
+        "transcript": "time, and place.",
+        "words": [
+          {
+            "word": "time",
+            "start": 139.245,
+            "end": 139.725,
+            "confidence": 0.8601074,
+            "punctuated_word": "time,"
+          },
+          {
+            "word": "and",
+            "start": 139.725,
+            "end": 139.88501,
+            "confidence": 1.0,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "place",
+            "start": 139.88501,
+            "end": 140.52501,
+            "confidence": 0.9995117,
+            "punctuated_word": "place."
+          }
+        ],
+        "id": "44d183f6-b56b-4105-8b29-566182522234"
+      },
+      {
+        "start": 140.845,
+        "end": 143.32501,
+        "confidence": 0.9877388,
+        "channel": 0,
+        "transcript": "Zara's row matches the recovered plan.",
+        "words": [
+          {
+            "word": "zara's",
+            "start": 140.845,
+            "end": 141.485,
+            "confidence": 0.9996745,
+            "punctuated_word": "Zara's"
+          },
+          {
+            "word": "row",
+            "start": 141.485,
+            "end": 141.725,
+            "confidence": 0.9370117,
+            "punctuated_word": "row"
+          },
+          {
+            "word": "matches",
+            "start": 141.725,
+            "end": 142.125,
+            "confidence": 1.0,
+            "punctuated_word": "matches"
+          },
+          {
+            "word": "the",
+            "start": 142.125,
+            "end": 142.285,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "recovered",
+            "start": 142.285,
+            "end": 142.685,
+            "confidence": 0.99609375,
+            "punctuated_word": "recovered"
+          },
+          {
+            "word": "plan",
+            "start": 142.685,
+            "end": 143.32501,
+            "confidence": 0.99365234,
+            "punctuated_word": "plan."
+          }
+        ],
+        "id": "310d2760-ed9c-46b6-a8fe-1ae0b5603494"
+      },
+      {
+        "start": 143.725,
+        "end": 149.37001,
+        "confidence": 0.9895395,
+        "channel": 0,
+        "transcript": "Individual cards carry the same schedule, while any missing turns are marked explicitly.",
+        "words": [
+          {
+            "word": "individual",
+            "start": 143.725,
+            "end": 144.285,
+            "confidence": 0.99902344,
+            "punctuated_word": "Individual"
+          },
+          {
+            "word": "cards",
+            "start": 144.285,
+            "end": 144.685,
+            "confidence": 1.0,
+            "punctuated_word": "cards"
+          },
+          {
+            "word": "carry",
+            "start": 144.685,
+            "end": 145.16501,
+            "confidence": 1.0,
+            "punctuated_word": "carry"
+          },
+          {
+            "word": "the",
+            "start": 145.16501,
+            "end": 145.325,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "same",
+            "start": 145.325,
+            "end": 145.645,
+            "confidence": 1.0,
+            "punctuated_word": "same"
+          },
+          {
+            "word": "schedule",
+            "start": 145.645,
+            "end": 146.045,
+            "confidence": 0.86938477,
+            "punctuated_word": "schedule,"
+          },
+          {
+            "word": "while",
+            "start": 146.41,
+            "end": 146.73,
+            "confidence": 1.0,
+            "punctuated_word": "while"
+          },
+          {
+            "word": "any",
+            "start": 146.73,
+            "end": 147.05,
+            "confidence": 0.99902344,
+            "punctuated_word": "any"
+          },
+          {
+            "word": "missing",
+            "start": 147.05,
+            "end": 147.45,
+            "confidence": 1.0,
+            "punctuated_word": "missing"
+          },
+          {
+            "word": "turns",
+            "start": 147.45,
+            "end": 147.77,
+            "confidence": 0.99902344,
+            "punctuated_word": "turns"
+          },
+          {
+            "word": "are",
+            "start": 147.77,
+            "end": 148.09,
+            "confidence": 0.9980469,
+            "punctuated_word": "are"
+          },
+          {
+            "word": "marked",
+            "start": 148.09,
+            "end": 148.49,
+            "confidence": 1.0,
+            "punctuated_word": "marked"
+          },
+          {
+            "word": "explicitly",
+            "start": 148.49,
+            "end": 149.37001,
+            "confidence": 0.9995117,
+            "punctuated_word": "explicitly."
+          }
+        ],
+        "id": "37d97244-048c-4632-8290-6cf4d7066881"
+      },
+      {
+        "start": 149.93,
+        "end": 154.25,
+        "confidence": 0.98922026,
+        "channel": 0,
+        "transcript": "This is a local proof of concept with public source and planning documents.",
+        "words": [
+          {
+            "word": "this",
+            "start": 149.93,
+            "end": 150.25,
+            "confidence": 1.0,
+            "punctuated_word": "This"
+          },
+          {
+            "word": "is",
+            "start": 150.25,
+            "end": 150.49,
+            "confidence": 0.99902344,
+            "punctuated_word": "is"
+          },
+          {
+            "word": "a",
+            "start": 150.49,
+            "end": 150.57,
+            "confidence": 0.9980469,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "local",
+            "start": 150.57,
+            "end": 150.97,
+            "confidence": 0.99902344,
+            "punctuated_word": "local"
+          },
+          {
+            "word": "proof",
+            "start": 150.97,
+            "end": 151.21,
+            "confidence": 0.99902344,
+            "punctuated_word": "proof"
+          },
+          {
+            "word": "of",
+            "start": 151.21,
+            "end": 151.37,
+            "confidence": 0.99902344,
+            "punctuated_word": "of"
+          },
+          {
+            "word": "concept",
+            "start": 151.37,
+            "end": 151.77,
+            "confidence": 1.0,
+            "punctuated_word": "concept"
+          },
+          {
+            "word": "with",
+            "start": 151.77,
+            "end": 152.17,
+            "confidence": 0.9013672,
+            "punctuated_word": "with"
+          },
+          {
+            "word": "public",
+            "start": 152.17,
+            "end": 152.49,
+            "confidence": 0.97802734,
+            "punctuated_word": "public"
+          },
+          {
+            "word": "source",
+            "start": 152.49,
+            "end": 152.89,
+            "confidence": 0.9951172,
+            "punctuated_word": "source"
+          },
+          {
+            "word": "and",
+            "start": 152.89,
+            "end": 153.13,
+            "confidence": 0.9970703,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "planning",
+            "start": 153.13,
+            "end": 153.45,
+            "confidence": 1.0,
+            "punctuated_word": "planning"
+          },
+          {
+            "word": "documents",
+            "start": 153.45,
+            "end": 154.25,
+            "confidence": 0.9941406,
+            "punctuated_word": "documents."
+          }
+        ],
+        "id": "3aff71da-b0b3-4a1d-8a53-8959ab0d1f18"
+      },
+      {
+        "start": 154.41,
+        "end": 156.09001,
+        "confidence": 0.97786456,
+        "channel": 0,
+        "transcript": "It plans opportunities.",
+        "words": [
+          {
+            "word": "it",
+            "start": 154.41,
+            "end": 154.73,
+            "confidence": 1.0,
+            "punctuated_word": "It"
+          },
+          {
+            "word": "plans",
+            "start": 154.73,
+            "end": 155.13,
+            "confidence": 0.99902344,
+            "punctuated_word": "plans"
+          },
+          {
+            "word": "opportunities",
+            "start": 155.13,
+            "end": 156.09001,
+            "confidence": 0.9345703,
+            "punctuated_word": "opportunities."
+          }
+        ],
+        "id": "553eff24-2406-44fe-8d4c-11f10fea7fd1"
+      },
+      {
+        "start": 156.17,
+        "end": 158.49,
+        "confidence": 0.99348956,
+        "channel": 0,
+        "transcript": "It doesn't measure attendance or learning.",
+        "words": [
+          {
+            "word": "it",
+            "start": 156.17,
+            "end": 156.33,
+            "confidence": 1.0,
+            "punctuated_word": "It"
+          },
+          {
+            "word": "doesn't",
+            "start": 156.33,
+            "end": 156.65,
+            "confidence": 1.0,
+            "punctuated_word": "doesn't"
+          },
+          {
+            "word": "measure",
+            "start": 156.65,
+            "end": 156.97,
+            "confidence": 1.0,
+            "punctuated_word": "measure"
+          },
+          {
+            "word": "attendance",
+            "start": 156.97,
+            "end": 157.61,
+            "confidence": 1.0,
+            "punctuated_word": "attendance"
+          },
+          {
+            "word": "or",
+            "start": 157.61,
+            "end": 157.85,
+            "confidence": 0.9941406,
+            "punctuated_word": "or"
+          },
+          {
+            "word": "learning",
+            "start": 157.85,
+            "end": 158.49,
+            "confidence": 0.9667969,
+            "punctuated_word": "learning."
+          }
+        ],
+        "id": "85ab7919-be78-4e67-84d2-1716be337af0"
+      },
+      {
+        "start": 159.13,
+        "end": 160.01,
+        "confidence": 0.8284912,
+        "channel": 0,
+        "transcript": "Every hand.",
+        "words": [
+          {
+            "word": "every",
+            "start": 159.13,
+            "end": 159.53,
+            "confidence": 1.0,
+            "punctuated_word": "Every"
+          },
+          {
+            "word": "hand",
+            "start": 159.53,
+            "end": 160.01,
+            "confidence": 0.6569824,
+            "punctuated_word": "hand."
+          }
+        ],
+        "id": "ba7757a8-1bba-4aa1-8fe8-5421de8a93cc"
+      },
+      {
+        "start": 160.60487,
+        "end": 163.32487,
+        "confidence": 0.9975179,
+        "channel": 0,
+        "transcript": "Make room for every learner's hands on turn.",
+        "words": [
+          {
+            "word": "make",
+            "start": 160.60487,
+            "end": 160.92487,
+            "confidence": 1.0,
+            "punctuated_word": "Make"
+          },
+          {
+            "word": "room",
+            "start": 160.92487,
+            "end": 161.24487,
+            "confidence": 1.0,
+            "punctuated_word": "room"
+          },
+          {
+            "word": "for",
+            "start": 161.24487,
+            "end": 161.56487,
+            "confidence": 1.0,
+            "punctuated_word": "for"
+          },
+          {
+            "word": "every",
+            "start": 161.56487,
+            "end": 161.88487,
+            "confidence": 0.9980469,
+            "punctuated_word": "every"
+          },
+          {
+            "word": "learner's",
+            "start": 161.88487,
+            "end": 162.52487,
+            "confidence": 0.9899089,
+            "punctuated_word": "learner's"
+          },
+          {
+            "word": "hands",
+            "start": 162.52487,
+            "end": 162.76486,
+            "confidence": 0.9941406,
+            "punctuated_word": "hands"
+          },
+          {
+            "word": "on",
+            "start": 162.76486,
+            "end": 163.00487,
+            "confidence": 1.0,
+            "punctuated_word": "on"
+          },
+          {
+            "word": "turn",
+            "start": 163.00487,
+            "end": 163.32487,
+            "confidence": 0.9980469,
+            "punctuated_word": "turn."
+          }
+        ],
+        "id": "5724713c-617b-4625-955d-a26b82e102d7"
+      }
+    ]
+  }
+}

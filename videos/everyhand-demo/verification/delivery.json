@@ -1,0 +1,48 @@
+{
+  "file": "everyhand-submission.mp4",
+  "bytes": 43956915,
+  "sha256": "969ece6b8bac762cba3b1769242ed3354a20b53a52b5d3c93ca29049a2935b5a",
+  "duration_seconds": 165.8,
+  "video": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "pix_fmt": "yuv420p",
+    "avg_frame_rate": "60/1",
+    "nb_frames": "9945",
+    "duration": "165.750000"
+  },
+  "audio": {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "duration": "165.800000"
+  },
+  "loudness_before": {
+    "input_i": "-18.54",
+    "input_tp": "-2.79",
+    "input_lra": "3.50",
+    "input_thresh": "-29.47",
+    "output_i": "-15.99",
+    "output_tp": "-1.50",
+    "output_lra": "3.10",
+    "output_thresh": "-26.86",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.01"
+  },
+  "loudness_after": {
+    "input_i": "-16.02",
+    "input_tp": "-1.51",
+    "input_lra": "3.50",
+    "input_thresh": "-26.95",
+    "output_i": "-16.09",
+    "output_tp": "-1.50",
+    "output_lra": "3.10",
+    "output_thresh": "-26.97",
+    "normalization_type": "dynamic",
+    "target_offset": "0.09"
+  },
+  "all_frames_decoded": true,
+  "black_intervals": [],
+  "method": "Two-pass audio loudness normalization; video stream copied unchanged."
+}

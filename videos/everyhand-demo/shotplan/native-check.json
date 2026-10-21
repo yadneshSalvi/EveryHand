@@ -1,0 +1,321 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 15,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"everyhand-act-01-shot-02-action\"> has data-start=\"3.71\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#everyhand-act-01-shot-02-action",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-01.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"3.71\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"everyhand-act-01-shot-03-action\"> has data-start=\"12.775\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#everyhand-act-01-shot-03-action",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-01.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"12.775\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 1 has 4 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-01.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"everyhand-act-02-shot-03-action\"> has data-start=\"11.875\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#everyhand-act-02-shot-03-action",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-02.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"11.875\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"everyhand-act-02-shot-04-action\"> has data-start=\"17.315\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#everyhand-act-02-shot-04-action",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-02.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"17.315\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"everyhand-act-03-shot-02-action\"> has data-start=\"4.69\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#everyhand-act-03-shot-02-action",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-03.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"4.69\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"everyhand-act-03-shot-03-action\"> has data-start=\"7.65\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#everyhand-act-03-shot-03-action",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-03.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"7.65\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"everyhand-act-03-shot-05-action\"> has data-start=\"14.015\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#everyhand-act-03-shot-05-action",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-03.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"14.015\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 1 has 6 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-03.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"everyhand-act-04-shot-02-action\"> has data-start=\"10.865\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#everyhand-act-04-shot-02-action",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-04.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"10.865\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"everyhand-act-04-shot-03-action\"> has data-start=\"16.625\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#everyhand-act-04-shot-03-action",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-04.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"16.625\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"everyhand-act-04-shot-04-action\"> has data-start=\"21.98\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#everyhand-act-04-shot-04-action",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-04.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"21.98\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 1 has 4 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-04.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"everyhand-act-05-shot-04-action\"> has data-start=\"17.08\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#everyhand-act-05-shot-04-action",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-05.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"17.08\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 1 has 4 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/EveryHand/videos/everyhand-demo/compositions/frames/act-05.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 6
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 165.75,
+    "samples": [
+      9.208,
+      27.625,
+      46.042,
+      64.458,
+      82.875,
+      101.292,
+      119.708,
+      138.125,
+      156.542
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      9.208,
+      46.042,
+      82.875,
+      119.708,
+      156.542
+    ],
+    "checked": 25,
+    "passed": 25
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

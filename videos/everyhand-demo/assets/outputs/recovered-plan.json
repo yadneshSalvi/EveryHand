@@ -1,0 +1,314 @@
+{
+  "plan": {
+    "origin": "example",
+    "title": "A closer look at the little things",
+    "learners": [
+      "Aarav",
+      "Ada",
+      "Amara",
+      "Arjun",
+      "Ava",
+      "Ben",
+      "Chloe",
+      "Dev",
+      "Ella",
+      "Ethan",
+      "Fatima",
+      "Finn",
+      "Grace",
+      "Hana",
+      "Ishaan",
+      "Ivy",
+      "Jai",
+      "Leo",
+      "Luna",
+      "Maya",
+      "Mia",
+      "Noah",
+      "Oliver",
+      "Priya",
+      "Riya",
+      "Sam",
+      "Sofia",
+      "Zara"
+    ],
+    "minutes": 36,
+    "tasks": [
+      {
+        "id": "observe",
+        "name": "Observe a specimen",
+        "duration": 4,
+        "capacity": 3
+      }
+    ]
+  },
+  "schedule": {
+    "slots": [
+      {
+        "learner": 0,
+        "task": "observe",
+        "resource": 0,
+        "start": 0,
+        "end": 4
+      },
+      {
+        "learner": 1,
+        "task": "observe",
+        "resource": 1,
+        "start": 0,
+        "end": 4
+      },
+      {
+        "learner": 2,
+        "task": "observe",
+        "resource": 2,
+        "start": 0,
+        "end": 4
+      },
+      {
+        "learner": 3,
+        "task": "observe",
+        "resource": 3,
+        "start": 0,
+        "end": 4
+      },
+      {
+        "learner": 4,
+        "task": "observe",
+        "resource": 0,
+        "start": 4,
+        "end": 8
+      },
+      {
+        "learner": 5,
+        "task": "observe",
+        "resource": 1,
+        "start": 4,
+        "end": 8
+      },
+      {
+        "learner": 6,
+        "task": "observe",
+        "resource": 2,
+        "start": 4,
+        "end": 8
+      },
+      {
+        "learner": 7,
+        "task": "observe",
+        "resource": 3,
+        "start": 4,
+        "end": 8
+      },
+      {
+        "learner": 8,
+        "task": "observe",
+        "resource": 0,
+        "start": 8,
+        "end": 12
+      },
+      {
+        "learner": 9,
+        "task": "observe",
+        "resource": 1,
+        "start": 8,
+        "end": 12
+      },
+      {
+        "learner": 10,
+        "task": "observe",
+        "resource": 2,
+        "start": 8,
+        "end": 12
+      },
+      {
+        "learner": 11,
+        "task": "observe",
+        "resource": 0,
+        "start": 12,
+        "end": 16
+      },
+      {
+        "learner": 12,
+        "task": "observe",
+        "resource": 1,
+        "start": 12,
+        "end": 16
+      },
+      {
+        "learner": 13,
+        "task": "observe",
+        "resource": 2,
+        "start": 12,
+        "end": 16
+      },
+      {
+        "learner": 14,
+        "task": "observe",
+        "resource": 0,
+        "start": 16,
+        "end": 20
+      },
+      {
+        "learner": 15,
+        "task": "observe",
+        "resource": 1,
+        "start": 16,
+        "end": 20
+      },
+      {
+        "learner": 16,
+        "task": "observe",
+        "resource": 2,
+        "start": 16,
+        "end": 20
+      },
+      {
+        "learner": 17,
+        "task": "observe",
+        "resource": 0,
+        "start": 20,
+        "end": 24
+      },
+      {
+        "learner": 18,
+        "task": "observe",
+        "resource": 1,
+        "start": 20,
+        "end": 24
+      },
+      {
+        "learner": 19,
+        "task": "observe",
+        "resource": 2,
+        "start": 20,
+        "end": 24
+      },
+      {
+        "learner": 20,
+        "task": "observe",
+        "resource": 0,
+        "start": 24,
+        "end": 28
+      },
+      {
+        "learner": 21,
+        "task": "observe",
+        "resource": 1,
+        "start": 24,
+        "end": 28
+      },
+      {
+        "learner": 22,
+        "task": "observe",
+        "resource": 2,
+        "start": 24,
+        "end": 28
+      },
+      {
+        "learner": 23,
+        "task": "observe",
+        "resource": 0,
+        "start": 28,
+        "end": 32
+      },
+      {
+        "learner": 24,
+        "task": "observe",
+        "resource": 1,
+        "start": 28,
+        "end": 32
+      },
+      {
+        "learner": 25,
+        "task": "observe",
+        "resource": 2,
+        "start": 28,
+        "end": 32
+      },
+      {
+        "learner": 26,
+        "task": "observe",
+        "resource": 0,
+        "start": 32,
+        "end": 36
+      },
+      {
+        "learner": 27,
+        "task": "observe",
+        "resource": 1,
+        "start": 32,
+        "end": 36
+      }
+    ],
+    "unserved": [],
+    "served": 28
+  },
+  "disruption": {
+    "minute": 8,
+    "task": "observe",
+    "resource": 3,
+    "completed": [
+      {
+        "learner": 0,
+        "task": "observe",
+        "resource": 0,
+        "start": 0,
+        "end": 4
+      },
+      {
+        "learner": 1,
+        "task": "observe",
+        "resource": 1,
+        "start": 0,
+        "end": 4
+      },
+      {
+        "learner": 2,
+        "task": "observe",
+        "resource": 2,
+        "start": 0,
+        "end": 4
+      },
+      {
+        "learner": 3,
+        "task": "observe",
+        "resource": 3,
+        "start": 0,
+        "end": 4
+      },
+      {
+        "learner": 4,
+        "task": "observe",
+        "resource": 0,
+        "start": 4,
+        "end": 8
+      },
+      {
+        "learner": 5,
+        "task": "observe",
+        "resource": 1,
+        "start": 4,
+        "end": 8
+      },
+      {
+        "learner": 6,
+        "task": "observe",
+        "resource": 2,
+        "start": 4,
+        "end": 8
+      },
+      {
+        "learner": 7,
+        "task": "observe",
+        "resource": 3,
+        "start": 4,
+        "end": 8
+      }
+    ],
+    "interrupted": [],
+    "before": 28,
+    "capacityBefore": 4
+  },
+  "notice": "Planned opportunities, not observed participation."
+}

@@ -4,6 +4,8 @@
 
 Every Hand is a workshop planning studio for teachers and facilitators. It schedules complete **individual** opportunities, then compares actual ways to make room: keep the equipment and add time, or keep the finish time and add places. Full turn lengths stay fixed, named learner paths show the consequence, and recovery preserves work already done.
 
+The [submission film source](videos/everyhand-demo/README.md) includes the story, actual demo captures, word-timed narration, original music and reproducible 1080p60 rendering instructions.
+
 ![Every Hand workshop studio showing the fictional 28-learner example and 21 complete individual turns.](docs/screenshots/studio.webp)
 
 ![The actual comparison workspace shows ten extra minutes or one extra place while preserving full four-minute turns.](docs/screenshots/choice-comparison.webp)

@@ -1,0 +1,220 @@
+1
+00:00:00,720 --> 00:00:04,380
+A place in a group
+doesn't guarantee a turn.
+
+2
+00:00:04,560 --> 00:00:08,680
+For teachers planning a practical
+workshop, every hand makes
+
+3
+00:00:08,720 --> 00:00:12,780
+that missing turn visible,
+then helps make room for it.
+
+4
+00:00:13,625 --> 00:00:16,945
+This fictional lesson
+has 28 learners, three
+
+5
+00:00:16,985 --> 00:00:19,365
+microscopes, and thirty minutes.
+
+6
+00:00:19,705 --> 00:00:23,605
+Each learner needs four full
+minutes, including reset.
+
+7
+00:00:24,025 --> 00:00:26,485
+Only 21 complete turns fit.
+
+8
+00:00:26,890 --> 00:00:30,470
+Zara is one of seven
+learners without a turn.
+
+9
+00:00:31,370 --> 00:00:33,570
+Compare ways to make room.
+
+10
+00:00:33,610 --> 00:00:37,410
+Keep the equipment and add
+ten minutes, or keep the
+
+11
+00:00:37,450 --> 00:00:39,990
+finish time and add one microscope.
+
+12
+00:00:40,250 --> 00:00:42,710
+Neither choice shortens anyone's turn.
+
+13
+00:00:43,255 --> 00:00:46,575
+If extra equipment isn't
+available, lock it.
+
+14
+00:00:46,615 --> 00:00:48,435
+The time option remains.
+
+15
+00:00:48,695 --> 00:00:52,115
+Unlock it and preview
+the extra place instead.
+
+16
+00:00:52,615 --> 00:00:56,255
+Now Zara has a real slot,
+minute twenty four to
+
+17
+00:00:56,295 --> 00:00:58,115
+twenty eight at place four.
+
+18
+00:00:58,580 --> 00:01:00,060
+This is still a preview.
+
+19
+00:01:00,100 --> 00:01:01,920
+The current plan hasn't changed.
+
+20
+00:01:02,740 --> 00:01:06,460
+Apply it. 28 learners now have complete
+
+21
+00:01:06,500 --> 00:01:10,540
+turns. The room is driven
+by those scheduled slots.
+
+22
+00:01:10,580 --> 00:01:13,040
+Select a learner to see
+their time and place.
+
+23
+00:01:13,585 --> 00:01:17,225
+But workshops change.
+At minute eight, one
+
+24
+00:01:17,265 --> 00:01:19,165
+microscope stops working.
+
+25
+00:01:19,665 --> 00:01:23,785
+Every hand preserves the eight
+completed turns and rebuilds what
+
+26
+00:01:23,825 --> 00:01:27,565
+comes next. The remaining
+plan serves 23.
+
+27
+00:01:28,240 --> 00:01:30,780
+Five learners still need a full turn.
+
+28
+00:01:31,200 --> 00:01:35,080
+The shortage is visible again,
+without erasing the work already
+
+29
+00:01:35,120 --> 00:01:35,820
+done.
+
+30
+00:01:36,800 --> 00:01:40,840
+Compare recovery. This
+time, six extra minutes are
+
+31
+00:01:40,880 --> 00:01:41,340
+enough.
+
+32
+00:01:41,875 --> 00:01:45,435
+The planner carries forward the
+completed turns and uses the
+
+33
+00:01:45,475 --> 00:01:49,355
+three remaining places.
+Apply the thirty six minute
+
+34
+00:01:49,395 --> 00:01:53,215
+plan. All 28 have complete paths again.
+
+35
+00:01:53,475 --> 00:01:56,870
+Zara's turn is now minute
+thirty two to thirty six
+
+36
+00:01:56,910 --> 00:01:58,170
+at place two.
+
+37
+00:01:58,830 --> 00:02:02,570
+Earlier completed turns keep
+their original times and places.
+
+38
+00:02:03,230 --> 00:02:07,370
+The recovery changes the future
+schedule while preserving the past,
+
+39
+00:02:07,470 --> 00:02:11,290
+and every scheduled turn still
+lasts the full four minutes.
+
+40
+00:02:12,685 --> 00:02:14,745
+Open the facilitator kit.
+
+41
+00:02:14,845 --> 00:02:18,245
+The real run sheet lists
+every scheduled learner,
+
+42
+00:02:18,285 --> 00:02:20,665
+activity, time, and place.
+
+43
+00:02:20,845 --> 00:02:23,465
+Zara's row matches the recovered plan.
+
+44
+00:02:23,725 --> 00:02:27,730
+Individual cards carry the same
+schedule, while any missing turns
+
+45
+00:02:27,770 --> 00:02:31,730
+are marked explicitly. This
+is a local proof of concept
+
+46
+00:02:31,770 --> 00:02:34,370
+with public source and
+planning documents.
+
+47
+00:02:34,410 --> 00:02:38,630
+It plans opportunities. It doesn't
+measure attendance or learning.
+
+48
+00:02:39,130 --> 00:02:43,465
+Every hand. Make room for
+every learner's hands on turn.

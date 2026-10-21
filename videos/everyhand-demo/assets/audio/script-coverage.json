@@ -1,0 +1,77 @@
+{
+  "method": "Actual Deepgram words compared against locked script; punctuation, number formatting and named compound normalization only",
+  "normalized_similarity": 1.0,
+  "substantive_mismatches": [],
+  "word_timestamp_errors": [],
+  "low_confidence_words": [
+    {
+      "id": "w72",
+      "text": "minutes,",
+      "word": "minutes",
+      "start": 35.61,
+      "end": 36.25,
+      "confidence": 0.70251465
+    },
+    {
+      "id": "w167",
+      "text": "hand",
+      "word": "hand",
+      "start": 79.985,
+      "end": 80.465004,
+      "confidence": 0.52783203
+    },
+    {
+      "id": "w266",
+      "text": "past,",
+      "word": "past",
+      "start": 126.670006,
+      "end": 127.23,
+      "confidence": 0.72595215
+    },
+    {
+      "id": "w335",
+      "text": "hand.",
+      "word": "hand",
+      "start": 159.53,
+      "end": 160.01,
+      "confidence": 0.6569824
+    }
+  ],
+  "acts": [
+    {
+      "id": "act-01",
+      "script_words": 61,
+      "recognized_words": 61,
+      "speech_duration_s": 29.53,
+      "effective_words_per_minute": 123.94175414832374
+    },
+    {
+      "id": "act-02",
+      "script_words": 68,
+      "recognized_words": 70,
+      "speech_duration_s": 30.55,
+      "effective_words_per_minute": 133.55155482815056
+    },
+    {
+      "id": "act-03",
+      "script_words": 70,
+      "recognized_words": 70,
+      "speech_duration_s": 32.87,
+      "effective_words_per_minute": 127.77608761788866
+    },
+    {
+      "id": "act-04",
+      "script_words": 72,
+      "recognized_words": 76,
+      "speech_duration_s": 34.75,
+      "effective_words_per_minute": 124.31654676258992
+    },
+    {
+      "id": "act-05",
+      "script_words": 66,
+      "recognized_words": 67,
+      "speech_duration_s": 30.7,
+      "effective_words_per_minute": 128.9902280130293
+    }
+  ]
+}

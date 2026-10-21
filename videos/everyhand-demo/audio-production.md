@@ -1,0 +1,17 @@
+# Audio production
+
+Generated with `gemini-3.1-flash-tts-preview` using the Sulafat prebuilt voice. Five locked acts were synthesized separately with the same professional narrator profile. Only leading/trailing silence was trimmed; each act received one fixed gain adjustment and tiny edge fades. No voice speed change was used. Raw provider WAVs and sanitized per-act metadata remain in `assets/audio/acts/`.
+
+The assembled dry narration is 165.750 seconds, including chapter holds and the closing card. Deepgram Nova-3 returned 344 word timestamps at confidence 1.0000; `transcript.json` contains actual recognition timestamps and `transcript.srt` contains readable caption phrases. Deepgram processed the final assembled narration before music or effects.
+
+Music and effects are original deterministic Python/NumPy/SciPy synthesis, with no external samples. The 88 BPM score uses soft sine pads, sparse plucks, and a quiet pulse. Effects are chapter sweeps and confirmation bells. Public lossless stems: `assets/audio/narration.flac`, `music.flac`, and `effects.flac`. WAV equivalents and raw provider files are local intermediates. `master-audition.flac` is a local audition mix with dynamic spectral carving and a -16 LUFS / -1.5 dBTP loudnorm target. The composition should use the separate stems and apply the HyperFrames native voiceover carve to its music element against the narration group. Do not layer the audition master together with stems.
+
+Reproduce: `python3 scripts/audio_production.py`. Python dependencies: numpy, scipy, requests; system dependency: ffmpeg. The script privately reads `GEMINI_API_KEY` and `DEEPGRAM_API_KEY` from the repository `.env`, never saves credentials, and reuses assets when request/audio hashes match. Transient provider failures retry; an unavailable explicit model fails visibly without substituting another model. All audio is frozen locally; playback/render has no provider requests.
+
+Quality reports: `assets/audio/script-coverage.json` compares actual Deepgram recognition to the locked script, and `assets/audio/loudness-qc.json` records measured LUFS, true peak, duration and file size for every final stem. Independent model observation, when available, is in `assets/audio/model-audio-qc.json`; this is not a human listening claim.
+
+Official contracts: [Gemini API](https://ai.google.dev/api/generate-content), [3.1 model](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-tts-preview), [Deepgram prerecorded API](https://developers.deepgram.com/docs/pre-recorded-audio). Gemini 3.1 is a legacy preview with earliest shutdown November 17, 2026.
+
+Final QC: 165.75 seconds, 100% normalized script coverage, 344 actual Deepgram word timestamps, no invalid word intervals, 48 SRT captions with maximum 39 characters per line, no invalid/overlapping caption intervals, and zero clipped narration samples. Final audition mastering measures -16.00 LUFS integrated and -1.50 dBTP. The raw music stem is approximately 20.6 dB below narration before the audition's dynamic carve. See `assets/audio/audio-qc-summary.json` for exact measurements and final stem hashes.
+
+An independent Gemini multimodal observation of the final actual master reports stable narration, an intact ending, unobtrusive music, and no identified clicks/hiss/mouth artifacts. Its listed instruction quotations are intentional on-screen UI actions from the locked narration. This is a model observation with limitations, not a human listening claim.
