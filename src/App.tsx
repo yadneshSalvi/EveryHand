@@ -10,7 +10,6 @@ import {
   FileText,
   Hand,
   Info,
-  Leaf,
   Minus,
   Plus,
   RotateCcw,
@@ -325,9 +324,6 @@ export default function App() {
             every hand<span className="brand-dot">.</span>
           </span>
         </a>
-        <div className="header-note">
-          <span className="tiny-flower">✳</span> Good learning makes room.
-        </div>
         <nav>
           <button
             className="text-button how-link"
@@ -367,10 +363,6 @@ export default function App() {
               <br />
               Getting a real turn is another.
             </p>
-            <span>
-              Plan the moments that let everyone
-              <br className="desktop-br" /> get their hands on the learning.
-            </span>
             <a href="#studio" className="jump-link">
               Let's make it work <ArrowDown size={16} />
             </a>
@@ -616,7 +608,6 @@ export default function App() {
           </div>
           <div className="roster-header">
             <div>
-              <p className="eyebrow">FROM THE GROUP TO THE INDIVIDUAL</p>
               <h2>
                 Every learner. <em>A real turn.</em>
               </h2>
@@ -779,8 +770,6 @@ export default function App() {
             )}
           </div>
           <div className="bottom-note">
-            <Leaf size={16} />
-            <span>More thoughtful plans. More hands on the learning.</span>
             <button className="text-button" onClick={() => setDialog("import")}>
               <Sparkles size={14} />
               Start from your own lesson
@@ -840,7 +829,6 @@ export default function App() {
               ? "Make the draft yours."
               : "A little planning. More possibility."
           }
-          subtitle="Give each learner enough time and a place to try."
           onClose={closeDialog}
           wide
         >
@@ -1126,11 +1114,7 @@ export default function App() {
         </Modal>
       )}
       {dialog === "import" && (
-        <Modal
-          title="Bring your own little lesson."
-          subtitle="Turn a few notes into a plan you can inspect and adjust."
-          onClose={closeDialog}
-        >
+        <Modal title="Bring your own little lesson." onClose={closeDialog}>
           <div className="import-body">
             <label className="field">
               Your lesson notes
@@ -1172,11 +1156,7 @@ export default function App() {
         </Modal>
       )}
       {dialog === "about" && (
-        <Modal
-          title="A turn changes everything."
-          subtitle="Start with the individual. Then make the room work."
-          onClose={closeDialog}
-        >
+        <Modal title="A turn changes everything." onClose={closeDialog}>
           <div className="about-body">
             {[
               [
@@ -1221,7 +1201,7 @@ export default function App() {
       {selected !== null && (
         <Modal
           title={`${plan.learners[selected]}'s moment.`}
-          subtitle={`Learner ${String(selected + 1).padStart(2, "0")} · An individual path through the workshop`}
+          subtitle={`Learner ${String(selected + 1).padStart(2, "0")}`}
           onClose={() => setSelected(null)}
         >
           <div className="learner-detail">
@@ -1314,11 +1294,7 @@ function ExportModal({
   notify: (s: string) => void;
 }) {
   return (
-    <Modal
-      title="From the plan to the room."
-      subtitle="Your real schedule, ready to put into practice."
-      onClose={onClose}
-    >
+    <Modal title="From the plan to the room." onClose={onClose}>
       <div className="export-body">
         <div className="export-preview">
           <FileText size={34} />

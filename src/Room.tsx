@@ -76,7 +76,6 @@ export default function Room({
       <div className="panel-top">
         <div>
           <span className="eyebrow">THE WORKSHOP</span>
-          <span className="view-label">A place for every learner</span>
         </div>
         <span className="preview-badge">
           <i />
@@ -399,7 +398,7 @@ export default function Room({
       </div>
       <div className="room-foot">
         <Check size={13} />
-        <span>Every dot is one learner. Every turn is theirs.</span>
+        <span>Every dot is one learner.</span>
         <span>Not live attendance</span>
       </div>
     </section>

@@ -69,7 +69,6 @@ export default function Modal({
       >
         <div className="modal-header">
           <div>
-            <span className="eyebrow">EVERY HAND / THE STUDIO</span>
             <h2 id="dialog-title">{title}</h2>
             {subtitle && <p>{subtitle}</p>}
           </div>

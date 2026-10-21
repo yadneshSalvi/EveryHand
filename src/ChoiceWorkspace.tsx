@@ -109,7 +109,7 @@ export default function ChoiceWorkspace({
   return (
     <Modal
       title="Keep the turn. Find the room."
-      subtitle={`${context.plan.learners.length - context.result.served} ${context.plan.learners.length - context.result.served === 1 ? "learner still needs" : "learners still need"} a full path. Compare time and equipment without shortening a turn.`}
+      subtitle={`${context.plan.learners.length - context.result.served} ${context.plan.learners.length - context.result.served === 1 ? "learner still needs" : "learners still need"} a full path.`}
       onClose={onClose}
       wide
       className="choice-workspace"
@@ -147,9 +147,6 @@ export default function ChoiceWorkspace({
           )}
           <div className="choice-question">
             <h3>What has to stay fixed?</h3>
-            <p>
-              Choose a real constraint. We’ll show the changes it still allows.
-            </p>
           </div>
           <div className="constraint-locks">
             <label className={locks.equipment ? "locked" : ""}>
@@ -162,7 +159,6 @@ export default function ChoiceWorkspace({
               />
               <span>
                 <b>I can’t find extra places</b>
-                <small>Keep equipment as planned</small>
               </span>
               <LockKeyhole size={15} />
             </label>
@@ -176,7 +172,6 @@ export default function ChoiceWorkspace({
               />
               <span>
                 <b>We must finish at {context.plan.minutes}:00</b>
-                <small>Keep the session length</small>
               </span>
               <LockKeyhole size={15} />
             </label>
