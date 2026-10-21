@@ -61,7 +61,7 @@ The comparison engine generates complete schedules, not estimated scores. Baseli
 
 Multi-activity options are labeled **verified**, with no global-minimum claim. The search checks later integer horizons through 120 minutes and increases to one activity at a time through 16 places. No result within this bounded search does not prove that combined changes or another ordering cannot work.
 
-Every candidate retains the original learners, activity order and full durations. Applying rechecks the source revision, lock settings, actual schedule and protected history; a stale preview cannot overwrite a changed plan. Time/equipment deltas, gained learner names and moved future turns are computed from actual before/after slots. Exports read the applied schedule.
+Every candidate retains the original learners, activity order and full durations. Applying rechecks the source revision, lock settings, actual schedule and protected history; a stale preview cannot overwrite a changed plan. Time/equipment deltas, gained learner names and moved future turns are computed from actual before/after slots. A compact named learner proof sits beside the choices on desktop, showing a missing turn become a real time and place as each option is previewed; the full learner inspector remains below. Exports read the applied schedule.
 
 ## Verification
 

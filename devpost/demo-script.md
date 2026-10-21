@@ -7,7 +7,7 @@ Target length: **2 minutes 45 seconds**, leaving a small margin below three minu
 | Time | Screen action | Evidence to make visible |
 | --- | --- | --- |
 | 0:00–0:20 | Show the fictional workshop: 28 learners, three microscopes, 30 minutes. Keep the full four-minute turn visible. | Only 21 learners have complete individual turns; seven still need a path. |
-| 0:20–0:40 | Choose **Compare ways to make room**. | Actual options: keep three places and add 10 minutes, or keep 30 minutes and add one place. Full turn lengths stay fixed. |
+| 0:20–0:40 | Choose **Compare ways to make room**. | Actual options: keep three places and add 10 minutes, or keep 30 minutes and add one place. Full turn lengths stay fixed, with a named missing-to-scheduled turn visible beside the choices. |
 | 0:40–1:05 | Lock equipment, inspect the time option and a named learner’s before/after path. Unlock equipment and preview the other option. | The constraints change what can be chosen. A missing turn becomes a real scheduled time and place; preview leaves the workshop unchanged. |
 | 1:05–1:25 | Apply the extra-place option. Briefly inspect the room/roster. | The actual plan becomes 28/28 with four places. Zara’s final turn fits at 24:00–28:00. |
 | 1:25–1:55 | At minute eight, lose one place. Open comparison again and inspect the time option. | The recovery starts at 23/28, keeps eight completed turns, and needs only six extra minutes. It uses the actual remaining state rather than starting over. |

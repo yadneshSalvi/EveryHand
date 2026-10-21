@@ -84,6 +84,16 @@ export default function ChoiceWorkspace({
     () => new Set(selected?.delta.changed.map((c) => c.learner) ?? []),
     [selected],
   );
+  const gainedLearner = selected?.delta.gained.at(-1);
+  const gainedChange = selected?.delta.changed.find(
+    (change) => change.learner === gainedLearner,
+  );
+  const gainedTurn = gainedChange?.after.find(
+    (slot) => !gainedChange.before.some((before) => before.task === slot.task),
+  );
+  const gainedTask = selected?.plan.tasks.find(
+    (task) => task.id === gainedTurn?.task,
+  );
   function apply() {
     if (!selected) return;
     try {
@@ -181,93 +191,143 @@ export default function ChoiceWorkspace({
           {search && (
             <>
               <div
-                className="choice-options"
-                role="group"
-                aria-label="Preview a proposed plan"
+                className={`choice-overview ${gainedTurn && gainedTask ? "has-preview" : ""}`}
               >
-                {(["time", "equipment"] as const).map((kind) => {
-                  const c = options.find((c) => c.kind === kind),
-                    disabled = !!c && !allowed(c);
-                  return (
-                    <button
-                      key={kind}
-                      className={`choice-option ${selected?.kind === kind ? "selected" : ""} ${disabled ? "locked-option" : ""}`}
-                      disabled={!c || disabled}
-                      aria-pressed={selected?.kind === kind}
-                      onClick={() => {
-                        setSelectedKind(kind);
-                        setError("");
-                      }}
-                    >
-                      <div className="option-top">
-                        <span>
-                          {kind === "time" ? (
-                            <Clock3 size={17} />
-                          ) : (
-                            <Plus size={18} />
-                          )}{" "}
-                          {kind === "time"
-                            ? "KEEP THE EQUIPMENT"
-                            : "KEEP THE FINISH TIME"}
-                        </span>
-                        {selected?.kind === kind ? (
-                          <CheckCircle2 size={18} />
-                        ) : (
-                          <i />
-                        )}
-                      </div>
-                      {c ? (
-                        <>
-                          <h3>
-                            +{kind === "time" ? c.extraMinutes : c.extraPlaces}{" "}
-                            <em>
-                              {kind === "time"
-                                ? "minutes"
-                                : c.extraPlaces === 1
-                                  ? "place"
-                                  : "places"}
-                            </em>
-                          </h3>
-                          <p>
+                <div
+                  className="choice-options"
+                  role="group"
+                  aria-label="Preview a proposed plan"
+                >
+                  {(["time", "equipment"] as const).map((kind) => {
+                    const c = options.find((c) => c.kind === kind),
+                      disabled = !!c && !allowed(c);
+                    return (
+                      <button
+                        key={kind}
+                        className={`choice-option ${selected?.kind === kind ? "selected" : ""} ${disabled ? "locked-option" : ""}`}
+                        disabled={!c || disabled}
+                        aria-pressed={selected?.kind === kind}
+                        onClick={() => {
+                          setSelectedKind(kind);
+                          setError("");
+                        }}
+                      >
+                        <div className="option-top">
+                          <span>
+                            {kind === "time" ? (
+                              <Clock3 size={17} />
+                            ) : (
+                              <Plus size={18} />
+                            )}{" "}
                             {kind === "time"
-                              ? `${context.plan.minutes} → ${c.plan.minutes} minutes. The same equipment.`
-                              : `${context.plan.tasks.find((t) => t.id === c.changedTask)?.capacity} → ${c.plan.tasks.find((t) => t.id === c.changedTask)?.capacity} places for ${c.plan.tasks.find((t) => t.id === c.changedTask)?.name}.`}
-                          </p>
-                          <div className="option-result">
-                            <span>
-                              <UsersRound size={14} />
-                              <b>
-                                {c.result.served}/{c.plan.learners.length}
-                              </b>{" "}
-                              full paths
-                            </span>
-                            <small>
-                              {disabled
-                                ? "Changes a locked limit"
-                                : c.evidence.kind === "exact"
-                                  ? "Exact minimum"
-                                  : "Verified option"}
-                            </small>
-                          </div>
-                        </>
-                      ) : (
-                        <>
-                          <h3 className="unavailable-title">
-                            No full plan
-                            <br />
-                            <em>in this search.</em>
-                          </h3>
-                          <p>
-                            {
-                              search.unavailable.find((u) => u.kind === kind)
-                                ?.reason
-                            }
-                          </p>
-                        </>
-                      )}
-                    </button>
-                  );
-                })}
+                              ? "KEEP THE EQUIPMENT"
+                              : "KEEP THE FINISH TIME"}
+                          </span>
+                          {selected?.kind === kind ? (
+                            <CheckCircle2 size={18} />
+                          ) : (
+                            <i />
+                          )}
+                        </div>
+                        {c ? (
+                          <>
+                            <h3>
+                              +
+                              {kind === "time" ? c.extraMinutes : c.extraPlaces}{" "}
+                              <em>
+                                {kind === "time"
+                                  ? "minutes"
+                                  : c.extraPlaces === 1
+                                    ? "place"
+                                    : "places"}
+                              </em>
+                            </h3>
+                            <p>
+                              {kind === "time"
+                                ? `${context.plan.minutes} → ${c.plan.minutes} minutes. The same equipment.`
+                                : `${context.plan.tasks.find((t) => t.id === c.changedTask)?.capacity} → ${c.plan.tasks.find((t) => t.id === c.changedTask)?.capacity} places for ${c.plan.tasks.find((t) => t.id === c.changedTask)?.name}.`}
+                            </p>
+                            <div className="option-result">
+                              <span>
+                                <UsersRound size={14} />
+                                <b>
+                                  {c.result.served}/{c.plan.learners.length}
+                                </b>{" "}
+                                full paths
+                              </span>
+                              <small>
+                                {disabled
+                                  ? "Changes a locked limit"
+                                  : c.evidence.kind === "exact"
+                                    ? "Exact minimum"
+                                    : "Verified option"}
+                              </small>
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            <h3 className="unavailable-title">
+                              No full plan
+                              <br />
+                              <em>in this search.</em>
+                            </h3>
+                            <p>
+                              {
+                                search.unavailable.find((u) => u.kind === kind)
+                                  ?.reason
+                              }
+                            </p>
+                          </>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+                {selected &&
+                  gainedLearner !== undefined &&
+                  gainedTurn &&
+                  gainedTask && (
+                    <section
+                      className="choice-snapshot"
+                      aria-label="Named learner proof for selected option"
+                      aria-live="polite"
+                      aria-atomic="true"
+                    >
+                      <div className="snapshot-heading">
+                        <span className="eyebrow">A LEARNER’S PATH</span>
+                        <span className="preview-only">Preview only</span>
+                      </div>
+                      <h3>
+                        {context.plan.learners[gainedLearner]}{" "}
+                        <em>gains a full path.</em>
+                      </h3>
+                      <p className="snapshot-task">
+                        {gainedTask.name}
+                        <span>{gainedTask.duration} full minutes</span>
+                      </p>
+                      <div className="snapshot-change">
+                        <div className="snapshot-before">
+                          <span>Current plan</span>
+                          <strong>No full turn</strong>
+                        </div>
+                        <ArrowRight size={17} aria-hidden="true" />
+                        <div className="snapshot-after">
+                          <span>With this choice</span>
+                          <strong>
+                            {gainedTurn.start}:00 – {gainedTurn.end}:00
+                          </strong>
+                          <small>Place {gainedTurn.resource + 1}</small>
+                        </div>
+                      </div>
+                      <p className="snapshot-gain">
+                        <Check size={14} aria-hidden="true" />
+                        {selected.delta.gained.length}{" "}
+                        {selected.delta.gained.length === 1
+                          ? "more learner gets a full path"
+                          : "more learners get full paths"}
+                      </p>
+                    </section>
+                  )}
               </div>
               {!selected && (
                 <div className="locked-explanation" role="status">
