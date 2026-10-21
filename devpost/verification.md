@@ -4,7 +4,7 @@ This records agent-run evidence. It does not claim a classroom pilot, human lear
 
 ## Automated checks
 
-`npm test`, `npm run check` and `npm run build` pass on Node 22.22.3. The test command now runs 20 tests, including 100 deterministic randomized valid plans checked by an independent invariant function. Fixtures enforce 28 learners × 4 minutes with 3 microscopes in 30 minutes → 21 complete turns; with 4 → 28 and final finish 28.
+`npm test`, `npm run check` and `npm run build` pass on Node 22.22.3. The test command now runs 23 tests, including 100 deterministic randomized valid plans checked by an independent invariant function. Fixtures enforce 28 learners × 4 minutes with 3 microscopes in 30 minutes → 21 complete turns; with 4 → 28 and final finish 28.
 
 The invariants check complete durations, session bounds, valid learner/resource IDs, no duplicate learner/task pairs, no learner/resource overlap, previous-activity completion and result-count parity. Repair is checked at 0, 4, 5, 12, 28 and 30 minutes, including restarting interrupted work at full duration and retaining every completed/unaffected active slot. A final-resource-loss fixture keeps historical work and schedules no new turns at zero capacity. A duration longer than the session returns no finite resource fix.
 
@@ -34,7 +34,7 @@ A separate audit agent ran `./node_modules/.bin/tsx /tmp/everyhand-api-audit.mts
 
 ## Remaining human work
 
-Review the product and planning drafts; try a real classroom timing assumption; complete the brief app-map/code learning activity if desired; record a human-narrated public demo under 3 minutes; write and submit the final Devpost entry. No deployment is included in this local build.
+Review the product and planning drafts; try a real classroom timing assumption; complete the brief app-map/code learning activity if desired; record a human-narrated public demo under 3 minutes; write and submit the final Devpost entry. The public deployment is recorded below; human review and final submission remain pending.
 
 Two additional source findings were repaired: interrupted-turn text distinguishes a required full restart from actual restarted slots, and a separate pre-loss baseline keeps “Restore previous plan” usable even after editing and undoing into a disrupted snapshot.
 
@@ -53,3 +53,17 @@ The actual JSON exported after applying the 36-minute recovery was independently
 Two independent agents reviewed the products against the official criteria. Their focused presentation feedback led to a compact named-learner proof beside the two desktop options. The name, added activity, full duration, time and place come from the selected candidate's actual schedule delta. This is agent review, not facilitator validation.
 
 The parent verified the initial comparison at 1280 × 720 without scrolling: both +10-minute/+1-place choices, the unchanged four-minute duration, Zara's missing-to-scheduled turn, Preview only and Apply were visible together. Switching options changed Zara from 36:00–40:00 at Place 1 to 24:00–28:00 at Place 4 while the current plan remained 21/28. Applying yielded 28/28. Losing a place at minute eight yielded 23/28 with eight completed turns preserved; the +6-minute comparison showed Zara's actual 32:00–36:00 turn at Place 2, and application/undo preserved that history. Locking both limits hid the candidate proof and disabled Apply. At 390 × 844 the document had no horizontal overflow, the comparison content scrolled, and Apply remained available in the footer. An independent reviewer accepted the updated desktop screenshot; the public comparison image shows the actual first-screen state.
+
+## Public deployment verification — 2026-10-21
+
+The studio is deployed at [every-hand.vercel.app](https://every-hand.vercel.app). The public `/api/health` endpoint returned `ok: true` and `aiConfigured: true`. Deployment of commit `ff96645` succeeded without the API type-definition warnings seen in the first deployment. The source build, typecheck and all 23 committed tests passed locally on Node 22.22.3.
+
+The orchestration agent tested the public interface in the browser:
+
+- AI import extracted the fictional 28-learner, 30-minute lesson with one four-minute activity and three places correctly, retaining the reviewable draft workflow.
+- Adding one place produced 28/28 complete turns. Losing a place at minute eight produced 23/28 while retaining all eight completed turns.
+- Applying six extra minutes restored 28/28 at a 36-minute horizon.
+- The downloaded CSV contained 28 learner data rows; Zara's turn was 32–36 minutes at Place 2.
+- No browser errors were observed during this flow.
+
+Production tests also cover missing/foreign origins, HTTPS same-origin acceptance, malformed/oversized bodies, content type and best-effort per-instance burst limits, plus the actual Vercel Web handler export. No classroom use, real-user feedback, human-authored submission or final submission readiness is claimed by this deployment evidence.

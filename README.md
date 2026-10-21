@@ -2,6 +2,8 @@
 
 **Make room for every learner's hands-on turn.**
 
+[Open the live studio](https://every-hand.vercel.app).
+
 Every Hand is a workshop planning studio for teachers and facilitators. It schedules complete **individual** opportunities, then compares actual ways to make room: keep the equipment and add time, or keep the finish time and add places. Full turn lengths stay fixed, named learner paths show the consequence, and recovery preserves work already done.
 
 The [submission film source](videos/everyhand-demo/README.md) includes the story, actual demo captures, word-timed narration, original music and reproducible 1080p60 rendering instructions.
