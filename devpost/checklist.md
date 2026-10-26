@@ -52,6 +52,7 @@ Build mode: fast — explicit autonomous implementation authorization. Human han
 - [ ] Final kick-the-tires exploration and feedback completed
 
 ## Final Review
+- [x] Final Devpost submission completed on 27 October 2026 (IST), following explicit user agreement. Devpost displayed “Project submitted!” and “SUBMITTED TO Build With AI: Basics”. [Public entry](https://devpost.com/software/every-hand); [submission record](submission.md).
 - [ ] Final review complete — feedback resolved and learner confirms ready to ship
 
 ## Code Tour and App Map
@@ -81,4 +82,4 @@ Activity mode: Offline reference map prepared; human activity pending.
 - Mid-turn historical regression verified in IAB: lose one of four places at minute five, rewind to minute four; all four historical active turns render, including the interrupted turn. Room and roster explicitly show the before-loss view. Functional small labels and warning/missing/undo/chip text were darkened and enlarged after computed-style contrast review. Human final review remains pending.
 
 - Public deployment verified on 2026-10-21 at [every-hand.vercel.app](https://every-hand.vercel.app). The deployed `/api/health` returned `ok: true` and `aiConfigured: true`. The deployment of `ff96645` completed without the earlier API type-definition warnings.
-- Agent verification on the public deployment covered AI extraction of the fictional 28-learner/30-minute/3-place/4-minute lesson, +1-place repair to 28/28, loss at minute eight to 23/28 with eight completed turns preserved, and +6-minute recovery to 28/28 in 36 minutes. Downloaded CSV contained 28 learner rows and Zara's actual 32–36-minute turn at Place 2. No browser errors were observed. This is agent evidence; human review, authorship requirements and final submission remain pending.
+- Agent verification on the public deployment covered AI extraction of the fictional 28-learner/30-minute/3-place/4-minute lesson, +1-place repair to 28/28, loss at minute eight to 23/28 with eight completed turns preserved, and +6-minute recovery to 28/28 in 36 minutes. Downloaded CSV contained 28 learner rows and Zara's actual 32–36-minute turn at Place 2. No browser errors were observed. This is agent evidence; human review and the human learning reflection remain pending. Final Devpost submission was completed on 27 October 2026 (IST), as recorded above.

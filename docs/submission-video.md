@@ -25,4 +25,4 @@
 
 The published video includes the custom thumbnail, English captions, story description and chapter timestamps. Its language is English, category is Science & Technology, and the AI-use disclosure is saved. YouTube's upload copyright check reported no issues.
 
-See the [film source](../videos/everyhand-demo/README.md) and [revision notes](video-revision.md) for production details. This publication record does not claim human review, completion of the human learning reflection, or final Devpost submission.
+See the [film source](../videos/everyhand-demo/README.md) and [revision notes](video-revision.md) for production details. The project was [submitted to Build With AI: Basics on Devpost](https://devpost.com/software/every-hand) on 27 October 2026 (IST), following explicit user agreement. See the [submission record](../devpost/submission.md). Human review and completion of the human learning reflection remain unestablished.

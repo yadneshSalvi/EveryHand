@@ -2,7 +2,7 @@
 
 **Make room for every learner's hands-on turn.**
 
-[Open the live studio](https://every-hand.vercel.app).
+[Open the live studio](https://every-hand.vercel.app). [View the submitted Devpost entry](https://devpost.com/software/every-hand) for Build With AI: Basics, submitted on 27 October 2026. See the [submission record](devpost/submission.md).
 
 Every Hand is a workshop planning studio for teachers and facilitators. It schedules complete **individual** opportunities, then compares actual ways to make room: keep the equipment and add time, or keep the finish time and add places. Full turn lengths stay fixed, named learner paths show the consequence, and recovery preserves work already done.
 
@@ -115,7 +115,7 @@ The 23 tests cover the canonical 21/28 and 28/28 fixtures, +10-minute/+1-place a
 - The current baseline plan is saved in this browser using versioned, validated local storage. The simulated loss, playback position and pasted import text are not persisted. Refresh returns to the baseline plan.
 - No accounts, collaboration, analytics, database or attendance hardware. The optional local server binds only to localhost; the Vercel function accepts same-origin HTTPS imports. Neither logs pasted text, API keys or raw provider errors.
 - Local storage can be cleared through browser settings. Use anonymous labels when entering or importing classroom notes.
-- No classroom pilot, endorsement or educational-effectiveness claim is made. The [revised narrated demo is published on YouTube](docs/submission-video.md). Human final review, the human learning reflection, and final Devpost submission remain pending.
+- No classroom pilot, endorsement or educational-effectiveness claim is made. The [revised narrated demo is published on YouTube](docs/submission-video.md). The [Devpost entry was submitted](https://devpost.com/software/every-hand) on 27 October 2026. Human final review and the human learning reflection remain pending.
 
 ## Planning and attribution
 
