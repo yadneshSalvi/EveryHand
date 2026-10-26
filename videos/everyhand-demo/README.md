@@ -1,5 +1,13 @@
 # Every Hand submission film
 
+## Revised submission — 2026-10-26
+
+The current final film is `renders/everyhand-submission.mp4`:171.10s at1080p60, including38.50s about development AI agents and their verification work. The original is preserved as `renders/everyhand-submission.original-2026-10-21.mp4`.
+
+The updated editable project, narration script, Deepgram timings, storyboard and audio tools are retained locally in the ignored `revision/` directory; start with its `README.md`. [REVIEW.md](REVIEW.md) records measurements and visual/audio QA. The original source composition below remains as the reusable source for the sped-up demonstration.
+
+## Original 21 October edit
+
 A roughly 2:45, 1920×1080, 60 fps product demonstration, built from actual local software captures and actual exported artifacts. The fictional example is identified on screen. The edit is synchronized to real Deepgram word timestamps from Gemini 3.1 Flash TTS narration. Music and sound effects are original deterministic code synthesis.
 
 The story is locked in [SCRIPT.md](SCRIPT.md), with [STORYBOARD.md](STORYBOARD.md), [capture provenance](capture/provenance.md), and [audio production notes](audio-production.md). [transcript.srt](transcript.srt) is a separate caption file; the film keeps the interface clear of burned-in narration.

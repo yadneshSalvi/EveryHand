@@ -12,3 +12,13 @@ assets/audio/acts/*.wav
 .waveform-cache/
 assets/audio/**/*.wav
 assets/audio/qc-original/
+# Revised film intermediates and frozen generated media stay local.
+revision/assets/
+revision/*.mp4
+revision/*.png
+revision/review.png/
+revision/review-final/
+revision/full-project-review/
+revision/final-frames/
+# The complete regenerated working project is retained locally.
+revision/

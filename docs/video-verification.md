@@ -1,5 +1,7 @@
 # Submission video verification
 
+**26 October update:** a revised cut adds a 38.5-second AI-agent chapter and retimes the existing demonstration. See [revision notes](video-revision.md). The timecodes below identify the original 21 October cut audited here.
+
 Independent agent audit, 21 October 2026, against [the public website](https://every-hand.vercel.app). The audit used the final 165.8-second submission video's audio and rendered claims, then reproduced the workflow through the deployed interface. This is software verification with fictional data, not a classroom trial.
 
 ## Video claims reproduced
